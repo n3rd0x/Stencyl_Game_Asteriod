@@ -4,6 +4,9 @@
     <custom-block blocktag="custom-9" blocktype="ACTION" code="scripts.Design_10_10_FellesBlokk._customBlock_();" desc="" global="true" gui="Missing" id="9" message="" name="" oid="-1" return="void" shared="false" snippetID="10"/>
     <custom-block blocktag="custom-19" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="19" message="" name="" oid="-1" return="void" shared="false" snippetID="0"/>
     <custom-block blocktag="custom-20" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="20" message="" name="" oid="-1" return="void" shared="false" snippetID="0"/>
+    <custom-block blocktag="custom-33" blocktype="ACTION" code=".say(&quot;Helse Egenskap&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="33" message="" name="" oid="-1" return="void" shared="false" snippetID="16">
+        <blank name="@block.thisactor" order="0" type="actor"/>
+    </custom-block>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="256" id="0" name="Bakgrunn" numframes="1" oid="-1" readable="false" repeats="true" resized="false" shared="false" width="256" xpf="1.0" ypf="1.0"/>
     <custom-block blocktag="custom-26" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_Damage&quot;, []);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="26" message="Damage" name="Damage" oid="-1" return="void" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="actor"/>
@@ -25,8 +28,11 @@
         <blank name="Self" order="0" type="actor"/>
         <blank name="Amount" order="1" type="number"/>
     </custom-block>
-    <custom-block blocktag="custom-21" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LagMeteor&quot;, []);" desc="" global="false" gui="Lag meteor av %0" id="21" message="LagMeteor" name="LagMeteor" oid="-1" return="void" shared="false" snippetID="0">
+    <custom-block blocktag="custom-34" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LagMetetor&quot;, [, , , ]);" desc="" global="false" gui="Lag meteor av %0 med max %1 animasjon ved %2 og pek mot %3" id="34" message="LagMetetor" name="LagMetetor" oid="-1" return="void" shared="false" snippetID="0">
         <blank name="type" order="0" type="actortype"/>
+        <blank name="maxAni" order="1" type="number"/>
+        <blank name="lokasjon" order="2" type="actor"/>
+        <blank name="destinasjon" order="3" type="actor"/>
     </custom-block>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="3" fixedrot="true" fric="0.2" gid="4" id="3" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Laser" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="4" static="false">
         <snippets>
@@ -40,7 +46,57 @@
             <poly data="4,0,0,9,0,9,2,0,2" density="0.1" fric="0.2" gid="4" id="0" name="Box" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="8" fixedrot="false" fric="0.2" gid="6" id="5" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="MeteorLA" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="18" fixedrot="false" fric="0.2" gid="3" id="35" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="MeteorLitenA" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="36" static="false">
+        <snippets>
+            <s enabled="true" id="16">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="20"/>
+            </s>
+            <s enabled="true" id="13">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="-1"/>
+                <prop id="3" list="0" val="20"/>
+                <prop id="4" list="0" val=""/>
+                <prop id="5" list="0" val=""/>
+                <prop id="6" list="0" val="16.0"/>
+                <prop id="7" list="0" val="16.0"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="36" name="MeteorLitenA" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="7" id="0" loop="false" name="0" numframes="1" originx="3" originy="3" sync="false" version="2" width="7">
+            <poly data="4,0,0,7,0,7,7,0,7" density="0.1" fric="0.2" gid="6" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="6" id="1" loop="false" name="1" numframes="1" originx="3" originy="3" sync="false" version="2" width="7">
+            <poly data="4,0,0,7,0,7,6,0,6" density="0.1" fric="0.2" gid="6" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="17" fixedrot="false" fric="0.2" gid="3" id="31" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="MeteorMediumA" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="32" static="false">
+        <snippets>
+            <s enabled="true" id="16">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="50"/>
+            </s>
+            <s enabled="true" id="13">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="35"/>
+                <prop id="3" list="0" val="50"/>
+                <prop id="4" list="0" val=""/>
+                <prop id="5" list="0" val=""/>
+                <prop id="6" list="0" val="16.0"/>
+                <prop id="7" list="0" val="16.0"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="32" name="MeteorMediumA" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="10" id="0" loop="false" name="0" numframes="1" originx="5" originy="5" sync="false" version="2" width="10">
+            <poly data="4,0,0,10,0,10,10,0,10" density="0.1" fric="0.2" gid="6" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="10" id="1" loop="false" name="1" numframes="1" originx="5" originy="5" sync="false" version="2" width="11">
+            <poly data="4,0,0,11,0,11,10,0,10" density="0.1" fric="0.2" gid="6" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="8" fixedrot="false" fric="0.2" gid="6" id="5" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="MeteorStorA" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
         <snippets>
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -49,25 +105,27 @@
             <s enabled="true" id="13">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="0"/>
-                <prop id="2" list="0" val="-1"/>
+                <prop id="2" list="0" val="31"/>
                 <prop id="3" list="0" val="100"/>
                 <prop id="4" list="0" val="16.0"/>
                 <prop id="5" list="0" val="16.0"/>
+                <prop id="6" list="0" val="16.0"/>
+                <prop id="7" list="0" val="16.0"/>
             </s>
         </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="6" name="MeteorLA" readable="false" shared="false">
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="6" name="MeteorStorA" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="21" id="0" loop="false" name="0" numframes="1" originx="12" originy="10" sync="false" version="2" width="25">
             <poly data="4,0,0,25,0,25,21,0,21" density="0.1" fric="0.2" gid="6" id="0" name="0" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" down="1" durations="100" height="25" id="1" loop="false" name="1" numframes="1" originx="15" originy="12" sync="false" version="2" width="30">
-            <poly data="4,0,0,30,0,30,25,0,25" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,30,0,30,25,0,25" density="0.1" fric="0.2" gid="6" id="0" name="1" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" down="1" durations="100" height="20" id="2" loop="false" name="2" numframes="1" originx="11" originy="10" sync="false" version="2" width="22">
-            <poly data="4,0,0,22,0,22,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="2" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,22,0,22,20,0,20" density="0.1" fric="0.2" gid="6" id="0" name="2" rest="0.0" sensor="false"/>
         </anim>
         <anim across="1" down="1" durations="100" height="24" id="3" loop="false" name="3" numframes="1" originx="12" originy="12" sync="false" version="2" width="24">
-            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="3" rest="0.0" sensor="false"/>
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="6" id="0" name="3" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <custom-block blocktag="custom-17" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_PekMotAktor&quot;, [, ]);" desc="" global="false" gui="Pek %0 mot %1" id="17" message="PekMotAktor" name="PekMotAktor" oid="-1" return="void" shared="false" snippetID="0">
@@ -84,10 +142,6 @@
     <custom-block blocktag="custom-22" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_SetInvincibility&quot;, []);" desc="" global="false" gui="Set Invincibility For %0 to %1" id="22" message="SetInvincibility" name="SetInvincibility" oid="-1" return="void" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="actor"/>
         <blank name="Status" order="1" type="boolean"/>
-    </custom-block>
-    <custom-block blocktag="custom-30" blocktype="ACTION" code=".say(&quot;Helse Behandling&quot;, &quot;_customBlock_SkadeTilfort&quot;, []);" desc="Skade tilført aktoren." global="false" gui="Tilfort %0 med %1" id="30" message="SkadeTilfort" name="SkadeTilfort" oid="-1" return="void" shared="false" snippetID="16">
-        <blank name="@block.thisactor" order="0" type="actor"/>
-        <blank name="skade" order="1" type="number"/>
     </custom-block>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="false" desc="Spawn lokasjon for astroider og fiendlige romskip." eventsnippetid="11" fixedrot="false" fric="0.2" gid="3" id="15" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="SpawnLokasjon" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="16" static="true">
         <snippets/>
@@ -124,4 +178,8 @@
             <poly data="4,0,0,18,0,18,24,0,24" density="0.1" fric="0.2" gid="7" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <custom-block blocktag="custom-30" blocktype="ACTION" code=".say(&quot;Helse Egenskap&quot;, &quot;_customBlock_TilforSkade&quot;, []);" desc="Tilføre skade til aktoren." global="false" gui="Tilfor skade til %0 med %1" id="30" message="TilforSkade" name="TilforSkade" oid="-1" return="void" shared="false" snippetID="16">
+        <blank name="@block.thisactor" order="0" type="actor"/>
+        <blank name="skade" order="1" type="number"/>
+    </custom-block>
 </pack>
