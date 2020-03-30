@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <event-actor-create-kill comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="2" id="-1">
+                        <set-game-val-0 comment="false" x="37" y="80">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </minus>
+                        </set-game-val-0>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <getatype comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getatype>
+                        <pick-type comment="false" id="1" x="0" y="0">
+                            <actortype eid="5" id="0"/>
+                        </pick-type>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="1"/>
+            <ACTOR eid="this" id="1"/>
+        </event-actor-create-kill>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="4" id="0">
+        <event-actor-create-kill comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="4" id="-1">
+                        <set-game-val-0 comment="false" x="37" y="80">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </plus>
+                        </set-game-val-0>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <getatype comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                        </getatype>
+                        <pick-type comment="false" id="1" x="0" y="0">
+                            <actortype eid="5" id="0"/>
+                        </pick-type>
+                    </eq>
+                </if>
+            </group>
+            <int id="0" val="0"/>
+            <ACTOR eid="this" id="1"/>
+        </event-actor-create-kill>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <custom-30 comment="false" x="26" y="45">
+                    <other-actor comment="false" id="0" x="0" y="0"/>
+                    <get-val-13-3 comment="false" id="1" x="0" y="0"/>
+                </custom-30>
+            </group>
+        </collide>
+    </group>
+    <group eventID="5" id="-1"/>
+</groups>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="0" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.2" gravx="-0.0" gravy="0.0" height="480" id="0" name="Hoved Spill" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <color-bg blue="-1" green="-1" red="-1"/>
+        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="Background" opacity="100" order="1" rid="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="screen" color="255,255,255" id="2" locked="false" name="Game" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="2" c="false" group="3" id="15" name="SpawnLokasjoner 2" order="0" sx="1.0" sy="1.0" x="609" y="23" z="2"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="15" name="SpawnLokasjoner 3" order="1" sx="1.0" sy="1.0" x="24" y="23" z="2"/>
+        <actor a="0.0" aid="4" c="false" group="3" id="15" name="SpawnLokasjoner 4" order="2" sx="1.0" sy="1.0" x="321" y="24" z="2"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="15" name="SpawnLokasjoner 5" order="3" sx="1.0" sy="1.0" x="23" y="192" z="2"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="15" name="SpawnLokasjoner 6" order="4" sx="1.0" sy="1.0" x="608" y="224" z="2"/>
+        <actor a="0.0" aid="7" c="false" group="3" id="15" name="SpawnLokasjoner 7" order="5" sx="1.0" sy="1.0" x="23" y="449" z="2"/>
+        <actor a="0.0" aid="8" c="false" group="3" id="15" name="SpawnLokasjoner 8" order="6" sx="1.0" sy="1.0" x="608" y="448" z="2"/>
+        <actor a="0.0" aid="9" c="false" group="3" id="15" name="SpawnLokasjoner 9" order="7" sx="1.0" sy="1.0" x="352" y="448" z="2"/>
+    </actors>
+    <snippets/>
+    <terrain/>
+    <atlases members="" retainAtlases="true"/>
+</scene>
