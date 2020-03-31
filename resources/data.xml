@@ -33,11 +33,13 @@
         <blank name="Self" order="0" type="actor"/>
         <blank name="Amount" order="1" type="number"/>
     </custom-block>
-    <custom-block blocktag="custom-34" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LagMetetor&quot;, [, , , ]);" desc="" global="false" gui="Lag meteor av %0 med maks %1 animasjon ved %2 og pek mot %3" id="34" message="LagMetetor" name="LagMetetor" oid="-1" return="void" shared="false" snippetID="0">
+    <custom-block blocktag="custom-50" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LagGenerellMeteor&quot;, [, , , , , ]);" desc="" global="false" gui="Lag meteor av %0 med maks %1 animasjon ved %2 og pek mot %3 med fart (min: %4 , maks: %5 )" id="50" message="LagGenerellMeteor" name="LagGenerellMeteor" oid="-1" return="void" shared="false" snippetID="0">
         <blank name="type" order="0" type="actortype"/>
-        <blank name="maxAni" order="1" type="number"/>
+        <blank name="maksAni" order="1" type="number"/>
         <blank name="lokasjon" order="2" type="actor"/>
         <blank name="destinasjon" order="3" type="actor"/>
+        <blank name="minFart" order="4" type="number"/>
+        <blank name="maksFart" order="5" type="number"/>
     </custom-block>
     <custom-block blocktag="custom-40" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LagSpiller&quot;);" desc="" global="false" gui="Lag spiller" id="40" message="LagSpiller" name="LagSpiller" oid="-1" return="void" shared="false" snippetID="0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="3" fixedrot="true" fric="0.2" gid="4" id="3" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Laser" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="4" static="false">
@@ -52,7 +54,7 @@
             <poly data="4,0,0,9,0,9,2,0,2" density="0.1" fric="0.2" gid="4" id="0" name="Box" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="18" fixedrot="false" fric="0.2" gid="6" id="35" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="MeteorLitenA" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="36" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="18" fixedrot="false" fric="0.2" gid="6" id="35" ignoreg="false" inertia="6.0" ldamp="0.0" mass="10.0" name="MeteorLitenA" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="36" static="false">
         <snippets>
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -67,6 +69,8 @@
                 <prop id="6" list="0" val="16.0"/>
                 <prop id="7" list="0" val="16.0"/>
                 <prop id="8" list="0" val="40"/>
+                <prop id="9" list="0" val="30"/>
+                <prop id="10" list="0" val="80"/>
             </s>
         </snippets>
     </actor>
@@ -78,7 +82,35 @@
             <poly data="4,0,0,7,0,7,6,0,6" density="0.1" fric="0.2" gid="6" id="0" name="Animation 1" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="17" fixedrot="false" fric="0.2" gid="6" id="31" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="MeteorMediumA" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="32" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="22" fixedrot="false" fric="0.2" gid="6" id="55" ignoreg="false" inertia="6.0" ldamp="0.0" mass="10.0" name="MeteorLitenB" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="56" static="false">
+        <snippets>
+            <s enabled="true" id="13">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="-1"/>
+                <prop id="3" list="0" val="20"/>
+                <prop id="4" list="0" val=""/>
+                <prop id="5" list="0" val=""/>
+                <prop id="6" list="0" val="16.0"/>
+                <prop id="7" list="0" val="16.0"/>
+                <prop id="8" list="0" val="40"/>
+                <prop id="9" list="0" val="30"/>
+                <prop id="10" list="0" val="80"/>
+            </s>
+            <s enabled="true" id="16">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="20"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="56" name="MeteorLitenB" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="7" id="0" loop="true" name="0" numframes="1" originx="3" originy="3" sync="false" version="2" width="7">
+            <poly data="4,0,0,7,0,7,7,0,7" density="0.1" fric="0.2" gid="6" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="6" id="1" loop="true" name="1" numframes="1" originx="3" originy="3" sync="false" version="2" width="7">
+            <poly data="4,0,0,7,0,7,6,0,6" density="0.1" fric="0.2" gid="6" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="17" fixedrot="false" fric="0.2" gid="6" id="31" ignoreg="false" inertia="20.0" ldamp="0.0" mass="15.0" name="MeteorMediumA" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="32" static="false">
         <snippets>
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -93,6 +125,8 @@
                 <prop id="6" list="0" val="16.0"/>
                 <prop id="7" list="0" val="16.0"/>
                 <prop id="8" list="0" val="150"/>
+                <prop id="9" list="0" val="20"/>
+                <prop id="10" list="0" val="80"/>
             </s>
         </snippets>
     </actor>
@@ -104,7 +138,35 @@
             <poly data="4,0,0,11,0,11,10,0,10" density="0.1" fric="0.2" gid="6" id="0" name="Animation 1" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="8" fixedrot="false" fric="0.2" gid="6" id="5" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="MeteorStorA" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="21" fixedrot="false" fric="0.2" gid="6" id="53" ignoreg="false" inertia="20.0" ldamp="0.0" mass="15.0" name="MeteorMediumB" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="54" static="false">
+        <snippets>
+            <s enabled="true" id="13">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="55"/>
+                <prop id="3" list="0" val="50"/>
+                <prop id="4" list="0" val=""/>
+                <prop id="5" list="0" val=""/>
+                <prop id="6" list="0" val="16.0"/>
+                <prop id="7" list="0" val="16.0"/>
+                <prop id="8" list="0" val="150"/>
+                <prop id="9" list="0" val="20"/>
+                <prop id="10" list="0" val="80"/>
+            </s>
+            <s enabled="true" id="16">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="50"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="54" name="MeteorMediumB" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="10" id="0" loop="true" name="0" numframes="1" originx="5" originy="5" sync="false" version="2" width="10">
+            <poly data="4,0,0,10,0,10,10,0,10" density="0.1" fric="0.2" gid="6" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="10" id="1" loop="true" name="1" numframes="1" originx="5" originy="5" sync="false" version="2" width="11">
+            <poly data="4,0,0,11,0,11,10,0,10" density="0.1" fric="0.2" gid="-1000" id="0" name="1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="8" fixedrot="false" fric="0.2" gid="6" id="5" ignoreg="false" inertia="30.0" ldamp="0.0" mass="20.0" name="MeteorStorA" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="6" static="false">
         <snippets>
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -120,6 +182,8 @@
                 <prop id="6" list="0" val="16.0"/>
                 <prop id="7" list="0" val="16.0"/>
                 <prop id="8" list="0" val="250"/>
+                <prop id="9" list="0" val="20"/>
+                <prop id="10" list="0" val="100"/>
             </s>
         </snippets>
     </actor>
@@ -135,6 +199,41 @@
         </anim>
         <anim across="1" down="1" durations="100" height="24" id="3" loop="false" name="3" numframes="1" originx="12" originy="12" sync="false" version="2" width="24">
             <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="6" id="0" name="3" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="20" fixedrot="false" fric="0.2" gid="6" id="51" ignoreg="false" inertia="30.0" ldamp="0.0" mass="20.0" name="MeteorStorB" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="52" static="false">
+        <snippets>
+            <s enabled="true" id="13">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="0"/>
+                <prop id="2" list="0" val="53"/>
+                <prop id="3" list="0" val="100"/>
+                <prop id="4" list="0" val="16.0"/>
+                <prop id="5" list="0" val="16.0"/>
+                <prop id="6" list="0" val="16.0"/>
+                <prop id="7" list="0" val="16.0"/>
+                <prop id="8" list="0" val="250"/>
+                <prop id="9" list="0" val="20"/>
+                <prop id="10" list="0" val="100"/>
+            </s>
+            <s enabled="true" id="16">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="100"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="52" name="MeteorStorB" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="21" id="0" loop="false" name="0" numframes="1" originx="12" originy="10" sync="false" version="2" width="25">
+            <poly data="4,0,0,25,0,25,21,0,21" density="0.1" fric="0.2" gid="6" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="25" id="1" loop="false" name="1" numframes="1" originx="15" originy="12" sync="false" version="2" width="30">
+            <poly data="4,0,0,30,0,30,25,0,25" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="20" id="2" loop="false" name="2" numframes="1" originx="11" originy="10" sync="false" version="2" width="22">
+            <poly data="4,0,0,22,0,22,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="24" id="3" loop="false" name="3" numframes="1" originx="12" originy="12" sync="false" version="2" width="24">
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <custom-block blocktag="custom-17" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_PekMotAktor&quot;, [, ]);" desc="" global="false" gui="Pek %0 mot %1" id="17" message="PekMotAktor" name="PekMotAktor" oid="-1" return="void" shared="false" snippetID="0">
@@ -163,7 +262,7 @@
             <poly data="4,0,0,8,0,8,8,0,8" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="true" inertia="1.0" ldamp="0.4" mass="1.0" name="Spiller" oid="-1" pausable="false" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="true" fric="0.2" gid="3" id="1" ignoreg="true" inertia="1.0" ldamp="0.4" mass="10.0" name="Spiller" oid="-1" pausable="false" physicsMode="0" rest="0.0" shared="false" sprite="2" static="false">
         <snippets>
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -171,7 +270,7 @@
             </s>
             <s enabled="true" id="4">
                 <prop id="2147483647" list="0" val="thisactor"/>
-                <prop id="1" list="0" val="10"/>
+                <prop id="1" list="0" val="80"/>
                 <prop id="2" list="0" val="1"/>
             </s>
             <s enabled="true" id="5">

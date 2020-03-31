@@ -10,12 +10,14 @@
                     <group eventID="2" id="-1">
                         <repeat comment="false" x="37" y="152">
                             <group eventID="2" id="-1">
-                                <custom-34 comment="false" x="48" y="177">
+                                <custom-50 comment="false" x="48" y="177">
                                     <get-val-13-2 comment="false" id="0" x="0" y="0"/>
                                     <int id="1" val="2"/>
                                     <ACTOR eid="this" id="2"/>
                                     <null comment="false" id="3" x="0" y="0"/>
-                                </custom-34>
+                                    <get-val-13-9 comment="false" id="4" x="0" y="0"/>
+                                    <get-val-13-10 comment="false" id="5" x="0" y="0"/>
+                                </custom-50>
                             </group>
                             <randint comment="false" id="0" x="0" y="0">
                                 <int id="0" val="1"/>

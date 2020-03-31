@@ -15,13 +15,14 @@
             <receiver blockID="38" id="7"/>
             <receiver blockID="39" id="8"/>
             <receiver blockID="40" id="9"/>
+            <receiver blockID="50" id="10"/>
         </blocks>
         <events>
             <event displayName="Scene Opprettet" enabled="true" id="2" name="init" order="2" repeats="true"/>
             <event displayName="Pek mot Destinasjon" enabled="true" id="3" name="event-custom-block" order="6" repeats="true"/>
             <event displayName="Lag Stor Meteor" enabled="true" id="5" name="event-periodic" order="5" repeats="true"/>
-            <event displayName="Lag Generell Meteor" enabled="true" id="6" name="event-custom-block" order="8" repeats="true"/>
-            <event displayName="Lag Spiller" enabled="true" id="9" name="event-custom-block" order="10" repeats="true"/>
+            <event displayName="Lag Spiller" enabled="true" id="9" name="event-custom-block" order="11" repeats="true"/>
+            <event displayName="Lag Generell Meteor" enabled="true" id="10" name="event-custom-block" order="9" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="1" attachedevent="true" class="scripts.ActorEvents_1" classname="scripts.ActorEvents_1" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_1" oid="-1" package="scripts." shared="false" type="actor">
@@ -110,6 +111,8 @@
         <number default="16.0" defaultValue="16.0" desc="The x-component of how many pixels of the actor are still visible before it wraps around the scene, and the x-component of how many pixels will be visible after it wraps around the scene." dropdown="" fullname="Wrap X" hidden="false" id="6" name="_WrapX" order="5"/>
         <number default="16.0" defaultValue="16.0" desc="The y-component of how many pixels of the actor are still visible before it wraps around the scene, and the y-component of how many pixels will be visible after it wraps around the scene." dropdown="" fullname="Wrap Y" hidden="false" id="7" name="_WrapY" order="6"/>
         <number default="0" defaultValue="0" desc="Poeng for å ødelegge denne." dropdown="" fullname="Poeng" hidden="false" id="8" name="_Poeng" order="7"/>
+        <number default="30" defaultValue="30" desc="Minimum fart." dropdown="" fullname="MinFart" hidden="false" id="9" name="_MinFart" order="8"/>
+        <number default="100" defaultValue="100" desc="Maksimun fart." dropdown="" fullname="MaksFart" hidden="false" id="10" name="_MaksFart" order="9"/>
         <blocks/>
         <events>
             <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="4" repeats="true"/>
@@ -153,5 +156,20 @@
             <event displayName="Tegn Ekstra Liv" enabled="true" id="6" name="event-custom-block" order="6" repeats="true"/>
             <event displayName="Oppdater Tegning" enabled="true" id="7" name="draw" order="3" repeats="true"/>
         </events>
+    </snippet>
+    <snippet actorid="5" attachedevent="true" class="scripts.ActorEvents_51" classname="scripts.ActorEvents_51" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="20" name="ActorEvents_51" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events>
+            <event displayName="Opprettet" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="31" attachedevent="true" class="scripts.ActorEvents_53" classname="scripts.ActorEvents_53" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="21" name="ActorEvents_53" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="35" attachedevent="true" class="scripts.ActorEvents_55" classname="scripts.ActorEvents_55" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="22" name="ActorEvents_55" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>
