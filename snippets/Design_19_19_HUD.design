@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-19-4 comment="false" x="26" y="40">
+                    <create-list comment="false" id="0" x="0" y="0"/>
+                </set-val-19-4>
+                <set-val-19-1 comment="false" x="26" y="65">
+                    <image-inst-create comment="false" id="0" x="0" y="0">
+                        <image-create comment="false" id="0" x="0" y="0">
+                            <int id="0" val="32"/>
+                            <int id="1" val="32"/>
+                        </image-create>
+                    </image-inst-create>
+                </set-val-19-1>
+                <image-inst-hud comment="false" x="26" y="95">
+                    <get-val-19-1 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="100"/>
+                    <int id="2" val="100"/>
+                </image-inst-hud>
+                <repeat comment="false" x="26" y="120">
+                    <group eventID="2" id="-1">
+                        <custom-48 comment="false" x="37" y="145"/>
+                    </group>
+                    <get-game-val-5 comment="false" id="0" x="0" y="0"/>
+                </repeat>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="5" id="0">
+        <receiver-3-47 comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-val-19-2 comment="false" x="26" y="40">
+                    <custom-46 comment="false" id="0" x="0" y="0">
+                        <get-val-19-4 comment="false" id="0" x="0" y="0"/>
+                    </custom-46>
+                </set-val-19-2>
+                <if comment="false" x="26" y="70">
+                    <group eventID="5" id="-1">
+                        <remove-item comment="false" x="37" y="100">
+                            <get-val-19-4 comment="false" id="0" x="0" y="0"/>
+                            <get-val-19-2 comment="false" id="1" x="0" y="0"/>
+                        </remove-item>
+                        <image-inst-remove comment="false" x="37" y="125">
+                            <get-val-19-2 comment="false" id="0" x="0" y="0"/>
+                        </image-inst-remove>
+                    </group>
+                    <noteq comment="false" id="0" x="0" y="0">
+                        <get-val-19-2 comment="false" id="0" x="0" y="0"/>
+                        <null comment="false" id="1" x="0" y="0"/>
+                    </noteq>
+                </if>
+            </group>
+        </receiver-3-47>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <receiver-4-48 comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <set-val-19-2 comment="false" x="26" y="40">
+                    <image-inst-create comment="false" id="0" x="0" y="0">
+                        <image-file comment="false" id="0" x="0" y="0">
+                            <int id="0" val="playerLives.png"/>
+                        </image-file>
+                    </image-inst-create>
+                </set-val-19-2>
+                <set-val-19-3 comment="false" x="26" y="70">
+                    <times comment="false" id="0" x="0" y="0">
+                        <plus comment="false" id="0" x="0" y="0">
+                            <image-get-props comment="false" id="0" x="0" y="0">
+                                <get-val-19-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="3"/>
+                            </image-get-props>
+                            <times comment="false" id="1" x="0" y="0">
+                                <int id="0" val="10"/>
+                                <engine-scale comment="false" id="1" x="0" y="0"/>
+                            </times>
+                        </plus>
+                        <length-list comment="false" id="1" x="0" y="0">
+                            <get-val-19-4 comment="false" id="0" x="0" y="0"/>
+                        </length-list>
+                    </times>
+                </set-val-19-3>
+                <image-inst-hud comment="false" x="26" y="118">
+                    <get-val-19-2 comment="false" id="0" x="0" y="0"/>
+                    <plus comment="false" id="1" x="0" y="0">
+                        <image-get-props comment="false" id="0" x="0" y="0">
+                            <get-val-19-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="0"/>
+                        </image-get-props>
+                        <get-val-19-3 comment="false" id="1" x="0" y="0"/>
+                    </plus>
+                    <image-get-props comment="false" id="2" x="0" y="0">
+                        <get-val-19-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </image-get-props>
+                </image-inst-hud>
+                <add-list comment="false" x="26" y="161">
+                    <get-val-19-4 comment="false" id="0" x="0" y="0"/>
+                    <get-val-19-2 comment="false" id="1" x="0" y="0"/>
+                </add-list>
+            </group>
+        </receiver-4-48>
+    </group>
+    <group eventID="6" id="-1"/>
+</groups>

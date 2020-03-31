@@ -15,6 +15,7 @@
         <blank name="Self" order="0" type="actor"/>
         <blank name="Amount" order="1" type="number"/>
     </custom-block>
+    <custom-block blocktag="custom-47" blocktype="ACTION" code="sayToScene(&quot;HUD&quot;, &quot;_customBlock_FjernEkstraLiv&quot;);" desc="" global="false" gui="Fjern ekstra liv" id="47" message="FjernEkstraLiv" name="FjernEkstraLiv" oid="-1" return="void" shared="false" snippetID="19"/>
     <custom-block blocktag="custom-24" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_FullRestore&quot;);" desc="" global="false" gui="Restore %0 To Full Health" id="24" message="FullRestore" name="FullRestore" oid="-1" return="void" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="actor"/>
     </custom-block>
@@ -136,6 +137,9 @@
         <blank name="aktor" order="0" type="actor"/>
         <blank name="destinasjon" order="1" type="actor"/>
     </custom-block>
+    <custom-block blocktag="custom-46" blocktype="NORMAL" code="scripts.Design_10_10_FellesBlokk._customBlock_ReturnerSisteGrafikk()" desc="" global="true" gui="Returner siste grafikk fra %0" id="46" message="ReturnerSisteGrafikk" name="ReturnerSisteGrafikk" oid="-1" return="image-instance" shared="false" snippetID="10">
+        <blank name="liste" order="0" type="list"/>
+    </custom-block>
     <custom-block blocktag="custom-12" blocktype="NORMAL" code="(scripts.Design_10_10_FellesBlokk._customBlock_ReturneTilfeldigAktor() : Actor)" desc="" global="true" gui="Returner tilfeldig aktor fra %0" id="12" message="ReturneTilfeldigAktor" name="ReturneTilfeldigAktor" oid="-1" return="actor" shared="false" snippetID="10">
         <blank name="liste" order="0" type="list"/>
     </custom-block>
@@ -182,6 +186,7 @@
             <poly data="4,0,0,18,0,18,24,0,24" density="0.1" fric="0.2" gid="7" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <custom-block blocktag="custom-48" blocktype="ACTION" code="sayToScene(&quot;HUD&quot;, &quot;_customBlock_TegnEkstraLiv&quot;);" desc="" global="false" gui="Tegn ekstra liv" id="48" message="TegnEkstraLiv" name="TegnEkstraLiv" oid="-1" return="void" shared="false" snippetID="19"/>
     <custom-block blocktag="custom-30" blocktype="ACTION" code=".say(&quot;Helse Egenskap&quot;, &quot;_customBlock_TilforSkade&quot;, []);" desc="Tilføre skade til aktoren." global="false" gui="Tilfor skade til %0 med %1" id="30" message="TilforSkade" name="TilforSkade" oid="-1" return="void" shared="false" snippetID="16">
         <blank name="@block.thisactor" order="0" type="actor"/>
         <blank name="skade" order="1" type="number"/>

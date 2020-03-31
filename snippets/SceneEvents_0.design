@@ -180,20 +180,17 @@
         </receiver-6-34>
     </group>
     <group eventID="6" id="-1"/>
-    <group eventID="8" id="0">
-        <step comment="false" x="15" y="15">
-            <group eventID="8" id="-1"/>
-        </step>
-    </group>
-    <group eventID="8" id="-1"/>
     <group eventID="9" id="0">
         <receiver-9-40 comment="false" x="15" y="15">
             <group eventID="9" id="-1">
-                <if comment="false" x="26" y="40">
+                <set-val-0-5 comment="false" x="26" y="40">
+                    <null comment="false" id="0" x="0" y="0"/>
+                </set-val-0-5>
+                <if comment="false" x="26" y="72">
                     <group eventID="9" id="-1">
-                        <dolater comment="false" x="37" y="70">
+                        <dolater comment="false" x="37" y="102">
                             <group eventID="9" id="-1">
-                                <create-actor3 comment="false" x="48" y="97">
+                                <create-actor3 comment="false" x="48" y="129">
                                     <actortype eid="1" id="0"/>
                                     <div comment="false" id="1" x="0" y="0">
                                         <screen-wh comment="false" id="0" x="0" y="0">
@@ -209,7 +206,7 @@
                                     </div>
                                     <int id="3" val="0"/>
                                 </create-actor3>
-                                <set-val-0-5 comment="false" x="48" y="142">
+                                <set-val-0-5 comment="false" x="48" y="174">
                                     <ACTOR eid="lastcreated" id="0"/>
                                 </set-val-0-5>
                             </group>

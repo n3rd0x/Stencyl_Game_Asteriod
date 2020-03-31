@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<scene depth="1" desc="" eventsnippetid="0" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.2" gravx="-0.0" gravy="0.0" height="480" id="0" name="Hoved Spill" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+<scene depth="2" desc="" eventsnippetid="0" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.2" gravx="-0.0" gravy="0.0" height="480" id="0" name="Hoved Spill" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
     <layers>
         <color-bg blue="-1" green="-1" red="-1"/>
-        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="Background" opacity="100" order="1" rid="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="Background" opacity="100" order="2" rid="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="128,128,128" id="3" locked="true" name="HUD" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
         <layer blendMode="screen" color="255,255,255" id="2" locked="false" name="Game" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
     </layers>
     <joints/>
@@ -18,7 +19,14 @@
         <actor a="0.0" aid="8" c="false" group="3" id="15" name="SpawnLokasjoner 8" order="6" sx="1.0" sy="1.0" x="608" y="448" z="2"/>
         <actor a="0.0" aid="9" c="false" group="3" id="15" name="SpawnLokasjoner 9" order="7" sx="1.0" sy="1.0" x="352" y="448" z="2"/>
     </actors>
-    <snippets/>
+    <snippets>
+        <s enabled="true" id="19">
+            <prop id="1" list="0" val="null"/>
+            <prop id="2" list="0" val=""/>
+            <prop id="3" list="0" val="0"/>
+            <prop id="4" list="1" val=""/>
+        </s>
+    </snippets>
     <terrain/>
     <atlases members="" retainAtlases="true"/>
 </scene>
