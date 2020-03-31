@@ -5,10 +5,10 @@
         <e enabled="false" id="label"/>
     </exts>
     <bundles>
-        <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Mac App Store" version="1.0.0"/>
         <bundle author="" id="com.yourcompany.gamename" internalVersion="1" metroColor="-12566464" name="My Game" store="Windows Store" version="1.0.0"/>
-        <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="App Store" version="1.0.0"/>
         <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Google Play" version="1.0.0"/>
+        <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Mac App Store" version="1.0.0"/>
+        <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="App Store" version="1.0.0"/>
     </bundles>
     <scales>
         <scale detailed="1x" id="0" name="1x" size="1.0"/>
@@ -98,6 +98,7 @@
     <attributes>
         <list cid="-1" id="3" name="SpawnLokasjoner" save="true" val="list"/>
         <number cid="-1" id="0" name="AntallMeteorStor" save="true" value="0.0"/>
+        <number cid="-1" id="5" name="Liv" save="true" value="3"/>
         <number cid="-1" id="4" name="MaxMeteorStor" save="true" value="8.0"/>
     </attributes>
     <collisions>

@@ -3,7 +3,7 @@
     <snippet attachedevent="true" class="scripts.SceneEvents_0" classname="scripts.SceneEvents_0" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="0" name="SceneEvents_0" oid="-1" package="scripts." sceneid="0" shared="false" type="scene">
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="dx" hidden="true" id="2" name="_dx" order="0"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="dy" hidden="true" id="3" name="_dy" order="1"/>
-        <actor default="" defaultValue="" desc="" dropdown="" fullname="Spiller" hidden="false" id="5" name="_Spiller" order="3"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Spiller" hidden="false" id="5" name="_Spiller" order="2"/>
         <blocks>
             <receiver blockID="17" id="1"/>
             <receiver blockID="18" id="2"/>
@@ -11,18 +11,24 @@
             <receiver blockID="33" id="4"/>
             <receiver blockID="34" id="5"/>
             <receiver blockID="34" id="6"/>
+            <receiver blockID="38" id="7"/>
+            <receiver blockID="39" id="8"/>
+            <receiver blockID="40" id="9"/>
         </blocks>
         <events>
             <event displayName="Scene Opprettet" enabled="true" id="2" name="init" order="2" repeats="true"/>
-            <event displayName="Pek Mot Aktor" enabled="true" id="3" name="event-custom-block" order="5" repeats="true"/>
-            <event displayName="Lag Stor Meteor" enabled="true" id="5" name="event-periodic" order="3" repeats="true"/>
-            <event displayName="Lag Generell Meteor" enabled="true" id="6" name="event-custom-block" order="6" repeats="true"/>
+            <event displayName="Pek mot Destinasjon" enabled="true" id="3" name="event-custom-block" order="5" repeats="true"/>
+            <event displayName="Lag Stor Meteor" enabled="true" id="5" name="event-periodic" order="4" repeats="true"/>
+            <event displayName="Lag Generell Meteor" enabled="true" id="6" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="Oppdatering" enabled="true" id="8" name="step" order="3" repeats="true"/>
+            <event displayName="Lag Spiller" enabled="true" id="9" name="event-custom-block" order="9" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="1" attachedevent="true" class="scripts.ActorEvents_1" classname="scripts.ActorEvents_1" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_1" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
-            <event displayName="Spiller vs Meteorer" enabled="true" id="1" name="collide" order="1" repeats="true"/>
+            <event displayName="Kollisjon med Meteorer" enabled="true" id="1" name="collide" order="1" repeats="true"/>
+            <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="3" attachedevent="true" class="scripts.ActorEvents_3" classname="scripts.ActorEvents_3" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="3" name="ActorEvents_3" oid="-1" package="scripts." shared="false" type="actor">
