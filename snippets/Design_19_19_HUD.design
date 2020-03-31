@@ -16,8 +16,8 @@
                 </set-val-19-1>
                 <image-inst-hud comment="false" x="26" y="95">
                     <get-val-19-1 comment="false" id="0" x="0" y="0"/>
-                    <int id="1" val="100"/>
-                    <int id="2" val="100"/>
+                    <int id="1" val="20"/>
+                    <int id="2" val="20"/>
                 </image-inst-hud>
                 <repeat comment="false" x="26" y="120">
                     <group eventID="2" id="-1">
@@ -105,4 +105,29 @@
         </receiver-4-48>
     </group>
     <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="49" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <str-combine comment="false" id="0" x="0" y="0">
+                        <int id="0" val="Poeng: "/>
+                        <tostring comment="false" id="1" x="0" y="0">
+                            <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                        </tostring>
+                    </str-combine>
+                    <int id="1" val="20"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <screen-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </screen-wh>
+                        <int id="1" val="40"/>
+                    </minus>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="7" id="-1"/>
 </groups>

@@ -103,12 +103,13 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_13_13_MeteorEgenskap" classname="scripts.Design_13_13_MeteorEgenskap" desc="Egenskaper for meteorer." description="Egenskaper for meteorer." design="true" drawOrder="0" id="13" name="Meteor Egenskap" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <actortype default="" defaultValue="" desc="Meteor type som lages ved død." dropdown="" fullname="Meteor Type" hidden="false" id="2" name="_MeteorType" order="1"/>
-        <number default="0.0" defaultValue="0.0" desc="Skade tilført motparten." dropdown="" fullname="Skade" hidden="false" id="3" name="_Skade" order="2"/>
+        <actortype default="" defaultValue="" desc="Meteor som omdannes til ved sin ødeleggelse." dropdown="" fullname="Meteor Type" hidden="false" id="2" name="_MeteorType" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="Skade som tilfører motparten." dropdown="" fullname="Skade" hidden="false" id="3" name="_Skade" order="2"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Spawn" hidden="true" id="4" name="_Spawn" order="3"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Spiller" hidden="false" id="5" name="_Spiller" order="4"/>
         <number default="16.0" defaultValue="16.0" desc="The x-component of how many pixels of the actor are still visible before it wraps around the scene, and the x-component of how many pixels will be visible after it wraps around the scene." dropdown="" fullname="Wrap X" hidden="false" id="6" name="_WrapX" order="5"/>
         <number default="16.0" defaultValue="16.0" desc="The y-component of how many pixels of the actor are still visible before it wraps around the scene, and the y-component of how many pixels will be visible after it wraps around the scene." dropdown="" fullname="Wrap Y" hidden="false" id="7" name="_WrapY" order="6"/>
+        <number default="0" defaultValue="0" desc="Poeng for å ødelegge denne." dropdown="" fullname="Poeng" hidden="false" id="8" name="_Poeng" order="7"/>
         <blocks/>
         <events>
             <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="4" repeats="true"/>
@@ -148,8 +149,9 @@
         </blocks>
         <events>
             <event displayName="Opprettet" enabled="true" id="2" name="init" order="2" repeats="true"/>
-            <event displayName="Fjern Ekstra Liv" enabled="true" id="5" name="event-custom-block" order="6" repeats="true"/>
-            <event displayName="Tegn Ekstra Liv" enabled="true" id="6" name="event-custom-block" order="5" repeats="true"/>
+            <event displayName="Fjern Ekstra Liv" enabled="true" id="5" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="Tegn Ekstra Liv" enabled="true" id="6" name="event-custom-block" order="6" repeats="true"/>
+            <event displayName="Oppdater Tegning" enabled="true" id="7" name="draw" order="3" repeats="true"/>
         </events>
     </snippet>
 </pack>

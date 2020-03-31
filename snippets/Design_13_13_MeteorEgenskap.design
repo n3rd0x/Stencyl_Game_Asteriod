@@ -4,7 +4,7 @@
         <event-actor-create-kill comment="false" x="15" y="15">
             <group eventID="2" id="-1">
                 <comment-long comment="false" x="26" y="42">
-                    <int id="0" val="Når en stor eller mellomstor meteor blir ødelagt, splitter den om til mindre meteorer."/>
+                    <int id="0" val="Når en stor eller medium meteor blir ødelagt, splitter den til mindre meteorer, som spres i tilfeldig retninger."/>
                 </comment-long>
                 <if comment="false" x="26" y="122">
                     <group eventID="2" id="-1">
@@ -28,6 +28,17 @@
                         <null comment="false" id="1" x="0" y="0"/>
                     </noteq>
                 </if>
+                <comment-wrapper comment="false" x="26" y="233">
+                    <group eventID="2" id="-1">
+                        <set-game-val-6 comment="false" x="37" y="253">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                                <get-val-13-8 comment="false" id="1" x="0" y="0"/>
+                            </plus>
+                        </set-game-val-6>
+                    </group>
+                    <int id="0" val="Legg til poeng."/>
+                </comment-wrapper>
             </group>
             <int id="0" val="1"/>
             <ACTOR eid="this" id="1"/>
