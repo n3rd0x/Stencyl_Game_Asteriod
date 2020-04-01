@@ -1,43 +1,105 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
+    <group eventID="16" id="0">
+        <receiver-18-86 comment="false" x="15" y="15">
+            <group eventID="16" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="16" id="-1">
+                        <custom-85 comment="false" x="37" y="70">
+                            <actortype eid="80" id="0"/>
+                            <int id="1" val="4"/>
+                            <custom-12 comment="false" id="2" x="0" y="0">
+                                <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                            </custom-12>
+                            <get-val-0-5 comment="false" id="3" x="0" y="0"/>
+                        </custom-85>
+                        <set-attribute comment="false" x="37" y="107">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="Follow Target"/>
+                            <int id="2" val="_TargetActor"/>
+                            <get-val-0-5 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="139">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="Face Target"/>
+                            <int id="2" val="_TargetActor"/>
+                            <get-val-0-5 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-game-val-13 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-12 comment="false" id="1" x="0" y="0"/>
+                    </less>
+                </if>
+            </group>
+        </receiver-18-86>
+    </group>
+    <group eventID="16" id="-1"/>
+    <group eventID="17" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="17" id="-1">
+                <die comment="false" x="26" y="42">
+                    <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                </die>
+            </group>
+            <control eid="6" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="17" id="-1"/>
     <group eventID="2" id="0">
         <init comment="false" x="20" y="17">
             <group eventID="2" id="-1">
                 <set-game-val-0 comment="false" x="31" y="42">
                     <int id="0" val="0"/>
                 </set-game-val-0>
-                <set-game-val-5 comment="false" x="31" y="62">
+                <set-game-val-13 comment="false" x="31" y="62">
+                    <int id="0" val="0"/>
+                </set-game-val-13>
+                <set-game-val-5 comment="false" x="31" y="82">
                     <int id="0" val="3"/>
                 </set-game-val-5>
-                <set-game-val-4 comment="false" x="31" y="82">
+                <set-game-val-4 comment="false" x="31" y="102">
                     <int id="0" val="8"/>
                 </set-game-val-4>
-                <set-game-val-7 comment="false" x="31" y="102">
-                    <int id="0" val="5000"/>
+                <set-game-val-12 comment="false" x="31" y="122">
+                    <int id="0" val="1"/>
+                </set-game-val-12>
+                <set-game-val-7 comment="false" x="31" y="142">
+                    <int id="0" val="5"/>
                 </set-game-val-7>
-                <set-game-val-9 comment="false" x="31" y="122">
+                <set-game-val-10 comment="false" x="31" y="162">
+                    <int id="0" val="10000"/>
+                </set-game-val-10>
+                <set-game-val-9 comment="false" x="31" y="182">
                     <get-game-val-7 comment="false" id="0" x="0" y="0"/>
                 </set-game-val-9>
-                <set-game-val-8 comment="false" x="31" y="147">
+                <set-game-val-11 comment="false" x="31" y="207">
+                    <get-game-val-10 comment="false" id="0" x="0" y="0"/>
+                </set-game-val-11>
+                <set-game-val-8 comment="false" x="31" y="232">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-8>
-                <clear-list comment="false" x="31" y="172">
+                <clear-list comment="false" x="31" y="257">
                     <get-game-val-3 comment="false" id="0" x="0" y="0"/>
                 </clear-list>
-                <actors-of-type3 comment="false" x="31" y="197">
+                <set-val-0-6 comment="false" x="31" y="282">
+                    <int id="0" val="2"/>
+                </set-val-0-6>
+                <actors-of-type3 comment="false" x="31" y="302">
                     <group eventID="2" id="-1">
-                        <add-list comment="false" x="42" y="229">
+                        <add-list comment="false" x="42" y="334">
                             <get-game-val-3 comment="false" id="0" x="0" y="0"/>
                             <actor-of-type comment="false" id="1" x="0" y="0"/>
                         </add-list>
-                        <toggle-image comment="false" x="42" y="254">
+                        <toggle-image comment="false" x="42" y="359">
                             <actor-of-type comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="1"/>
                         </toggle-image>
                     </group>
                     <actortype eid="15" id="0"/>
                 </actors-of-type3>
-                <custom-40 comment="false" x="31" y="298"/>
+                <custom-40 comment="false" x="31" y="403"/>
             </group>
         </init>
     </group>
@@ -100,53 +162,61 @@
     <group eventID="5" id="0">
         <event-periodic comment="false" x="15" y="15">
             <group eventID="5" id="-1">
-                <if comment="false" x="26" y="42">
-                    <group eventID="5" id="-1">
-                        <if comment="false" x="37" y="72">
-                            <group eventID="5" id="-1">
-                                <custom-50 comment="false" x="48" y="102">
-                                    <actortype eid="5" id="0"/>
-                                    <int id="1" val="4"/>
-                                    <custom-12 comment="false" id="2" x="0" y="0">
-                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
-                                    </custom-12>
-                                    <get-val-0-5 comment="false" id="3" x="0" y="0"/>
-                                    <int id="4" val="20"/>
-                                    <int id="5" val="100"/>
-                                </custom-50>
-                            </group>
-                            <less comment="false" id="0" x="0" y="0">
-                                <randint comment="false" id="0" x="0" y="0">
-                                    <int id="0" val="0"/>
-                                    <int id="1" val="100"/>
-                                </randint>
-                                <int id="1" val="50"/>
-                            </less>
-                        </if>
-                        <else comment="false" x="37" y="151">
-                            <group eventID="5" id="-1">
-                                <custom-50 comment="false" x="48" y="171">
-                                    <actortype eid="51" id="0"/>
-                                    <int id="1" val="4"/>
-                                    <custom-12 comment="false" id="2" x="0" y="0">
-                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
-                                    </custom-12>
-                                    <get-val-0-5 comment="false" id="3" x="0" y="0"/>
-                                    <int id="4" val="20"/>
-                                    <int id="5" val="100"/>
-                                </custom-50>
-                            </group>
-                        </else>
-                    </group>
-                    <lesseq comment="false" id="0" x="0" y="0">
-                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
-                        <get-game-val-4 comment="false" id="1" x="0" y="0"/>
-                    </lesseq>
-                </if>
+                <comment-long comment="false" x="26" y="42">
+                    <int id="0" val="Tilfeldig fiende:&#10;0 - Ingen&#10;1 - Stor Meteor&#10;2 - Medium Meteor"/>
+                </comment-long>
+                <comment-long comment="false" x="26" y="122">
+                    <int id="0" val="3 - Romskip A (sakte)&#10;4 - Romskip B (normal)&#10;5 - Romskip C (rask)"/>
+                </comment-long>
+                <set-val-0-7 comment="false" x="26" y="202">
+                    <randint comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-0-6 comment="false" id="1" x="0" y="0"/>
+                    </randint>
+                </set-val-0-7>
+                <custom-86 comment="false" x="26" y="232"/>
             </group>
             <int id="0" val="4"/>
             <ACTOR eid="lastcreated" id="2"/>
         </event-periodic>
+    </group>
+    <group eventID="5" id="1">
+        <if comment="false" x="97" y="316">
+            <group eventID="5" id="-1">
+                <stop comment="false" x="108" y="346"/>
+            </group>
+            <eq comment="false" id="0" x="0" y="0">
+                <get-val-0-7 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="0"/>
+            </eq>
+        </if>
+        <else-if comment="false" x="97" y="378">
+            <group eventID="5" id="-1">
+                <custom-83 comment="false" x="108" y="408"/>
+            </group>
+            <eq comment="false" id="0" x="0" y="0">
+                <get-val-0-7 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="1"/>
+            </eq>
+        </else-if>
+        <else-if comment="false" x="97" y="440">
+            <group eventID="5" id="-1">
+                <custom-82 comment="false" x="108" y="470"/>
+            </group>
+            <eq comment="false" id="0" x="0" y="0">
+                <get-val-0-7 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="2"/>
+            </eq>
+        </else-if>
+        <else-if comment="false" x="97" y="502">
+            <group eventID="5" id="-1">
+                <custom-86 comment="false" x="108" y="532"/>
+            </group>
+            <eq comment="false" id="0" x="0" y="0">
+                <get-val-0-7 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="3"/>
+            </eq>
+        </else-if>
     </group>
     <group eventID="5" id="-1"/>
     <group eventID="9" id="0">
@@ -192,75 +262,6 @@
         </receiver-9-40>
     </group>
     <group eventID="9" id="-1"/>
-    <group eventID="10" id="0">
-        <receiver-10-50 comment="false" x="15" y="15">
-            <group eventID="10" id="-1">
-                <create-actor3 comment="false" x="26" y="45">
-                    <get-byobval-0-50-0 comment="false" id="0" x="0" y="0"/>
-                    <get-xy comment="false" id="1" x="0" y="0">
-                        <get-byobval-0-50-2 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="2"/>
-                    </get-xy>
-                    <get-xy comment="false" id="2" x="0" y="0">
-                        <get-byobval-0-50-2 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="3"/>
-                    </get-xy>
-                    <int id="3" val="0"/>
-                </create-actor3>
-                <setanim comment="false" x="26" y="90">
-                    <ACTOR eid="lastcreated" id="0"/>
-                    <randint comment="false" id="1" x="0" y="0">
-                        <int id="0" val="0"/>
-                        <minus comment="false" id="1" x="0" y="0">
-                            <get-byobval-0-50-1 comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="1"/>
-                        </minus>
-                    </randint>
-                </setanim>
-                <if comment="false" x="26" y="132">
-                    <group eventID="10" id="-1">
-                        <custom-17 comment="false" x="37" y="162">
-                            <ACTOR eid="lastcreated" id="0"/>
-                            <get-byobval-0-50-3 comment="false" id="1" x="0" y="0"/>
-                        </custom-17>
-                    </group>
-                    <noteq comment="false" id="0" x="0" y="0">
-                        <get-byobval-0-50-3 comment="false" id="0" x="0" y="0"/>
-                        <null comment="false" id="1" x="0" y="0"/>
-                    </noteq>
-                </if>
-                <else comment="false" x="26" y="206">
-                    <group eventID="10" id="-1">
-                        <setangle comment="false" x="37" y="226">
-                            <ACTOR eid="lastcreated" id="0"/>
-                            <randint comment="false" id="1" x="0" y="0">
-                                <int id="0" val="0"/>
-                                <int id="1" val="360"/>
-                            </randint>
-                        </setangle>
-                    </group>
-                </else>
-                <push-shove2 comment="false" x="26" y="270">
-                    <ACTOR eid="lastcreated" id="0"/>
-                    <int id="1" val="1"/>
-                    <getdir comment="false" id="2" x="0" y="0">
-                        <ACTOR eid="lastcreated" id="0"/>
-                    </getdir>
-                    <randint comment="false" id="3" x="0" y="0">
-                        <get-byobval-0-50-4 comment="false" id="0" x="0" y="0"/>
-                        <get-byobval-0-50-5 comment="false" id="1" x="0" y="0"/>
-                    </randint>
-                </push-shove2>
-            </group>
-            <get-byobval-0-50-0 comment="false" id="0" x="0" y="0"/>
-            <get-byobval-0-50-1 comment="false" id="1" x="0" y="0"/>
-            <get-byobval-0-50-2 comment="false" id="2" x="0" y="0"/>
-            <get-byobval-0-50-3 comment="false" id="3" x="0" y="0"/>
-            <get-byobval-0-50-4 comment="false" id="4" x="0" y="0"/>
-            <get-byobval-0-50-5 comment="false" id="5" x="0" y="0"/>
-        </receiver-10-50>
-    </group>
-    <group eventID="10" id="-1"/>
     <group eventID="12" id="0">
         <receiver-13-70 comment="false" x="15" y="15">
             <group eventID="12" id="-1">
@@ -291,9 +292,201 @@
                         <get-game-val-9 comment="false" id="1" x="0" y="0"/>
                     </moreeq>
                 </if>
+                <comment-long comment="false" x="26" y="272">
+                    <int id="0" val="&amp;quot;Oppgrader&amp;quot; romskip fiende. Maks er fiende liste 5."/>
+                </comment-long>
+                <if comment="false" x="26" y="352">
+                    <group eventID="12" id="-1">
+                        <if comment="false" x="37" y="382">
+                            <group eventID="12" id="-1">
+                                <incdec comment="false" x="48" y="412">
+                                    <int id="0" val="6"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="1"/>
+                                </incdec>
+                                <set-game-val-11 comment="false" x="48" y="439">
+                                    <plus comment="false" id="0" x="0" y="0">
+                                        <get-game-val-11 comment="false" id="0" x="0" y="0"/>
+                                        <get-game-val-10 comment="false" id="1" x="0" y="0"/>
+                                    </plus>
+                                </set-game-val-11>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <get-val-0-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="3"/>
+                            </less>
+                        </if>
+                    </group>
+                    <moreeq comment="false" id="0" x="0" y="0">
+                        <get-game-val-6 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-11 comment="false" id="1" x="0" y="0"/>
+                    </moreeq>
+                </if>
             </group>
             <get-byobval-0-70-0 comment="false" id="0" x="0" y="0"/>
         </receiver-13-70>
     </group>
     <group eventID="12" id="-1"/>
+    <group eventID="13" id="0">
+        <receiver-14-82 comment="false" x="15" y="15">
+            <group eventID="13" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="13" id="-1">
+                        <custom-85 comment="false" x="37" y="70">
+                            <actortype eid="31" id="0"/>
+                            <int id="1" val="4"/>
+                            <custom-12 comment="false" id="2" x="0" y="0">
+                                <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                            </custom-12>
+                            <get-val-0-5 comment="false" id="3" x="0" y="0"/>
+                        </custom-85>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <randint comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="100"/>
+                        </randint>
+                        <int id="1" val="50"/>
+                    </less>
+                </if>
+                <else comment="false" x="26" y="119">
+                    <group eventID="13" id="-1">
+                        <custom-85 comment="false" x="37" y="139">
+                            <actortype eid="53" id="0"/>
+                            <int id="1" val="4"/>
+                            <custom-12 comment="false" id="2" x="0" y="0">
+                                <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                            </custom-12>
+                            <get-val-0-5 comment="false" id="3" x="0" y="0"/>
+                        </custom-85>
+                    </group>
+                </else>
+                <push-shove2 comment="false" x="26" y="188">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <getdir comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="lastcreated" id="0"/>
+                    </getdir>
+                    <randint comment="false" id="3" x="0" y="0">
+                        <int id="0" val="20"/>
+                        <int id="1" val="80"/>
+                    </randint>
+                </push-shove2>
+            </group>
+        </receiver-14-82>
+    </group>
+    <group eventID="13" id="-1"/>
+    <group eventID="14" id="0">
+        <receiver-15-83 comment="false" x="15" y="15">
+            <group eventID="14" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="14" id="-1">
+                        <if comment="false" x="37" y="70">
+                            <group eventID="14" id="-1">
+                                <custom-85 comment="false" x="48" y="100">
+                                    <actortype eid="5" id="0"/>
+                                    <int id="1" val="4"/>
+                                    <custom-12 comment="false" id="2" x="0" y="0">
+                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                    </custom-12>
+                                    <get-val-0-5 comment="false" id="3" x="0" y="0"/>
+                                </custom-85>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <randint comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="100"/>
+                                </randint>
+                                <int id="1" val="50"/>
+                            </less>
+                        </if>
+                        <else comment="false" x="37" y="149">
+                            <group eventID="14" id="-1">
+                                <custom-85 comment="false" x="48" y="169">
+                                    <actortype eid="51" id="0"/>
+                                    <int id="1" val="4"/>
+                                    <custom-12 comment="false" id="2" x="0" y="0">
+                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                    </custom-12>
+                                    <get-val-0-5 comment="false" id="3" x="0" y="0"/>
+                                </custom-85>
+                            </group>
+                        </else>
+                        <push-shove2 comment="false" x="37" y="218">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <getdir comment="false" id="2" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                            </getdir>
+                            <randint comment="false" id="3" x="0" y="0">
+                                <int id="0" val="20"/>
+                                <int id="1" val="100"/>
+                            </randint>
+                        </push-shove2>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-4 comment="false" id="1" x="0" y="0"/>
+                    </less>
+                </if>
+            </group>
+        </receiver-15-83>
+    </group>
+    <group eventID="14" id="-1"/>
+    <group eventID="15" id="0">
+        <receiver-17-85 comment="false" x="15" y="15">
+            <group eventID="15" id="-1">
+                <create-actor3 comment="false" x="26" y="45">
+                    <get-byobval-0-85-0 comment="false" id="0" x="0" y="0"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <get-byobval-0-85-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </get-xy>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <get-byobval-0-85-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="3"/>
+                    </get-xy>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <setanim comment="false" x="26" y="90">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <randint comment="false" id="1" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <get-byobval-0-85-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                        </minus>
+                    </randint>
+                </setanim>
+                <if comment="false" x="26" y="132">
+                    <group eventID="15" id="-1">
+                        <custom-17 comment="false" x="37" y="162">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <get-byobval-0-85-3 comment="false" id="1" x="0" y="0"/>
+                        </custom-17>
+                    </group>
+                    <noteq comment="false" id="0" x="0" y="0">
+                        <get-byobval-0-85-3 comment="false" id="0" x="0" y="0"/>
+                        <null comment="false" id="1" x="0" y="0"/>
+                    </noteq>
+                </if>
+                <else comment="false" x="26" y="206">
+                    <group eventID="15" id="-1">
+                        <setangle comment="false" x="37" y="226">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <randint comment="false" id="1" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <int id="1" val="360"/>
+                            </randint>
+                        </setangle>
+                    </group>
+                </else>
+            </group>
+            <get-byobval-0-85-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-0-85-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-0-85-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-0-85-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-17-85>
+    </group>
+    <group eventID="15" id="-1"/>
 </groups>

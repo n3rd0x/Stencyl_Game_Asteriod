@@ -12,14 +12,23 @@
                             <group eventID="2" id="-1">
                                 <repeat comment="false" x="48" y="182">
                                     <group eventID="2" id="-1">
-                                        <custom-50 comment="false" x="59" y="207">
+                                        <custom-85 comment="false" x="59" y="207">
                                             <get-val-13-2 comment="false" id="0" x="0" y="0"/>
                                             <int id="1" val="2"/>
                                             <ACTOR eid="this" id="2"/>
                                             <null comment="false" id="3" x="0" y="0"/>
-                                            <get-val-13-9 comment="false" id="4" x="0" y="0"/>
-                                            <get-val-13-10 comment="false" id="5" x="0" y="0"/>
-                                        </custom-50>
+                                        </custom-85>
+                                        <push-shove2 comment="false" x="59" y="239">
+                                            <ACTOR eid="lastcreated" id="0"/>
+                                            <int id="1" val="1"/>
+                                            <getdir comment="false" id="2" x="0" y="0">
+                                                <ACTOR eid="lastcreated" id="0"/>
+                                            </getdir>
+                                            <randint comment="false" id="3" x="0" y="0">
+                                                <get-val-13-9 comment="false" id="0" x="0" y="0"/>
+                                                <get-val-13-10 comment="false" id="1" x="0" y="0"/>
+                                            </randint>
+                                        </push-shove2>
                                     </group>
                                     <randint comment="false" id="0" x="0" y="0">
                                         <int id="0" val="1"/>
@@ -37,7 +46,7 @@
                         <get-val-13-11 comment="false" id="0" x="0" y="0"/>
                     </not>
                 </if>
-                <custom-70 comment="false" x="26" y="275">
+                <custom-70 comment="false" x="26" y="315">
                     <get-val-13-8 comment="false" id="0" x="0" y="0"/>
                 </custom-70>
             </group>
