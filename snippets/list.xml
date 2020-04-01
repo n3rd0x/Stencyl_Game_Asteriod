@@ -5,6 +5,10 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="dy" hidden="true" id="3" name="_dy" order="1"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Spiller" hidden="false" id="5" name="_Spiller" order="2"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="posLiv" hidden="false" id="6" name="_posLiv" order="3"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="mr" hidden="false" id="7" name="_mr" order="4"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="mk" hidden="false" id="8" name="_mk" order="5"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="mv" hidden="false" id="9" name="_mv" order="6"/>
+        <number default="0.0" defaultValue="0.0" desc="Poeng for å ødelegge denne." dropdown="" fullname="Poeng" hidden="false" id="10" name="_Poeng" order="7"/>
         <blocks>
             <receiver blockID="17" id="1"/>
             <receiver blockID="18" id="2"/>
@@ -16,20 +20,31 @@
             <receiver blockID="39" id="8"/>
             <receiver blockID="40" id="9"/>
             <receiver blockID="50" id="10"/>
+            <receiver blockID="68" id="11"/>
+            <receiver blockID="69" id="12"/>
+            <receiver blockID="70" id="13"/>
         </blocks>
         <events>
             <event displayName="Scene Opprettet" enabled="true" id="2" name="init" order="2" repeats="true"/>
-            <event displayName="Pek mot Destinasjon" enabled="true" id="3" name="event-custom-block" order="6" repeats="true"/>
-            <event displayName="Lag Stor Meteor" enabled="true" id="5" name="event-periodic" order="5" repeats="true"/>
-            <event displayName="Lag Spiller" enabled="true" id="9" name="event-custom-block" order="11" repeats="true"/>
+            <event displayName="Pek mot Destinasjon" enabled="true" id="3" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="Drawing" enabled="true" id="5" name="event-periodic" order="3" repeats="true"/>
+            <event displayName="Lag Spiller" enabled="true" id="9" name="event-custom-block" order="12" repeats="true"/>
             <event displayName="Lag Generell Meteor" enabled="true" id="10" name="event-custom-block" order="9" repeats="true"/>
+            <event displayName="Legg Poeng" enabled="true" id="12" name="event-custom-block" order="13" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="1" attachedevent="true" class="scripts.ActorEvents_1" classname="scripts.ActorEvents_1" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_1" oid="-1" package="scripts." shared="false" type="actor">
-        <blocks/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="SkjoldAktivert" hidden="false" id="1" name="_SkjoldAktivert" order="0"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="HarSkjold" hidden="false" id="2" name="_HarSkjold" order="1"/>
+        <blocks>
+            <receiver blockID="61" id="1"/>
+            <receiver blockID="62" id="2"/>
+        </blocks>
         <events>
             <event displayName="Kollisjon med Meteorer" enabled="true" id="1" name="collide" order="1" repeats="true"/>
-            <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
+            <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="4" repeats="true"/>
+            <event displayName="Aktiver Skjold Animasjon" enabled="true" id="3" name="event-custom-block" order="5" repeats="true"/>
+            <event displayName="Deaktiver Skjold Animasjon" enabled="true" id="4" name="event-custom-block" order="6" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="3" attachedevent="true" class="scripts.ActorEvents_3" classname="scripts.ActorEvents_3" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="3" name="ActorEvents_3" oid="-1" package="scripts." shared="false" type="actor">
@@ -52,7 +67,7 @@
         <number default="20.0" defaultValue="20.0" desc="Fart for laseren når skytes." dropdown="" fullname="Fart" hidden="false" id="1" name="_Fart" order="1"/>
         <blocks/>
         <events>
-            <event displayName="Fire" enabled="true" id="2" name="event-key-press-release" order="2" repeats="true"/>
+            <event displayName="Skyt Utført" enabled="true" id="2" name="event-key-press-release" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_6_6_WrapAroundScene" classname="scripts.Design_6_6_WrapAroundScene" desc="Make the actor appear on the opposite site of the scene when it leaves the scene." description="Make the actor appear on the opposite site of the scene when it leaves the scene." design="true" drawOrder="0" id="6" name="Wrap Around Scene" oid="-1" package="scripts" shared="false" type="actor">
@@ -81,8 +96,6 @@
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_10_10_FellesBlokk" classname="scripts.Design_10_10_FellesBlokk" desc="" description="" design="true" drawOrder="0" id="10" name="Funksjoner" oid="-1" package="scripts" shared="false" type="scene">
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="dx" hidden="true" id="5" name="_dx" order="4"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="dy" hidden="true" id="6" name="_dy" order="5"/>
         <blocks>
             <receiver blockID="10" id="1"/>
             <receiver blockID="11" id="2"/>
@@ -92,10 +105,12 @@
             <receiver blockID="18" id="6"/>
             <receiver blockID="46" id="7"/>
             <receiver blockID="46" id="8"/>
+            <receiver blockID="65" id="9"/>
+            <receiver blockID="68" id="10"/>
         </blocks>
         <events>
-            <event displayName="Returner Tilfeldig Aktor" enabled="true" id="1" name="event-custom-block-global" order="1" repeats="true"/>
-            <event displayName="Returner Siste Grafikk" enabled="true" id="2" name="event-custom-block-global" order="2" repeats="true"/>
+            <event displayName="Returner Tilfeldig Aktor" enabled="true" id="1" name="event-custom-block-global" order="4" repeats="true"/>
+            <event displayName="Returner Siste Grafikk" enabled="true" id="2" name="event-custom-block-global" order="7" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="15" attachedevent="true" class="scripts.ActorEvents_15" classname="scripts.ActorEvents_15" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="11" name="ActorEvents_15" oid="-1" package="scripts." shared="false" type="actor">
@@ -112,7 +127,8 @@
         <number default="16.0" defaultValue="16.0" desc="The y-component of how many pixels of the actor are still visible before it wraps around the scene, and the y-component of how many pixels will be visible after it wraps around the scene." dropdown="" fullname="Wrap Y" hidden="false" id="7" name="_WrapY" order="6"/>
         <number default="0" defaultValue="0" desc="Poeng for å ødelegge denne." dropdown="" fullname="Poeng" hidden="false" id="8" name="_Poeng" order="7"/>
         <number default="30" defaultValue="30" desc="Minimum fart." dropdown="" fullname="MinFart" hidden="false" id="9" name="_MinFart" order="8"/>
-        <number default="100" defaultValue="100" desc="Maksimun fart." dropdown="" fullname="MaksFart" hidden="false" id="10" name="_MaksFart" order="9"/>
+        <number default="100.0" defaultValue="100.0" desc="Maksimun fart." dropdown="" fullname="MaksFart" hidden="false" id="10" name="_MaksFart" order="9"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="TraffSkjold" hidden="true" id="11" name="_TraffSkjold" order="10"/>
         <blocks/>
         <events>
             <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="4" repeats="true"/>
@@ -127,8 +143,8 @@
             <receiver blockID="30" id="1"/>
         </blocks>
         <events>
-            <event displayName="Updating" enabled="true" id="1" name="step" order="1" repeats="true"/>
-            <event displayName="TilfortSkade" enabled="true" id="2" name="event-custom-block" order="2" repeats="true"/>
+            <event displayName="Oppdatering" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Tilfør Skade" enabled="true" id="2" name="event-custom-block" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="31" attachedevent="true" class="scripts.ActorEvents_31" classname="scripts.ActorEvents_31" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="17" name="ActorEvents_31" oid="-1" package="scripts." shared="false" type="actor">
@@ -144,32 +160,61 @@
         <image-instance default="" defaultValue="" desc="" dropdown="" fullname="SisteGrafikk" hidden="false" id="2" name="_SisteGrafikk" order="1"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="dx" hidden="false" id="3" name="_dx" order="2"/>
         <list default="list" defaultValue="list" desc="" dropdown="" fullname="GrafikkListe" hidden="false" id="4" name="_GrafikkListe" order="3"/>
+        <image-instance default="" defaultValue="" desc="" dropdown="" fullname="SkjoldNode" hidden="true" id="5" name="_SkjoldNode" order="4"/>
+        <image default="" defaultValue="" desc="" dropdown="" fullname="SkjoldBilde" hidden="true" id="6" name="_SkjoldBilde" order="5"/>
+        <image default="" defaultValue="" desc="" dropdown="" fullname="SkjoldCanvas" hidden="true" id="7" name="_SkjoldCanvas" order="6"/>
         <blocks>
             <receiver blockID="44" id="1"/>
             <receiver blockID="45" id="2"/>
             <receiver blockID="47" id="3"/>
             <receiver blockID="48" id="4"/>
+            <receiver blockID="63" id="5"/>
+            <receiver blockID="64" id="6"/>
         </blocks>
         <events>
             <event displayName="Opprettet" enabled="true" id="2" name="init" order="2" repeats="true"/>
-            <event displayName="Fjern Ekstra Liv" enabled="true" id="5" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="Fjern Ekstra Liv" enabled="true" id="5" name="event-custom-block" order="9" repeats="true"/>
             <event displayName="Tegn Ekstra Liv" enabled="true" id="6" name="event-custom-block" order="6" repeats="true"/>
             <event displayName="Oppdater Tegning" enabled="true" id="7" name="draw" order="3" repeats="true"/>
+            <event displayName="Tegn Skjold" enabled="true" id="8" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="Fjern Skjold" enabled="true" id="9" name="event-custom-block" order="8" repeats="true"/>
         </events>
     </snippet>
-    <snippet actorid="5" attachedevent="true" class="scripts.ActorEvents_51" classname="scripts.ActorEvents_51" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="20" name="ActorEvents_51" oid="-1" package="scripts." shared="false" type="actor">
+    <snippet actorid="51" attachedevent="true" class="scripts.ActorEvents_51" classname="scripts.ActorEvents_51" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="20" name="ActorEvents_51" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events>
             <event displayName="Opprettet" enabled="true" id="1" name="init" order="1" repeats="true"/>
             <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="2" repeats="true"/>
         </events>
     </snippet>
-    <snippet actorid="31" attachedevent="true" class="scripts.ActorEvents_53" classname="scripts.ActorEvents_53" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="21" name="ActorEvents_53" oid="-1" package="scripts." shared="false" type="actor">
+    <snippet actorid="53" attachedevent="true" class="scripts.ActorEvents_53" classname="scripts.ActorEvents_53" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="21" name="ActorEvents_53" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events/>
     </snippet>
-    <snippet actorid="35" attachedevent="true" class="scripts.ActorEvents_55" classname="scripts.ActorEvents_55" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="22" name="ActorEvents_55" oid="-1" package="scripts." shared="false" type="actor">
+    <snippet actorid="55" attachedevent="true" class="scripts.ActorEvents_55" classname="scripts.ActorEvents_55" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="22" name="ActorEvents_55" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_23_23_Skjold" classname="scripts.Design_23_23_Skjold" desc="" description="" design="true" drawOrder="0" id="23" name="Skjold" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="SkjoldAktivert" hidden="true" id="2" name="_SkjoldAktivert" order="2"/>
+        <number default="3" defaultValue="3" desc="" dropdown="" fullname="SkjoldLengde" hidden="false" id="3" name="_SkjoldLengde" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Skjold" hidden="true" id="4" name="_Skjold" order="4"/>
+        <blocks>
+            <receiver blockID="57" id="1"/>
+            <receiver blockID="58" id="2"/>
+            <receiver blockID="59" id="3"/>
+            <receiver blockID="60" id="4"/>
+        </blocks>
+        <events>
+            <event displayName="Er Skjold Aktivert" enabled="true" id="1" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="Opprettet" enabled="true" id="2" name="init" order="1" repeats="true"/>
+            <event displayName="Aktiver Skjold" enabled="true" id="3" name="event-custom-block" order="6" repeats="true"/>
+            <event displayName="Oppdatering" enabled="true" id="4" name="step" order="2" repeats="true"/>
+            <event displayName="Deaktiver Skjold" enabled="true" id="5" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="Sjekk Skjold Lengde" enabled="true" id="6" name="event-periodic" order="4" repeats="true"/>
+            <event displayName="Legg til Skjold" enabled="true" id="7" name="event-custom-block" order="5" repeats="true"/>
+            <event displayName="Skjold Utført" enabled="true" id="8" name="event-key-press-release" order="3" repeats="true"/>
+        </events>
     </snippet>
 </pack>

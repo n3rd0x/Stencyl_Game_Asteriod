@@ -6,7 +6,18 @@
                 <set-val-19-4 comment="false" x="26" y="40">
                     <create-list comment="false" id="0" x="0" y="0"/>
                 </set-val-19-4>
-                <set-val-19-1 comment="false" x="26" y="65">
+                <set-val-19-6 comment="false" x="26" y="65">
+                    <image-file comment="false" id="0" x="0" y="0">
+                        <int id="0" val="skjold.png"/>
+                    </image-file>
+                </set-val-19-6>
+                <set-val-19-7 comment="false" x="26" y="90">
+                    <image-create comment="false" id="0" x="0" y="0">
+                        <int id="0" val="32"/>
+                        <int id="1" val="32"/>
+                    </image-create>
+                </set-val-19-7>
+                <set-val-19-1 comment="false" x="26" y="115">
                     <image-inst-create comment="false" id="0" x="0" y="0">
                         <image-create comment="false" id="0" x="0" y="0">
                             <int id="0" val="32"/>
@@ -14,14 +25,24 @@
                         </image-create>
                     </image-inst-create>
                 </set-val-19-1>
-                <image-inst-hud comment="false" x="26" y="95">
+                <set-val-19-5 comment="false" x="26" y="145">
+                    <image-inst-create comment="false" id="0" x="0" y="0">
+                        <get-val-19-7 comment="false" id="0" x="0" y="0"/>
+                    </image-inst-create>
+                </set-val-19-5>
+                <image-inst-hud comment="false" x="26" y="175">
                     <get-val-19-1 comment="false" id="0" x="0" y="0"/>
                     <int id="1" val="20"/>
                     <int id="2" val="20"/>
                 </image-inst-hud>
-                <repeat comment="false" x="26" y="120">
+                <image-inst-hud comment="false" x="26" y="200">
+                    <get-val-19-5 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="20"/>
+                    <int id="2" val="40"/>
+                </image-inst-hud>
+                <repeat comment="false" x="26" y="225">
                     <group eventID="2" id="-1">
-                        <custom-48 comment="false" x="37" y="145"/>
+                        <custom-48 comment="false" x="37" y="250"/>
                     </group>
                     <get-game-val-5 comment="false" id="0" x="0" y="0"/>
                 </repeat>
@@ -62,7 +83,7 @@
                 <set-val-19-2 comment="false" x="26" y="40">
                     <image-inst-create comment="false" id="0" x="0" y="0">
                         <image-file comment="false" id="0" x="0" y="0">
-                            <int id="0" val="playerLives.png"/>
+                            <int id="0" val="ekstraliv.png"/>
                         </image-file>
                     </image-inst-create>
                 </set-val-19-2>
@@ -74,7 +95,7 @@
                                 <int id="1" val="3"/>
                             </image-get-props>
                             <times comment="false" id="1" x="0" y="0">
-                                <int id="0" val="10"/>
+                                <int id="0" val="4"/>
                                 <engine-scale comment="false" id="1" x="0" y="0"/>
                             </times>
                         </plus>
@@ -130,4 +151,31 @@
         </draw>
     </group>
     <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <receiver-5-63 comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <image-clear-all comment="false" x="26" y="40">
+                    <get-val-19-7 comment="false" id="0" x="0" y="0"/>
+                </image-clear-all>
+                <image-draw comment="false" x="26" y="65">
+                    <get-val-19-6 comment="false" id="0" x="0" y="0"/>
+                    <get-val-19-7 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                    <int id="4" val="0"/>
+                </image-draw>
+            </group>
+        </receiver-5-63>
+    </group>
+    <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <receiver-6-64 comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <image-clear-all comment="false" x="26" y="40">
+                    <get-val-19-7 comment="false" id="0" x="0" y="0"/>
+                </image-clear-all>
+            </group>
+        </receiver-6-64>
+    </group>
+    <group eventID="9" id="-1"/>
 </groups>

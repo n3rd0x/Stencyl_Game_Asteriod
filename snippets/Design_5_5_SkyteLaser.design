@@ -30,7 +30,7 @@
                 </setangle>
             </group>
             <control eid="4" id="0"/>
-            <int id="1" val="0"/>
+            <int id="1" val="1"/>
         </event-key-press-release>
     </group>
     <group eventID="2" id="-1"/>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <receiver-1-57 comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <return comment="false" x="26" y="40">
+                    <get-val-23-2 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+            <int id="0" val=""/>
+        </receiver-1-57>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-23-2 comment="false" x="26" y="40">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-23-2>
+                <set-val-23-3 comment="false" x="26" y="65">
+                    <int id="0" val="2"/>
+                </set-val-23-3>
+                <custom-58 comment="false" x="26" y="85">
+                    <ACTOR eid="this" id="0"/>
+                </custom-58>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receiver-2-58 comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="3" id="-1">
+                        <set-val-23-2 comment="false" x="37" y="70">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-23-2>
+                        <custom-61 comment="false" x="37" y="95">
+                            <ACTOR eid="this" id="0"/>
+                        </custom-61>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-23-2 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+            <int id="0" val=""/>
+        </receiver-2-58>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="4" id="-1">
+                        <if comment="false" x="37" y="65">
+                            <group eventID="4" id="-1">
+                                <custom-59 comment="false" x="48" y="95">
+                                    <ACTOR eid="this" id="0"/>
+                                </custom-59>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <get-val-23-4 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </less>
+                        </if>
+                    </group>
+                    <get-val-23-2 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receiver-3-59 comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="5" id="-1">
+                        <set-val-23-2 comment="false" x="37" y="65">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-23-2>
+                        <custom-62 comment="false" x="37" y="90">
+                            <ACTOR eid="this" id="0"/>
+                        </custom-62>
+                    </group>
+                    <get-val-23-2 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <int id="0" val=""/>
+        </receiver-3-59>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="6" id="-1">
+                        <incdec comment="false" x="37" y="67">
+                            <int id="0" val="4"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                    </group>
+                    <get-val-23-2 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <int id="0" val="1"/>
+            <ACTOR eid="this" id="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <receiver-4-60 comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <set-val-23-4 comment="false" x="26" y="40">
+                    <get-val-23-3 comment="false" id="0" x="0" y="0"/>
+                </set-val-23-4>
+            </group>
+            <int id="0" val=""/>
+        </receiver-4-60>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <event-key-press-release comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <if comment="false" x="26" y="42">
+                    <group eventID="8" id="-1">
+                        <set-game-val-8 comment="false" x="37" y="67">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-8>
+                        <custom-60 comment="false" x="37" y="92">
+                            <ACTOR eid="this" id="0"/>
+                        </custom-60>
+                        <custom-58 comment="false" x="37" y="119">
+                            <ACTOR eid="this" id="0"/>
+                        </custom-58>
+                        <custom-64 comment="false" x="37" y="146"/>
+                    </group>
+                    <get-game-val-8 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+            <control eid="5" id="0"/>
+            <int id="1" val="0"/>
+        </event-key-press-release>
+    </group>
+    <group eventID="8" id="-1"/>
+</groups>

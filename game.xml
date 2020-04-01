@@ -6,8 +6,8 @@
     </exts>
     <bundles>
         <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Google Play" version="1.0.0"/>
-        <bundle author="" id="com.yourcompany.gamename" internalVersion="1" metroColor="-12566464" name="My Game" store="Windows Store" version="1.0.0"/>
         <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="App Store" version="1.0.0"/>
+        <bundle author="" id="com.yourcompany.gamename" internalVersion="1" metroColor="-12566464" name="My Game" store="Windows Store" version="1.0.0"/>
         <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Mac App Store" version="1.0.0"/>
     </bundles>
     <scales>
@@ -88,18 +88,21 @@
         <cgroup g1="6" g2="7"/>
     </cgroups>
     <input>
-        <key id="0" keyname="W" name="up" vk="87" vks="87"/>
-        <key id="1" keyname="S" name="down" vk="83" vks="83"/>
-        <key id="2" keyname="A" name="left" vk="65" vks="65"/>
-        <key id="3" keyname="D" name="right" vk="68" vks="68"/>
-        <key id="4" keyname="SPACE" name="fire" vk="32" vks="32"/>
+        <key id="0" keyname="W" name="Opp" vk="87" vks="87"/>
+        <key id="2" keyname="A" name="Venstre" vk="65" vks="65"/>
+        <key id="3" keyname="D" name="Hoyre" vk="68" vks="68"/>
+        <key id="4" keyname="SPACE" name="Skyt" vk="32" vks="32"/>
+        <key id="5" keyname="Q" name="Skjold" vk="81" vks="81"/>
+        <key id="6" keyname="E" name="Test" vk="69" vks="69"/>
     </input>
     <attcats>
         <cat id="-1" name="Default"/>
     </attcats>
     <props/>
     <attributes>
+        <boolean cid="-1" id="8" name="Skjold" save="true" value="false"/>
         <list cid="-1" id="3" name="SpawnLokasjoner" save="true" val="list"/>
+        <number cid="-1" id="7" name="SkjoldGodis" save="true" value="1000.0"/>
         <number cid="-1" id="6" name="Poeng" save="true" value="0.0"/>
         <number cid="-1" id="0" name="AntallMeteorStor" save="true" value="0.0"/>
         <number cid="-1" id="5" name="Liv" save="true" value="3.0"/>
