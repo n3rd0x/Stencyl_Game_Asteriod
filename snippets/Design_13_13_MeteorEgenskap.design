@@ -57,11 +57,9 @@
                         </custom-30>
                     </group>
                     <not comment="false" id="0" x="0" y="0">
-                        <get-attribute comment="false" id="0" x="0" y="0">
+                        <custom-73 comment="false" id="0" x="0" y="0">
                             <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
-                            <int id="1" val="Skjold"/>
-                            <int id="2" val="_SkjoldAktivert"/>
-                        </get-attribute>
+                        </custom-73>
                     </not>
                 </if>
                 <else comment="false" x="26" y="134">

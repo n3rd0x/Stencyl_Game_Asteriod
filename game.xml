@@ -100,9 +100,10 @@
     </attcats>
     <props/>
     <attributes>
+        <number cid="-1" id="9" name="SkjoldNiva" save="true" value="5000.0"/>
         <boolean cid="-1" id="8" name="Skjold" save="true" value="false"/>
         <list cid="-1" id="3" name="SpawnLokasjoner" save="true" val="list"/>
-        <number cid="-1" id="7" name="SkjoldGodis" save="true" value="1000.0"/>
+        <number cid="-1" id="7" name="SkjoldGodis" save="true" value="5000.0"/>
         <number cid="-1" id="6" name="Poeng" save="true" value="0.0"/>
         <number cid="-1" id="0" name="AntallMeteorStor" save="true" value="0.0"/>
         <number cid="-1" id="5" name="Liv" save="true" value="3.0"/>

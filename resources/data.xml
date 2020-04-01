@@ -12,10 +12,13 @@
     </custom-block>
     <custom-block blocktag="custom-66" blocktype="ACTION" code="scripts.Design_10_10_FellesBlokk._customBlock_();" desc="" global="true" gui="Missing" id="66" message="" name="" oid="-1" return="void" shared="false" snippetID="10"/>
     <custom-block blocktag="custom-67" blocktype="ACTION" code="scripts.Design_10_10_FellesBlokk._customBlock_();" desc="" global="true" gui="Missing" id="67" message="" name="" oid="-1" return="void" shared="false" snippetID="10"/>
-    <custom-block blocktag="custom-58" blocktype="ACTION" code=".say(&quot;Skjold&quot;, &quot;_customBlock_AktiverSkjold&quot;);" desc="" global="false" gui="Aktiver skjold" id="58" message="AktiverSkjold" name="AktiverSkjold" oid="-1" return="void" shared="false" snippetID="23">
+    <custom-block blocktag="custom-77" blocktype="ACTION" code=".say(&quot;Skjold&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="77" message="" name="" oid="-1" return="void" shared="false" snippetID="23">
         <blank name="@block.thisactor" order="0" type="actor"/>
     </custom-block>
-    <custom-block blocktag="custom-61" blocktype="ACTION" code=".say(&quot;ActorEvents_1&quot;, &quot;_customBlock_AktiverSkjoldAnimasjon&quot;);" desc="" global="false" gui="Aktiver skjold animasjon" id="61" message="AktiverSkjoldAnimasjon" name="AktiverSkjoldAnimasjon" oid="-1" return="void" shared="false" snippetID="1">
+    <custom-block blocktag="custom-78" blocktype="ACTION" code=".say(&quot;Skjold&quot;, &quot;_customBlock_AktiverSkjold&quot;);" desc="" global="false" gui="Aktiver skjold for %0" id="78" message="AktiverSkjold" name="AktiverSkjold" oid="-1" return="void" shared="false" snippetID="23">
+        <blank name="@block.thisactor" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-74" blocktype="ACTION" code=".say(&quot;ActorEvents_1&quot;, &quot;_customBlock_AktiverSkjoldAnimasjon&quot;);" desc="" global="false" gui="Aktiver skjold animasjon for %0" id="74" message="AktiverSkjoldAnimasjon" name="AktiverSkjoldAnimasjon" oid="-1" return="void" shared="false" snippetID="1">
         <blank name="@block.thisactor" order="0" type="actor"/>
     </custom-block>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="256" id="0" name="Bakgrunn" numframes="1" oid="-1" readable="false" repeats="true" resized="false" shared="false" width="256" xpf="1.0" ypf="1.0"/>
@@ -23,14 +26,17 @@
         <blank name="Self" order="0" type="actor"/>
         <blank name="Amount" order="1" type="number"/>
     </custom-block>
-    <custom-block blocktag="custom-59" blocktype="ACTION" code=".say(&quot;Skjold&quot;, &quot;_customBlock_DeaktiverSkjold&quot;);" desc="" global="false" gui="Deaktiver skjold" id="59" message="DeaktiverSkjold" name="DeaktiverSkjold" oid="-1" return="void" shared="false" snippetID="23">
+    <custom-block blocktag="custom-76" blocktype="ACTION" code=".say(&quot;Skjold&quot;, &quot;_customBlock_DeaktiverSkjold&quot;);" desc="" global="false" gui="Deaktiver skjold for %0" id="76" message="DeaktiverSkjold" name="DeaktiverSkjold" oid="-1" return="void" shared="false" snippetID="23">
         <blank name="@block.thisactor" order="0" type="actor"/>
     </custom-block>
-    <custom-block blocktag="custom-62" blocktype="ACTION" code=".say(&quot;ActorEvents_1&quot;, &quot;_customBlock_DeaktiverSkjoldAnimasjon&quot;);" desc="" global="false" gui="Deaktiver skjold animasjon" id="62" message="DeaktiverSkjoldAnimasjon" name="DeaktiverSkjoldAnimasjon" oid="-1" return="void" shared="false" snippetID="1">
+    <custom-block blocktag="custom-75" blocktype="ACTION" code=".say(&quot;ActorEvents_1&quot;, &quot;_customBlock_DeaktiverSkjoldAnimasjon&quot;);" desc="" global="false" gui="Deaktiver skjold animasjon for %0" id="75" message="DeaktiverSkjoldAnimasjon" name="DeaktiverSkjoldAnimasjon" oid="-1" return="void" shared="false" snippetID="1">
         <blank name="@block.thisactor" order="0" type="actor"/>
     </custom-block>
-    <custom-block blocktag="custom-47" blocktype="ACTION" code="sayToScene(&quot;HUD&quot;, &quot;_customBlock_FjernEkstraLiv&quot;);" desc="" global="false" gui="Fjern ekstra liv" id="47" message="FjernEkstraLiv" name="FjernEkstraLiv" oid="-1" return="void" shared="false" snippetID="19"/>
-    <custom-block blocktag="custom-64" blocktype="ACTION" code="sayToScene(&quot;HUD&quot;, &quot;_customBlock_FjernSkjold&quot;);" desc="" global="false" gui="Fjern skjold" id="64" message="FjernSkjold" name="FjernSkjold" oid="-1" return="void" shared="false" snippetID="19"/>
+    <custom-block blocktag="custom-73" blocktype="NORMAL" code="(.say(&quot;Skjold&quot;, &quot;_customBlock_ErSKjoldAktivert&quot;) : Bool)" desc="" global="false" gui="Er skjold aktivert for %0" id="73" message="ErSKjoldAktivert" name="ErSKjoldAktivert" oid="-1" return="boolean" shared="false" snippetID="23">
+        <blank name="@block.thisactor" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-47" blocktype="ACTION" code="sayToScene(&quot;HUD&quot;, &quot;_customBlock_FjernEkstraLivHud&quot;);" desc="" global="false" gui="Fjern ekstra liv fra HUD" id="47" message="FjernEkstraLivHud" name="FjernEkstraLivHud" oid="-1" return="void" shared="false" snippetID="19"/>
+    <custom-block blocktag="custom-64" blocktype="ACTION" code="sayToScene(&quot;HUD&quot;, &quot;_customBlock_FjernSkjoldHud&quot;);" desc="" global="false" gui="Fjern skjold fra HUD" id="64" message="FjernSkjoldHud" name="FjernSkjoldHud" oid="-1" return="void" shared="false" snippetID="19"/>
     <custom-block blocktag="custom-24" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_FullRestore&quot;);" desc="" global="false" gui="Restore %0 To Full Health" id="24" message="FullRestore" name="FullRestore" oid="-1" return="void" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="actor"/>
     </custom-block>
@@ -56,7 +62,6 @@
         <blank name="minFart" order="4" type="number"/>
         <blank name="maksFart" order="5" type="number"/>
     </custom-block>
-    <custom-block blocktag="custom-40" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LagSpiller&quot;);" desc="" global="false" gui="Lag spiller" id="40" message="LagSpiller" name="LagSpiller" oid="-1" return="void" shared="false" snippetID="0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="3" fixedrot="true" fric="0.2" gid="4" id="3" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Laser" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="4" static="false">
         <snippets>
             <s enabled="true" id="7">
@@ -69,10 +74,11 @@
             <poly data="4,0,0,9,0,9,2,0,2" density="0.1" fric="0.2" gid="4" id="0" name="Box" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
+    <custom-block blocktag="custom-40" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LeggSpillerScene&quot;);" desc="" global="false" gui="Legg spiller til scene" id="40" message="LeggSpillerScene" name="LeggSpillerScene" oid="-1" return="void" shared="false" snippetID="0"/>
     <custom-block blocktag="custom-70" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LeggTilPoeng&quot;, []);" desc="" global="false" gui="Legg til %0 poeng" id="70" message="LeggTilPoeng" name="LeggTilPoeng" oid="-1" return="void" shared="false" snippetID="0">
         <blank name="poeng" order="0" type="number"/>
     </custom-block>
-    <custom-block blocktag="custom-60" blocktype="ACTION" code=".say(&quot;Skjold&quot;, &quot;_customBlock_LeggTilSkjold&quot;);" desc="" global="false" gui="Legg til skjold" id="60" message="LeggTilSkjold" name="LeggTilSkjold" oid="-1" return="void" shared="false" snippetID="23">
+    <custom-block blocktag="custom-79" blocktype="ACTION" code=".say(&quot;Skjold&quot;, &quot;_customBlock_LeggTilSkjold&quot;);" desc="" global="false" gui="Legg til skjold for %0" id="79" message="LeggTilSkjold" name="LeggTilSkjold" oid="-1" return="void" shared="false" snippetID="23">
         <blank name="@block.thisactor" order="0" type="actor"/>
     </custom-block>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="18" fixedrot="false" fric="0.2" gid="6" id="35" ignoreg="false" inertia="6.0" ldamp="0.0" mass="10.0" name="MeteorLitenA" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="36" static="false">
@@ -281,9 +287,6 @@
         <blank name="Self" order="0" type="actor"/>
         <blank name="Status" order="1" type="boolean"/>
     </custom-block>
-    <custom-block blocktag="custom-57" blocktype="NORMAL" code="(.say(&quot;Skjold&quot;, &quot;_customBlock_SkjoldAktivert&quot;) : Bool)" desc="" global="false" gui="Er skjold aktivert" id="57" message="SkjoldAktivert" name="SkjoldAktivert" oid="-1" return="boolean" shared="false" snippetID="23">
-        <blank name="@block.thisactor" order="0" type="actor"/>
-    </custom-block>
     <custom-block blocktag="custom-71" blocktype="NORMAL" code="(sayToScene(&quot;Skjold&quot;, &quot;_customBlock_SkjoldAktivert&quot;) : Bool)" desc="" global="false" gui="Er skjold aktivert" id="71" message="SkjoldAktivert" name="SkjoldAktivert" oid="-1" return="boolean" shared="false" snippetID="-1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="false" desc="Spawn lokasjon for astroider og fiendlige romskip." eventsnippetid="11" fixedrot="false" fric="0.2" gid="3" id="15" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="SpawnLokasjon" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="16" static="true">
         <snippets/>
@@ -330,8 +333,8 @@
             <poly data="4,0,0,18,0,18,24,0,24" density="0.1" fric="0.2" gid="7" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <custom-block blocktag="custom-48" blocktype="ACTION" code="sayToScene(&quot;HUD&quot;, &quot;_customBlock_TegnEkstraLiv&quot;);" desc="" global="false" gui="Tegn ekstra liv" id="48" message="TegnEkstraLiv" name="TegnEkstraLiv" oid="-1" return="void" shared="false" snippetID="19"/>
-    <custom-block blocktag="custom-63" blocktype="ACTION" code="sayToScene(&quot;HUD&quot;, &quot;_customBlock_TegnSkjold&quot;);" desc="" global="false" gui="Tegn skjold" id="63" message="TegnSkjold" name="TegnSkjold" oid="-1" return="void" shared="false" snippetID="19"/>
+    <custom-block blocktag="custom-48" blocktype="ACTION" code="sayToScene(&quot;HUD&quot;, &quot;_customBlock_TegnEkstraLivHud&quot;);" desc="" global="false" gui="Tegn ekstra liv på HUD" id="48" message="TegnEkstraLivHud" name="TegnEkstraLivHud" oid="-1" return="void" shared="false" snippetID="19"/>
+    <custom-block blocktag="custom-63" blocktype="ACTION" code="sayToScene(&quot;HUD&quot;, &quot;_customBlock_TegnSkjoldHud&quot;);" desc="" global="false" gui="Tegn skjold på HUD" id="63" message="TegnSkjoldHud" name="TegnSkjoldHud" oid="-1" return="void" shared="false" snippetID="19"/>
     <custom-block blocktag="custom-30" blocktype="ACTION" code=".say(&quot;Helse Egenskap&quot;, &quot;_customBlock_TilforSkade&quot;, []);" desc="Tilføre skade til aktoren." global="false" gui="Tilfor skade til %0 med %1" id="30" message="TilforSkade" name="TilforSkade" oid="-1" return="void" shared="false" snippetID="16">
         <blank name="@block.thisactor" order="0" type="actor"/>
         <blank name="skade" order="1" type="number"/>

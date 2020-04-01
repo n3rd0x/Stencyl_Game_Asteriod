@@ -5,20 +5,20 @@
             <group eventID="1" id="-1">
                 <if comment="false" x="26" y="45">
                     <group eventID="1" id="-1">
-                        <custom-30 comment="false" x="37" y="83">
+                        <custom-30 comment="false" x="37" y="88">
                             <other-actor comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="50"/>
                         </custom-30>
                     </group>
                     <not comment="false" id="0" x="0" y="0">
-                        <custom-57 comment="false" id="0" x="0" y="0">
-                            <ACTOR eid="this" id="0"/>
-                        </custom-57>
+                        <custom-73 comment="false" id="0" x="0" y="0">
+                            <this-actor comment="false" id="0" x="0" y="0"/>
+                        </custom-73>
                     </not>
                 </if>
-                <else comment="false" x="26" y="127">
+                <else comment="false" x="26" y="132">
                     <group eventID="1" id="-1">
-                        <custom-30 comment="false" x="37" y="147">
+                        <custom-30 comment="false" x="37" y="152">
                             <other-actor comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="5000"/>
                         </custom-30>
@@ -45,28 +45,28 @@
         </event-actor-create-kill>
     </group>
     <group eventID="2" id="-1"/>
-    <group eventID="3" id="0">
-        <receiver-1-61 comment="false" x="15" y="15">
-            <group eventID="3" id="-1">
-                <setanim comment="false" x="26" y="40">
-                    <ACTOR eid="this" id="0"/>
+    <group eventID="5" id="0">
+        <receiver-3-74 comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <setanim comment="false" x="26" y="45">
+                    <get-byobval-1-74-0 comment="false" id="0" x="0" y="0"/>
                     <int id="1" val="Skjold"/>
                 </setanim>
             </group>
-            <int id="0" val=""/>
-        </receiver-1-61>
+            <get-byobval-1-74-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-3-74>
     </group>
-    <group eventID="3" id="-1"/>
-    <group eventID="4" id="0">
-        <receiver-2-62 comment="false" x="15" y="15">
-            <group eventID="4" id="-1">
-                <setanim comment="false" x="26" y="40">
-                    <ACTOR eid="this" id="0"/>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <receiver-4-75 comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <setanim comment="false" x="26" y="45">
+                    <get-byobval-1-75-0 comment="false" id="0" x="0" y="0"/>
                     <int id="1" val="Standard"/>
                 </setanim>
             </group>
-            <int id="0" val=""/>
-        </receiver-2-62>
+            <get-byobval-1-75-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-4-75>
     </group>
-    <group eventID="4" id="-1"/>
+    <group eventID="6" id="-1"/>
 </groups>

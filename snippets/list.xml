@@ -28,7 +28,7 @@
             <event displayName="Scene Opprettet" enabled="true" id="2" name="init" order="2" repeats="true"/>
             <event displayName="Pek mot Destinasjon" enabled="true" id="3" name="event-custom-block" order="8" repeats="true"/>
             <event displayName="Drawing" enabled="true" id="5" name="event-periodic" order="3" repeats="true"/>
-            <event displayName="Lag Spiller" enabled="true" id="9" name="event-custom-block" order="12" repeats="true"/>
+            <event displayName="Legg Spiller" enabled="true" id="9" name="event-custom-block" order="12" repeats="true"/>
             <event displayName="Lag Generell Meteor" enabled="true" id="10" name="event-custom-block" order="9" repeats="true"/>
             <event displayName="Legg Poeng" enabled="true" id="12" name="event-custom-block" order="13" repeats="true"/>
         </events>
@@ -39,12 +39,14 @@
         <blocks>
             <receiver blockID="61" id="1"/>
             <receiver blockID="62" id="2"/>
+            <receiver blockID="74" id="3"/>
+            <receiver blockID="75" id="4"/>
         </blocks>
         <events>
             <event displayName="Kollisjon med Meteorer" enabled="true" id="1" name="collide" order="1" repeats="true"/>
             <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="4" repeats="true"/>
-            <event displayName="Aktiver Skjold Animasjon" enabled="true" id="3" name="event-custom-block" order="5" repeats="true"/>
-            <event displayName="Deaktiver Skjold Animasjon" enabled="true" id="4" name="event-custom-block" order="6" repeats="true"/>
+            <event displayName="Aktiver Skjold Animasjon" enabled="true" id="5" name="event-custom-block" order="6" repeats="true"/>
+            <event displayName="Deaktiver Skjold Animasjon" enabled="true" id="6" name="event-custom-block" order="7" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="3" attachedevent="true" class="scripts.ActorEvents_3" classname="scripts.ActorEvents_3" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="3" name="ActorEvents_3" oid="-1" package="scripts." shared="false" type="actor">
@@ -205,16 +207,21 @@
             <receiver blockID="58" id="2"/>
             <receiver blockID="59" id="3"/>
             <receiver blockID="60" id="4"/>
+            <receiver blockID="72" id="5"/>
+            <receiver blockID="73" id="6"/>
+            <receiver blockID="76" id="7"/>
+            <receiver blockID="78" id="8"/>
+            <receiver blockID="79" id="9"/>
         </blocks>
         <events>
-            <event displayName="Er Skjold Aktivert" enabled="true" id="1" name="event-custom-block" order="7" repeats="true"/>
             <event displayName="Opprettet" enabled="true" id="2" name="init" order="1" repeats="true"/>
-            <event displayName="Aktiver Skjold" enabled="true" id="3" name="event-custom-block" order="6" repeats="true"/>
             <event displayName="Oppdatering" enabled="true" id="4" name="step" order="2" repeats="true"/>
-            <event displayName="Deaktiver Skjold" enabled="true" id="5" name="event-custom-block" order="8" repeats="true"/>
             <event displayName="Sjekk Skjold Lengde" enabled="true" id="6" name="event-periodic" order="4" repeats="true"/>
-            <event displayName="Legg til Skjold" enabled="true" id="7" name="event-custom-block" order="5" repeats="true"/>
             <event displayName="Skjold Utført" enabled="true" id="8" name="event-key-press-release" order="3" repeats="true"/>
+            <event displayName="Er Skjold Aktivert" enabled="true" id="9" name="event-custom-block" order="10" repeats="true"/>
+            <event displayName="Deaktiver Skjold" enabled="true" id="10" name="event-custom-block" order="13" repeats="true"/>
+            <event displayName="Aktiver Skjold" enabled="true" id="11" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="Legg til Skjold" enabled="true" id="12" name="event-custom-block" order="6" repeats="true"/>
         </events>
     </snippet>
 </pack>
