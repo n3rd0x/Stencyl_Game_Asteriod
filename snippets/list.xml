@@ -25,18 +25,19 @@
             <receiver blockID="84" id="16"/>
             <receiver blockID="85" id="17"/>
             <receiver blockID="86" id="18"/>
+            <receiver blockID="98" id="19"/>
         </blocks>
         <events>
-            <event displayName="Legg Romskip A" enabled="true" id="16" name="event-custom-block" order="5" repeats="true"/>
-            <event displayName="Keyboard" enabled="true" id="17" name="event-key-press-release" order="6" repeats="true"/>
+            <event displayName="Keyboard" enabled="true" id="17" name="event-key-press-release" order="7" repeats="true"/>
             <event displayName="Scene Opprettet" enabled="true" id="2" name="init" order="2" repeats="true"/>
+            <event displayName="Legg Romskip" enabled="true" id="18" name="event-custom-block" order="6" repeats="true"/>
             <event displayName="Pek mot Destinasjon" enabled="true" id="3" name="event-custom-block" order="4" repeats="true"/>
             <event displayName="Drawing" enabled="true" id="5" name="event-periodic" order="3" repeats="true"/>
-            <event displayName="Legg Spiller" enabled="true" id="9" name="event-custom-block" order="19" repeats="true"/>
-            <event displayName="Legg Poeng" enabled="true" id="12" name="event-custom-block" order="20" repeats="true"/>
-            <event displayName="Legg Medium Meteor" enabled="true" id="13" name="event-custom-block" order="15" repeats="true"/>
-            <event displayName="Legg Stor Meteor" enabled="true" id="14" name="event-custom-block" order="16" repeats="true"/>
-            <event displayName="Lag Fiende" enabled="true" id="15" name="event-custom-block" order="14" repeats="true"/>
+            <event displayName="Legg Spiller" enabled="true" id="9" name="event-custom-block" order="20" repeats="true"/>
+            <event displayName="Legg Poeng" enabled="true" id="12" name="event-custom-block" order="21" repeats="true"/>
+            <event displayName="Legg Medium Meteor" enabled="true" id="13" name="event-custom-block" order="16" repeats="true"/>
+            <event displayName="Legg Stor Meteor" enabled="true" id="14" name="event-custom-block" order="17" repeats="true"/>
+            <event displayName="Lag Fiende" enabled="true" id="15" name="event-custom-block" order="15" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="1" attachedevent="true" class="scripts.ActorEvents_1" classname="scripts.ActorEvents_1" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_1" oid="-1" package="scripts." shared="false" type="actor">
@@ -305,5 +306,13 @@
         <events>
             <event displayName="Kollisjon" enabled="true" id="1" name="collide" order="1" repeats="true"/>
         </events>
+    </snippet>
+    <snippet actorid="94" attachedevent="true" class="scripts.ActorEvents_94" classname="scripts.ActorEvents_94" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="31" name="ActorEvents_94" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet actorid="96" attachedevent="true" class="scripts.ActorEvents_96" classname="scripts.ActorEvents_96" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="32" name="ActorEvents_96" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>

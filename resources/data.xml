@@ -61,11 +61,13 @@
         <blank name="destinasjon" order="3" type="actor"/>
     </custom-block>
     <custom-block blocktag="custom-82" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LeggMediumMeteor&quot;);" desc="" global="false" gui="Legg medium meteor til scene" id="82" message="LeggMediumMeteor" name="LeggMediumMeteor" oid="-1" return="void" shared="false" snippetID="0"/>
-    <custom-block blocktag="custom-86" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LeggRomskipA&quot;);" desc="" global="false" gui="Legg romskip A til scene" id="86" message="LeggRomskipA" name="LeggRomskipA" oid="-1" return="void" shared="false" snippetID="0"/>
     <custom-block blocktag="custom-40" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LeggSpillerScene&quot;);" desc="" global="false" gui="Legg spiller til scene" id="40" message="LeggSpillerScene" name="LeggSpillerScene" oid="-1" return="void" shared="false" snippetID="0"/>
     <custom-block blocktag="custom-83" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LeggStorMeteor&quot;);" desc="" global="false" gui="Legg stor meteor til scene" id="83" message="LeggStorMeteor" name="LeggStorMeteor" oid="-1" return="void" shared="false" snippetID="0"/>
     <custom-block blocktag="custom-70" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LeggTilPoeng&quot;, []);" desc="" global="false" gui="Legg til %0 poeng" id="70" message="LeggTilPoeng" name="LeggTilPoeng" oid="-1" return="void" shared="false" snippetID="0">
         <blank name="poeng" order="0" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-98" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_LeggTilRomskip&quot;, []);" desc="" global="false" gui="Legg til romskip av %0 til scene" id="98" message="LeggTilRomskip" name="LeggTilRomskip" oid="-1" return="void" shared="false" snippetID="0">
+        <blank name="Type" order="0" type="actortype"/>
     </custom-block>
     <custom-block blocktag="custom-79" blocktype="ACTION" code=".say(&quot;Skjold&quot;, &quot;_customBlock_LeggTilSkjold&quot;);" desc="" global="false" gui="Legg til skjold for %0" id="79" message="LeggTilSkjold" name="LeggTilSkjold" oid="-1" return="void" shared="false" snippetID="23">
         <blank name="@block.thisactor" order="0" type="actor"/>
@@ -392,6 +394,146 @@
         </anim>
         <anim across="1" down="1" durations="100" height="26" id="3" loop="false" name="3" numframes="1" originx="10" originy="13" sync="false" version="2" width="21">
             <poly data="4,0,0,21,0,21,26,0,26" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="31" fixedrot="false" fric="0.0" gid="5" id="94" ignoreg="false" inertia="8.0" ldamp="0.4" mass="20.0" name="RomskipB" oid="-1" pausable="true" physicsMode="0" rest="0.4" shared="false" sprite="95" static="false">
+        <snippets>
+            <s enabled="true" id="16">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="100"/>
+            </s>
+            <s enabled="true" id="6">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="3" list="0" val="16.0"/>
+                <prop id="4" list="0" val="16.0"/>
+            </s>
+            <s enabled="true" id="25">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="0.0"/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="2.0"/>
+                <prop id="7" list="0" val="80"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="1.0"/>
+                <prop id="10" list="0" val="0.0"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val="false"/>
+            </s>
+            <s enabled="true" id="26">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="0.0"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="0.0"/>
+                <prop id="5" list="0" val="false"/>
+                <prop id="6" list="0" val="3"/>
+                <prop id="7" list="0" val="0.0"/>
+                <prop id="8" list="0" val="30"/>
+                <prop id="9" list="0" val="true"/>
+                <prop id="10" list="0" val="true"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val=""/>
+            </s>
+            <s enabled="true" id="27">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="0"/>
+                <prop id="5" list="0" val=""/>
+            </s>
+            <s enabled="true" id="29">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="3" list="0" val="50"/>
+                <prop id="8" list="0" val="400"/>
+                <prop id="11" list="0" val="false"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="95" name="RomskipB" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="23" id="0" loop="false" name="0" numframes="1" originx="10" originy="11" sync="false" version="2" width="21">
+            <poly data="4,0,0,21,0,21,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="23" id="1" loop="false" name="1" numframes="1" originx="10" originy="11" sync="false" version="2" width="21">
+            <poly data="4,0,0,21,0,21,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="23" id="2" loop="false" name="2" numframes="1" originx="10" originy="11" sync="false" version="2" width="21">
+            <poly data="4,0,0,21,0,21,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="23" id="3" loop="false" name="3" numframes="1" originx="10" originy="11" sync="false" version="2" width="21">
+            <poly data="4,0,0,21,0,21,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="32" fixedrot="false" fric="0.0" gid="5" id="96" ignoreg="false" inertia="8.0" ldamp="0.4" mass="20.0" name="RomskipC" oid="-1" pausable="true" physicsMode="0" rest="0.4" shared="false" sprite="97" static="false">
+        <snippets>
+            <s enabled="true" id="16">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="110"/>
+            </s>
+            <s enabled="true" id="6">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="3" list="0" val="16.0"/>
+                <prop id="4" list="0" val="16.0"/>
+            </s>
+            <s enabled="true" id="25">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="0.0"/>
+                <prop id="5" list="0" val="0.0"/>
+                <prop id="6" list="0" val="4"/>
+                <prop id="7" list="0" val="200"/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="1.0"/>
+                <prop id="10" list="0" val="0.0"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val="false"/>
+            </s>
+            <s enabled="true" id="26">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="0.0"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="0.0"/>
+                <prop id="5" list="0" val="false"/>
+                <prop id="6" list="0" val="1"/>
+                <prop id="7" list="0" val="0.0"/>
+                <prop id="8" list="0" val="10"/>
+                <prop id="9" list="0" val="true"/>
+                <prop id="10" list="0" val="true"/>
+                <prop id="11" list="0" val="false"/>
+                <prop id="12" list="0" val=""/>
+            </s>
+            <s enabled="true" id="27">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="0"/>
+                <prop id="5" list="0" val=""/>
+            </s>
+            <s enabled="true" id="29">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="3" list="0" val="50"/>
+                <prop id="8" list="0" val="500"/>
+                <prop id="11" list="0" val="false"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="97" name="RomskipC" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="21" id="0" loop="false" name="0" numframes="1" originx="10" originy="10" sync="false" version="2" width="21">
+            <poly data="4,0,0,21,0,21,21,0,21" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="21" id="1" loop="false" name="1" numframes="1" originx="10" originy="10" sync="false" version="2" width="21">
+            <poly data="4,0,0,21,0,21,21,0,21" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="21" id="2" loop="false" name="2" numframes="1" originx="10" originy="10" sync="false" version="2" width="21">
+            <poly data="4,0,0,21,0,21,21,0,21" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="21" id="3" loop="false" name="3" numframes="1" originx="10" originy="10" sync="false" version="2" width="21">
+            <poly data="4,0,0,21,0,21,21,0,21" density="0.1" fric="0.2" gid="-1000" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="28" fixedrot="true" fric="0.2" gid="4" id="91" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="RomskipLaser" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="92" static="false">
