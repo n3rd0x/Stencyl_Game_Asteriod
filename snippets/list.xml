@@ -49,17 +49,15 @@
             <receiver blockID="75" id="4"/>
         </blocks>
         <events>
-            <event displayName="Kollisjon med Meteorer" enabled="true" id="1" name="collide" order="1" repeats="true"/>
-            <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="4" repeats="true"/>
-            <event displayName="Aktiver Skjold Animasjon" enabled="true" id="5" name="event-custom-block" order="6" repeats="true"/>
-            <event displayName="Deaktiver Skjold Animasjon" enabled="true" id="6" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="Kollisjon" enabled="false" id="1" name="collide" order="1" repeats="true"/>
+            <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="7" repeats="true"/>
+            <event displayName="Aktiver Skjold Animasjon" enabled="true" id="5" name="event-custom-block" order="9" repeats="true"/>
+            <event displayName="Deaktiver Skjold Animasjon" enabled="true" id="6" name="event-custom-block" order="10" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="3" attachedevent="true" class="scripts.ActorEvents_3" classname="scripts.ActorEvents_3" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="3" name="ActorEvents_3" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
-        <events>
-            <event displayName="Kollisjon med Fiender" enabled="true" id="2" name="collide" order="2" repeats="true"/>
-        </events>
+        <events/>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_4_4_SpillerKontroller" classname="scripts.Design_4_4_SpillerKontroller" desc="Kontroller for spilleren." description="Kontroller for spilleren." design="true" drawOrder="0" id="4" name="Spiller Kontroller" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
@@ -129,20 +127,13 @@
     <snippet attachedevent="false" class="scripts.Design_13_13_MeteorEgenskap" classname="scripts.Design_13_13_MeteorEgenskap" desc="Egenskaper for meteorer." description="Egenskaper for meteorer." design="true" drawOrder="0" id="13" name="Meteor Egenskap" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <actortype default="" defaultValue="" desc="Meteor som omdannes til ved sin ødeleggelse." dropdown="" fullname="Meteor Type" hidden="false" id="2" name="_MeteorType" order="1"/>
-        <number default="0.0" defaultValue="0.0" desc="Skade som tilfører motparten." dropdown="" fullname="Skade" hidden="false" id="3" name="_Skade" order="2"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Spawn" hidden="true" id="4" name="_Spawn" order="3"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Spiller" hidden="false" id="5" name="_Spiller" order="4"/>
-        <number default="16.0" defaultValue="16.0" desc="The x-component of how many pixels of the actor are still visible before it wraps around the scene, and the x-component of how many pixels will be visible after it wraps around the scene." dropdown="" fullname="Wrap X" hidden="false" id="6" name="_WrapX" order="5"/>
-        <number default="16.0" defaultValue="16.0" desc="The y-component of how many pixels of the actor are still visible before it wraps around the scene, and the y-component of how many pixels will be visible after it wraps around the scene." dropdown="" fullname="Wrap Y" hidden="false" id="7" name="_WrapY" order="6"/>
-        <number default="0" defaultValue="0" desc="Poeng for å ødelegge denne." dropdown="" fullname="Poeng" hidden="false" id="8" name="_Poeng" order="7"/>
-        <number default="30" defaultValue="30" desc="Minimum fart." dropdown="" fullname="MinFart" hidden="false" id="9" name="_MinFart" order="8"/>
+        <number default="30.0" defaultValue="30.0" desc="Minimum fart." dropdown="" fullname="MinFart" hidden="false" id="9" name="_MinFart" order="8"/>
         <number default="100.0" defaultValue="100.0" desc="Maksimun fart." dropdown="" fullname="MaksFart" hidden="false" id="10" name="_MaksFart" order="9"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="TraffSkjold" hidden="true" id="11" name="_TraffSkjold" order="10"/>
         <blocks/>
         <events>
             <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="4" repeats="true"/>
-            <event displayName="Kollisjon med Spiller" enabled="true" id="6" name="event-collide-actortotype" order="7" repeats="true"/>
-            <event displayName="Oppdatering" enabled="true" id="7" name="step" order="5" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_16_16_HelseEgenskap" classname="scripts.Design_16_16_HelseEgenskap" desc="" description="" design="true" drawOrder="0" id="16" name="Helse Egenskap" oid="-1" package="scripts" shared="false" type="actor">
@@ -258,11 +249,23 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_26_26_RomskipEgenskap" classname="scripts.Design_26_26_RomskipEgenskap" desc="" description="" design="true" drawOrder="0" id="26" name="Romskip Egenskap" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="KanSkyte" hidden="true" id="5" name="_KanSkyte" order="1"/>
+        <number default="2.0" defaultValue="2.0" desc="" dropdown="" fullname="SkyteRate" hidden="false" id="6" name="_SkyteRate" order="2"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Spiller" hidden="true" id="7" name="_Spiller" order="3"/>
+        <number default="20.0" defaultValue="20.0" desc="Fart for laseren når skytes." dropdown="" fullname="Fart" hidden="false" id="8" name="_Fart" order="4"/>
         <blocks>
             <receiver blockID="87" id="1"/>
+            <receiver blockID="87" id="2"/>
+            <receiver blockID="88" id="3"/>
+            <receiver blockID="89" id="4"/>
+            <receiver blockID="90" id="5"/>
         </blocks>
         <events>
             <event displayName="Opprettet" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Oppdatering" enabled="true" id="2" name="step" order="3" repeats="true"/>
+            <event displayName="Sjekk Skyte Rate" enabled="true" id="3" name="event-periodic" order="5" repeats="true"/>
+            <event displayName="Sett Spiller" enabled="true" id="4" name="event-custom-block" order="4" repeats="true"/>
+            <event displayName="Ødelagt" enabled="true" id="5" name="event-actor-create-kill" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_27_27_FaceTarget" classname="scripts.Design_27_27_FaceTarget" desc="Makes the actor always face a given target actor." description="Makes the actor always face a given target actor." design="true" drawOrder="0" id="27" name="Face Target" oid="-1" package="scripts" shared="false" type="actor">
@@ -274,6 +277,33 @@
         <blocks/>
         <events>
             <event displayName="Updated" enabled="true" id="1" name="step" order="1" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="91" attachedevent="true" class="scripts.ActorEvents_91" classname="scripts.ActorEvents_91" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="28" name="ActorEvents_91" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_29_29" classname="scripts.Design_29_29" desc="Egenskaper for meteorer." description="Egenskaper for meteorer." design="true" drawOrder="0" id="29" name="Fiende Egenskap" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="Skade som tilfører motparten." dropdown="" fullname="Skade" hidden="false" id="3" name="_Skade" order="2"/>
+        <number default="0.0" defaultValue="0.0" desc="Poeng for å ødelegge denne." dropdown="" fullname="Poeng" hidden="false" id="8" name="_Poeng" order="7"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="TraffSkjold" hidden="true" id="11" name="_TraffSkjold" order="10"/>
+        <blocks>
+            <receiver blockID="93" id="1"/>
+        </blocks>
+        <events>
+            <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="4" repeats="true"/>
+            <event displayName="Kollisjon med Spiller" enabled="false" id="6" name="event-collide-actortotype" order="8" repeats="true"/>
+            <event displayName="Traff Skjold" enabled="true" id="7" name="event-custom-block" order="9" repeats="true"/>
+            <event displayName="Created" enabled="true" id="8" name="init" order="5" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_30_30_LaserEgenskap" classname="scripts.Design_30_30_LaserEgenskap" desc="" description="" design="true" drawOrder="0" id="30" name="Laser Egenskap" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="Skade" hidden="false" id="1" name="_Skade" order="1"/>
+        <blocks/>
+        <events>
+            <event displayName="Kollisjon" enabled="true" id="1" name="collide" order="1" repeats="true"/>
         </events>
     </snippet>
 </pack>

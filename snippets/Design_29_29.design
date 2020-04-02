@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <event-actor-create-kill comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <custom-70 comment="false" x="26" y="42">
+                    <get-val-29-8 comment="false" id="0" x="0" y="0"/>
+                </custom-70>
+            </group>
+            <int id="0" val="1"/>
+            <ACTOR eid="this" id="1"/>
+        </event-actor-create-kill>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="6" id="0">
+        <event-collide-actortotype comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="26" y="47">
+                    <group eventID="6" id="-1">
+                        <custom-30 comment="false" x="37" y="90">
+                            <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                            <get-val-29-3 comment="false" id="1" x="0" y="0"/>
+                        </custom-30>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <custom-73 comment="false" id="0" x="0" y="0">
+                            <collide-actor-of-type comment="false" id="0" x="0" y="0"/>
+                        </custom-73>
+                    </not>
+                </if>
+                <else comment="false" x="26" y="134">
+                    <group eventID="6" id="-1">
+                        <set-val-29-11 comment="false" x="37" y="154">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-29-11>
+                    </group>
+                </else>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <actortype eid="1" id="1"/>
+        </event-collide-actortotype>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <receiver-1-93 comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <return comment="false" x="26" y="45">
+                    <get-val-29-11 comment="false" id="0" x="0" y="0"/>
+                </return>
+            </group>
+            <get-byobval-29-93-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-1-93>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <set-val-29-11 comment="false" x="26" y="40">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-29-11>
+            </group>
+        </init>
+    </group>
+    <group eventID="8" id="-1"/>
+</groups>

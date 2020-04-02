@@ -3,7 +3,10 @@
     <group eventID="1" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <set-game-val-13 comment="false" x="26" y="40">
+                <set-val-26-5 comment="false" x="26" y="40">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-26-5>
+                <set-game-val-13 comment="false" x="26" y="65">
                     <plus comment="false" id="0" x="0" y="0">
                         <get-game-val-13 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="1"/>
@@ -13,4 +16,117 @@
         </init>
     </group>
     <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="88">
+                            <group eventID="2" id="-1">
+                                <create-actor3 comment="false" x="48" y="131">
+                                    <actortype eid="91" id="0"/>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="2"/>
+                                    </get-xy>
+                                    <get-xy comment="false" id="2" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <int id="1" val="3"/>
+                                    </get-xy>
+                                    <int id="3" val="0"/>
+                                </create-actor3>
+                                <setvel comment="false" x="48" y="171">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <getdir comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                    </getdir>
+                                    <get-val-26-8 comment="false" id="2" x="0" y="0"/>
+                                </setvel>
+                                <setangle comment="false" x="48" y="211">
+                                    <ACTOR eid="lastcreated" id="0"/>
+                                    <getdir comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                    </getdir>
+                                </setangle>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <custom-73 comment="false" id="0" x="0" y="0">
+                                    <get-val-26-7 comment="false" id="0" x="0" y="0"/>
+                                </custom-73>
+                            </not>
+                        </if>
+                        <set-val-26-5 comment="false" x="37" y="263">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-26-5>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <get-val-26-5 comment="false" id="0" x="0" y="0"/>
+                        <and comment="false" id="1" x="0" y="0">
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="7"/>
+                                <int id="1" val="0"/>
+                            </value>
+                            <isalive comment="false" id="1" x="0" y="0">
+                                <get-val-26-7 comment="false" id="0" x="0" y="0"/>
+                            </isalive>
+                        </and>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <comment-long comment="false" x="26" y="47">
+                    <int id="0" val="Vi lar tilfeldig skyting."/>
+                </comment-long>
+                <if comment="false" x="26" y="127">
+                    <group eventID="3" id="-1">
+                        <set-val-26-5 comment="false" x="37" y="157">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-26-5>
+                    </group>
+                    <lesseq comment="false" id="0" x="0" y="0">
+                        <randint comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="100"/>
+                        </randint>
+                        <int id="1" val="50"/>
+                    </lesseq>
+                </if>
+            </group>
+            <get-val-26-6 comment="false" id="0" x="0" y="0"/>
+            <ACTOR eid="this" id="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receiver-5-90 comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-val-26-7 comment="false" x="26" y="45">
+                    <get-byobval-26-90-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-26-7>
+            </group>
+            <get-byobval-26-90-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-26-90-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-5-90>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <event-actor-create-kill comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-game-val-13 comment="false" x="26" y="42">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-game-val-13 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </minus>
+                </set-game-val-13>
+            </group>
+            <int id="0" val="1"/>
+            <ACTOR eid="this" id="1"/>
+        </event-actor-create-kill>
+    </group>
+    <group eventID="5" id="-1"/>
 </groups>

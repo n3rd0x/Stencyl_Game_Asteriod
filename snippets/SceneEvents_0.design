@@ -25,6 +25,10 @@
                             <int id="2" val="_TargetActor"/>
                             <get-val-0-5 comment="false" id="3" x="0" y="0"/>
                         </set-attribute>
+                        <custom-90 comment="false" x="37" y="171">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <get-val-0-5 comment="false" id="1" x="0" y="0"/>
+                        </custom-90>
                     </group>
                     <less comment="false" id="0" x="0" y="0">
                         <get-game-val-13 comment="false" id="0" x="0" y="0"/>
@@ -175,42 +179,41 @@
                     </randint>
                 </set-val-0-7>
                 <custom-86 comment="false" x="26" y="232"/>
+                <custom-83 comment="false" x="26" y="252"/>
             </group>
             <int id="0" val="4"/>
             <ACTOR eid="lastcreated" id="2"/>
         </event-periodic>
     </group>
     <group eventID="5" id="1">
-        <if comment="false" x="97" y="316">
+        <if comment="false" x="87" y="314">
             <group eventID="5" id="-1">
-                <stop comment="false" x="108" y="346"/>
+                <stop comment="false" x="98" y="344"/>
             </group>
             <eq comment="false" id="0" x="0" y="0">
                 <get-val-0-7 comment="false" id="0" x="0" y="0"/>
                 <int id="1" val="0"/>
             </eq>
         </if>
-        <else-if comment="false" x="97" y="378">
-            <group eventID="5" id="-1">
-                <custom-83 comment="false" x="108" y="408"/>
-            </group>
+        <else-if comment="false" x="87" y="376">
+            <group eventID="5" id="-1"/>
             <eq comment="false" id="0" x="0" y="0">
                 <get-val-0-7 comment="false" id="0" x="0" y="0"/>
                 <int id="1" val="1"/>
             </eq>
         </else-if>
-        <else-if comment="false" x="97" y="440">
+        <else-if comment="false" x="87" y="438">
             <group eventID="5" id="-1">
-                <custom-82 comment="false" x="108" y="470"/>
+                <custom-82 comment="false" x="98" y="468"/>
             </group>
             <eq comment="false" id="0" x="0" y="0">
                 <get-val-0-7 comment="false" id="0" x="0" y="0"/>
                 <int id="1" val="2"/>
             </eq>
         </else-if>
-        <else-if comment="false" x="97" y="502">
+        <else-if comment="false" x="87" y="500">
             <group eventID="5" id="-1">
-                <custom-86 comment="false" x="108" y="532"/>
+                <custom-86 comment="false" x="98" y="530"/>
             </group>
             <eq comment="false" id="0" x="0" y="0">
                 <get-val-0-7 comment="false" id="0" x="0" y="0"/>
