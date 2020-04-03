@@ -12,6 +12,10 @@
                         <int id="1" val="1"/>
                     </plus>
                 </set-game-val-13>
+                <play-sound4 comment="false" x="26" y="95">
+                    <int id="0" val="0"/>
+                    <sound eid="113" id="1"/>
+                </play-sound4>
             </group>
         </init>
     </group>
@@ -48,6 +52,10 @@
                                         <ACTOR eid="this" id="0"/>
                                     </getdir>
                                 </setangle>
+                                <play-sound4 comment="false" x="48" y="251">
+                                    <int id="0" val="0"/>
+                                    <sound eid="111" id="1"/>
+                                </play-sound4>
                             </group>
                             <not comment="false" id="0" x="0" y="0">
                                 <custom-73 comment="false" id="0" x="0" y="0">
@@ -55,7 +63,7 @@
                                 </custom-73>
                             </not>
                         </if>
-                        <set-val-26-5 comment="false" x="37" y="263">
+                        <set-val-26-5 comment="false" x="37" y="290">
                             <false comment="false" id="0" x="0" y="0"/>
                         </set-val-26-5>
                     </group>

@@ -5,7 +5,19 @@
             <group eventID="1" id="-1">
                 <if comment="false" x="26" y="40">
                     <group eventID="1" id="-1">
-                        <die comment="false" x="37" y="70">
+                        <if comment="false" x="37" y="70">
+                            <group eventID="1" id="-1">
+                                <play-sound4 comment="false" x="48" y="103">
+                                    <int id="0" val="0"/>
+                                    <sound eid="var" id="1" vid="2"/>
+                                </play-sound4>
+                            </group>
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="2"/>
+                                <int id="1" val="0"/>
+                            </value>
+                        </if>
+                        <die comment="false" x="37" y="142">
                             <ACTOR eid="this" id="0"/>
                         </die>
                     </group>

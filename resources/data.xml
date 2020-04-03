@@ -72,11 +72,24 @@
     <custom-block blocktag="custom-79" blocktype="ACTION" code=".say(&quot;Skjold&quot;, &quot;_customBlock_LeggTilSkjold&quot;);" desc="" global="false" gui="Legg til skjold for %0" id="79" message="LeggTilSkjold" name="LeggTilSkjold" oid="-1" return="void" shared="false" snippetID="23">
         <blank name="@block.thisactor" order="0" type="actor"/>
     </custom-block>
+    <music atlasID="0" desc="" id="116" loop="true" name="LydMeteorLitenOdelagt" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="115" loop="true" name="LydMeteorMediumOdelagt" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="114" loop="true" name="LydMeteorStorOdelagt" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="111" loop="true" name="LydRomskipLaser" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="118" loop="true" name="LydRomskipLaserKollisjon" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="112" loop="true" name="LydRomskipOdelagt" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="113" loop="true" name="LydRomskipSpawn" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="108" loop="true" name="LydSpillerEkstraLiv" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="107" loop="true" name="LydSpillerLaser" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="117" loop="true" name="LydSpillerLaserKollisjon" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="110" loop="true" name="LydSpillerOdelagt" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="109" loop="true" name="LydSpillerSkjold" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="18" fixedrot="false" fric="0.0" gid="6" id="35" ignoreg="false" inertia="6.0" ldamp="0.0" mass="10.0" name="MeteorLitenA" oid="-1" pausable="true" physicsMode="0" rest="0.95" shared="false" sprite="36" static="false">
         <snippets>
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="20"/>
+                <prop id="2" list="0" val="116"/>
             </s>
             <s enabled="true" id="6">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -117,6 +130,7 @@
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="20"/>
+                <prop id="2" list="0" val="116"/>
             </s>
             <s enabled="true" id="6">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -157,6 +171,7 @@
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="50"/>
+                <prop id="2" list="0" val="115"/>
             </s>
             <s enabled="true" id="13">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -192,6 +207,7 @@
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="50"/>
+                <prop id="2" list="0" val="115"/>
             </s>
             <s enabled="true" id="13">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -227,6 +243,7 @@
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="100"/>
+                <prop id="2" list="0" val="114"/>
             </s>
             <s enabled="true" id="6">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -274,6 +291,7 @@
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="100"/>
+                <prop id="2" list="0" val="114"/>
             </s>
             <s enabled="true" id="6">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -331,6 +349,7 @@
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="80"/>
+                <prop id="2" list="0" val="112"/>
             </s>
             <s enabled="true" id="6">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -401,6 +420,7 @@
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="100"/>
+                <prop id="2" list="0" val="112"/>
             </s>
             <s enabled="true" id="6">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -471,6 +491,7 @@
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="110"/>
+                <prop id="2" list="0" val="112"/>
             </s>
             <s enabled="true" id="6">
                 <prop id="2147483647" list="0" val="thisactor"/>
@@ -578,6 +599,7 @@
             <s enabled="true" id="16">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="1" list="0" val="100.0"/>
+                <prop id="2" list="0" val="110"/>
             </s>
             <s enabled="true" id="4">
                 <prop id="2147483647" list="0" val="thisactor"/>
