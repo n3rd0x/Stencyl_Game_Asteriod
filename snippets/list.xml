@@ -6,6 +6,11 @@
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Spiller" hidden="false" id="5" name="_Spiller" order="2"/>
         <number default="0" defaultValue="0" desc="" dropdown="" fullname="FiendeListe" hidden="false" id="6" name="_FiendeListe" order="3"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Fiende" hidden="false" id="7" name="_Fiende" order="4"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="ErSpilletAktiv" hidden="false" id="8" name="_ErSpilletAktiv" order="5"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="NyRekord" hidden="false" id="9" name="_NyRekord" order="6"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Rekord" hidden="false" id="11" name="_Rekord" order="7"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="RekordBoks" hidden="false" id="12" name="_RekordBoks" order="8"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="RekordPoeng" hidden="false" id="13" name="_RekordPoeng" order="9"/>
         <blocks>
             <receiver blockID="17" id="1"/>
             <receiver blockID="18" id="2"/>
@@ -26,18 +31,18 @@
             <receiver blockID="85" id="17"/>
             <receiver blockID="86" id="18"/>
             <receiver blockID="98" id="19"/>
+            <receiver blockID="141" id="20"/>
         </blocks>
         <events>
-            <event displayName="Keyboard" enabled="true" id="17" name="event-key-press-release" order="7" repeats="true"/>
             <event displayName="Opprettet" enabled="true" id="2" name="init" order="2" repeats="true"/>
-            <event displayName="Legg Romskip" enabled="true" id="18" name="event-custom-block" order="6" repeats="true"/>
-            <event displayName="Pek mot Destinasjon" enabled="true" id="3" name="event-custom-block" order="4" repeats="true"/>
-            <event displayName="Drawing" enabled="true" id="5" name="event-periodic" order="3" repeats="true"/>
-            <event displayName="Legg Spiller" enabled="true" id="9" name="event-custom-block" order="20" repeats="true"/>
-            <event displayName="Legg Poeng" enabled="true" id="12" name="event-custom-block" order="21" repeats="true"/>
-            <event displayName="Legg Medium Meteor" enabled="true" id="13" name="event-custom-block" order="16" repeats="true"/>
-            <event displayName="Legg Stor Meteor" enabled="true" id="14" name="event-custom-block" order="17" repeats="true"/>
-            <event displayName="Lag Fiende" enabled="true" id="15" name="event-custom-block" order="15" repeats="true"/>
+            <event displayName="Legg Romskip" enabled="true" id="18" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="Pek mot Destinasjon" enabled="true" id="3" name="event-custom-block" order="6" repeats="true"/>
+            <event displayName="Legg Fiende" enabled="true" id="5" name="event-periodic" order="4" repeats="true"/>
+            <event displayName="Legg Spiller" enabled="true" id="9" name="event-custom-block" order="22" repeats="true"/>
+            <event displayName="Legg Poeng" enabled="true" id="12" name="event-custom-block" order="23" repeats="true"/>
+            <event displayName="Legg Medium Meteor" enabled="true" id="13" name="event-custom-block" order="18" repeats="true"/>
+            <event displayName="Legg Stor Meteor" enabled="true" id="14" name="event-custom-block" order="19" repeats="true"/>
+            <event displayName="Lag Fiende" enabled="true" id="15" name="event-custom-block" order="17" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="1" attachedevent="true" class="scripts.ActorEvents_1" classname="scripts.ActorEvents_1" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_1" oid="-1" package="scripts." shared="false" type="actor">
@@ -118,10 +123,16 @@
             <receiver blockID="46" id="8"/>
             <receiver blockID="65" id="9"/>
             <receiver blockID="68" id="10"/>
+            <receiver blockID="128" id="11"/>
+            <receiver blockID="132" id="12"/>
+            <receiver blockID="133" id="13"/>
         </blocks>
         <events>
             <event displayName="Returner Tilfeldig Aktor" enabled="true" id="1" name="event-custom-block-global" order="4" repeats="true"/>
-            <event displayName="Returner Siste Grafikk" enabled="true" id="2" name="event-custom-block-global" order="7" repeats="true"/>
+            <event displayName="Returner Siste Grafikk" enabled="true" id="2" name="event-custom-block-global" order="9" repeats="true"/>
+            <event displayName="Returner Siste Indeks" enabled="true" id="3" name="event-custom-block-global" order="10" repeats="true"/>
+            <event displayName="Returner Halv Bredde" enabled="true" id="4" name="event-custom-block-global" order="5" repeats="true"/>
+            <event displayName="Returner Halv Høyde" enabled="true" id="5" name="event-custom-block-global" order="6" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="15" attachedevent="true" class="scripts.ActorEvents_15" classname="scripts.ActorEvents_15" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="11" name="ActorEvents_15" oid="-1" package="scripts." shared="false" type="actor">
@@ -144,12 +155,22 @@
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="100.0" defaultValue="100.0" desc="Helse verdi." dropdown="" fullname="Helse" hidden="false" id="1" name="_Helse" order="1"/>
         <sound default="" defaultValue="" desc="Lyd ved ødelagt." dropdown="" fullname="Lyd" hidden="false" id="2" name="_Lyd" order="2"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="LydAktivert" hidden="true" id="3" name="_LydAktivert" order="3"/>
         <blocks>
             <receiver blockID="30" id="1"/>
+            <receiver blockID="119" id="2"/>
+            <receiver blockID="120" id="3"/>
+            <receiver blockID="121" id="4"/>
+            <receiver blockID="122" id="5"/>
+            <receiver blockID="123" id="6"/>
+            <receiver blockID="124" id="7"/>
         </blocks>
         <events>
             <event displayName="Oppdatering" enabled="true" id="1" name="step" order="1" repeats="true"/>
-            <event displayName="Tilfør Skade" enabled="true" id="2" name="event-custom-block" order="2" repeats="true"/>
+            <event displayName="Tilfør Skade" enabled="true" id="2" name="event-custom-block" order="7" repeats="true"/>
+            <event displayName="Aktiver Lyd" enabled="true" id="3" name="event-custom-block" order="3" repeats="true"/>
+            <event displayName="Deaktiver Lyd" enabled="true" id="4" name="event-custom-block" order="4" repeats="true"/>
+            <event displayName="Opprettet" enabled="true" id="5" name="init" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="31" attachedevent="true" class="scripts.ActorEvents_31" classname="scripts.ActorEvents_31" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="17" name="ActorEvents_31" oid="-1" package="scripts." shared="false" type="actor">
@@ -320,5 +341,56 @@
     <snippet actorid="96" attachedevent="true" class="scripts.ActorEvents_96" classname="scripts.ActorEvents_96" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="32" name="ActorEvents_96" oid="-1" package="scripts." shared="false" type="actor">
         <blocks/>
         <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_36_36_TekstBoks" classname="scripts.Design_36_36_TekstBoks" desc="" description="" design="true" drawOrder="0" id="36" name="TekstBoks Egenskap" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <text default="" defaultValue="" desc="Lagret inntastet bokstaver." dropdown="" fullname="Tekst" hidden="true" id="1" name="_Tekst" order="1"/>
+        <font default="" defaultValue="" desc="Skrift som skal brukes." dropdown="" fullname="Skrift" hidden="false" id="2" name="_Skrift" order="4"/>
+        <number default="0" defaultValue="0" desc="X posisjon på skjermen." dropdown="" fullname="PosX" hidden="false" id="3" name="_PosX" order="5"/>
+        <number default="0" defaultValue="0" desc="Y posisjon på skjermen." dropdown="" fullname="PosY" hidden="false" id="4" name="_PosY" order="6"/>
+        <text default="" defaultValue="" desc="Tekst som vises først." dropdown="" fullname="Prefiks" hidden="false" id="5" name="_Prefiks" order="7"/>
+        <number default="15.0" defaultValue="15.0" desc="Maks antall tegn." dropdown="" fullname="MaksTegn" hidden="false" id="6" name="_MaksTegn" order="8"/>
+        <boolean default="false" defaultValue="false" desc="Brukes for å forsinke inntasting etter opprettelsen." dropdown="" fullname="Aktiv" hidden="true" id="7" name="_Aktiv" order="3"/>
+        <boolean default="false" defaultValue="false" desc="Bruk posisjon som offset fra senter." dropdown="" fullname="Offset" hidden="false" id="8" name="_Offset" order="2"/>
+        <blocks>
+            <receiver blockID="134" id="1"/>
+        </blocks>
+        <events>
+            <event displayName="Tegning" enabled="true" id="1" name="draw" order="1" repeats="true"/>
+            <event displayName="Opprettet" enabled="true" id="2" name="init" order="2" repeats="true"/>
+            <event displayName="Tastetur" enabled="true" id="3" name="event-key-any-press-release" order="3" repeats="true"/>
+            <event displayName="Returner Tekst" enabled="true" id="4" name="event-custom-block" order="4" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="135" attachedevent="true" class="scripts.ActorEvents_135" classname="scripts.ActorEvents_135" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="38" name="ActorEvents_135" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_39_39_RekordEgenskap" classname="scripts.Design_39_39_RekordEgenskap" desc="" description="" design="true" drawOrder="0" id="39" name="Rekord Egenskap" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <text default="" defaultValue="" desc="" dropdown="" fullname="Navn" hidden="false" id="1" name="_Navn" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="Rekord" hidden="false" id="2" name="_Rekord" order="2"/>
+        <blocks>
+            <receiver blockID="137" id="1"/>
+            <receiver blockID="138" id="2"/>
+            <receiver blockID="139" id="3"/>
+            <receiver blockID="140" id="4"/>
+        </blocks>
+        <events>
+            <event displayName="Returner Navn" enabled="true" id="1" name="event-custom-block" order="1" repeats="true"/>
+            <event displayName="Retruner Poeng" enabled="true" id="2" name="event-custom-block" order="3" repeats="true"/>
+            <event displayName="Sett Navn" enabled="true" id="3" name="event-custom-block" order="4" repeats="true"/>
+            <event displayName="Sett Poeng" enabled="true" id="4" name="event-custom-block" order="5" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="143" attachedevent="true" class="scripts.ActorEvents_143" classname="scripts.ActorEvents_143" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="40" name="ActorEvents_143" oid="-1" package="scripts." shared="false" type="actor">
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="RekordAktor" hidden="false" id="1" name="_RekordAktor" order="0"/>
+        <blocks>
+            <receiver blockID="145" id="1"/>
+        </blocks>
+        <events>
+            <event displayName="Sett Rekord Aktor" enabled="true" id="1" name="event-custom-block" order="1" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
+        </events>
     </snippet>
 </pack>

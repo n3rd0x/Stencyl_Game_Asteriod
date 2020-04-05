@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <receiver-1-145 comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-40-1 comment="false" x="26" y="45">
+                    <get-byobval-40-145-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-40-1>
+            </group>
+            <get-byobval-40-145-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-40-145-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-1-145>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <custom-139 comment="false" x="37" y="88">
+                            <get-val-40-1 comment="false" id="0" x="0" y="0"/>
+                            <custom-134 comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                            </custom-134>
+                        </custom-139>
+                        <custom-140 comment="false" x="37" y="128">
+                            <get-val-40-1 comment="false" id="0" x="0" y="0"/>
+                            <get-game-val-6 comment="false" id="1" x="0" y="0"/>
+                        </custom-140>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <not comment="false" id="1" x="0" y="0">
+                            <str-empty comment="false" id="0" x="0" y="0">
+                                <custom-134 comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                </custom-134>
+                            </str-empty>
+                        </not>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

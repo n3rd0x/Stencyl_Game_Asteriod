@@ -147,6 +147,10 @@
                         <int id="1" val="40"/>
                     </minus>
                 </draw-text>
+                <if comment="false" x="26" y="105">
+                    <group eventID="7" id="-1"/>
+                    <get-game-val-16 comment="false" id="0" x="0" y="0"/>
+                </if>
             </group>
         </draw>
     </group>

@@ -8,12 +8,9 @@
                         <get-byobval-10-12-0 comment="false" id="0" x="0" y="0"/>
                         <randint comment="false" id="1" x="0" y="0">
                             <int id="0" val="0"/>
-                            <minus comment="false" id="1" x="0" y="0">
-                                <length-list comment="false" id="0" x="0" y="0">
-                                    <get-byobval-10-12-0 comment="false" id="0" x="0" y="0"/>
-                                </length-list>
-                                <int id="1" val="1"/>
-                            </minus>
+                            <custom-128 comment="false" id="1" x="0" y="0">
+                                <get-byobval-10-12-0 comment="false" id="0" x="0" y="0"/>
+                            </custom-128>
                         </randint>
                     </get-item>
                 </return>
@@ -28,12 +25,9 @@
                 <return comment="false" x="26" y="45">
                     <get-item comment="false" id="0" x="0" y="0">
                         <get-byobval-10-46-0 comment="false" id="0" x="0" y="0"/>
-                        <minus comment="false" id="1" x="0" y="0">
-                            <length-list comment="false" id="0" x="0" y="0">
-                                <get-byobval-10-46-0 comment="false" id="0" x="0" y="0"/>
-                            </length-list>
-                            <int id="1" val="1"/>
-                        </minus>
+                        <custom-128 comment="false" id="1" x="0" y="0">
+                            <get-byobval-10-46-0 comment="false" id="0" x="0" y="0"/>
+                        </custom-128>
                     </get-item>
                 </return>
             </group>
@@ -41,4 +35,50 @@
         </receiver-8-46>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receiver-11-128 comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <return comment="false" x="26" y="45">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <length-list comment="false" id="0" x="0" y="0">
+                            <get-byobval-10-128-0 comment="false" id="0" x="0" y="0"/>
+                        </length-list>
+                        <int id="1" val="1"/>
+                    </minus>
+                </return>
+            </group>
+            <get-byobval-10-128-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-11-128>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receiver-12-132 comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <return comment="false" x="26" y="40">
+                    <div comment="false" id="0" x="0" y="0">
+                        <screen-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </screen-wh>
+                        <int id="1" val="2"/>
+                    </div>
+                </return>
+            </group>
+        </receiver-12-132>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receiver-13-133 comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <return comment="false" x="26" y="40">
+                    <div comment="false" id="0" x="0" y="0">
+                        <screen-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </screen-wh>
+                        <int id="1" val="2"/>
+                    </div>
+                </return>
+            </group>
+        </receiver-13-133>
+    </group>
+    <group eventID="5" id="-1"/>
 </groups>

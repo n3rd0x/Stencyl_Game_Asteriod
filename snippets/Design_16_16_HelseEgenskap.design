@@ -7,17 +7,20 @@
                     <group eventID="1" id="-1">
                         <if comment="false" x="37" y="70">
                             <group eventID="1" id="-1">
-                                <play-sound4 comment="false" x="48" y="103">
+                                <play-sound4 comment="false" x="48" y="108">
                                     <int id="0" val="0"/>
                                     <sound eid="var" id="1" vid="2"/>
                                 </play-sound4>
                             </group>
-                            <value comment="false" id="0" x="0" y="0">
-                                <int id="0" val="2"/>
-                                <int id="1" val="0"/>
-                            </value>
+                            <and comment="false" id="0" x="0" y="0">
+                                <value comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="2"/>
+                                    <int id="1" val="0"/>
+                                </value>
+                                <get-val-16-3 comment="false" id="1" x="0" y="0"/>
+                            </and>
                         </if>
-                        <die comment="false" x="37" y="142">
+                        <die comment="false" x="37" y="147">
                             <ACTOR eid="this" id="0"/>
                         </die>
                     </group>
@@ -44,4 +47,36 @@
         </receiver-1-30>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receiver-6-123 comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-val-16-3 comment="false" x="26" y="45">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-16-3>
+            </group>
+            <get-byobval-16-123-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-6-123>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receiver-7-124 comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-val-16-3 comment="false" x="26" y="45">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-16-3>
+            </group>
+            <get-byobval-16-124-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-7-124>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <custom-123 comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                </custom-123>
+            </group>
+        </init>
+    </group>
+    <group eventID="5" id="-1"/>
 </groups>
