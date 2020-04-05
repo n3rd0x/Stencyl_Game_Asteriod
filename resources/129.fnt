@@ -1,12 +1,12 @@
 #
-#Sat Apr 04 11:44:01 CEST 2020
+#Sun Apr 05 14:32:02 CEST 2020
 shadow.x=0
 shadow.y=0
 color=\#ffff00
 shadow.blur=0
 stroke.size=1
 shadow.color=\#000000
-alphabet=abcdefghijklmnopqrstuvwxyz\u00E6\u00F8\u00E5ABCDEFGHIJKLMNOPQRSTUVWXYZ\u00C6\u00D8\u00C51234567890\:-
+alphabet=abcdefghijklmnopqrstuvwxyz\u00E6\u00F8\u00E5ABCDEFGHIJKLMNOPQRSTUVWXYZ\u00C6\u00D8\u00C51234567890\:-?\!
 gradient.offset=0
 size=16
 antialias=true

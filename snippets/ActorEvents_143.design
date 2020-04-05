@@ -46,4 +46,57 @@
         </step>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <font eid="129" id="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="67">
+                    <int id="0" val="YEAH! Ny Rekord!"/>
+                    <get-val-40-3 comment="false" id="1" x="0" y="0"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <get-val-40-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="30"/>
+                    </minus>
+                </draw-text>
+                <draw-text comment="false" x="26" y="97">
+                    <int id="0" val="Tast inn ditt navn"/>
+                    <get-val-40-3 comment="false" id="1" x="0" y="0"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <get-val-40-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="10"/>
+                    </minus>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-val-40-3 comment="false" x="26" y="40">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <custom-132 comment="false" id="0" x="0" y="0"/>
+                        <get-attribute comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="TekstBoks Egenskap"/>
+                            <int id="2" val="_PosX"/>
+                        </get-attribute>
+                    </plus>
+                </set-val-40-3>
+                <set-val-40-4 comment="false" x="26" y="78">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <custom-133 comment="false" id="0" x="0" y="0"/>
+                        <get-attribute comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="TekstBoks Egenskap"/>
+                            <int id="2" val="_PosY"/>
+                        </get-attribute>
+                    </minus>
+                </set-val-40-4>
+            </group>
+        </init>
+    </group>
+    <group eventID="4" id="-1"/>
 </groups>

@@ -3,77 +3,77 @@
     <group eventID="2" id="0">
         <init comment="false" x="20" y="17">
             <group eventID="2" id="-1">
-                <load-game comment="false" x="31" y="42">
-                    <group eventID="2" id="-1"/>
-                </load-game>
-                <set-game-val-16 comment="false" x="31" y="99">
+                <set-game-val-16 comment="false" x="31" y="42">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-16>
-                <set-game-val-6 comment="false" x="31" y="124">
+                <set-game-val-6 comment="false" x="31" y="67">
                     <int id="0" val="0"/>
                 </set-game-val-6>
-                <set-game-val-0 comment="false" x="31" y="144">
+                <set-game-val-0 comment="false" x="31" y="87">
                     <int id="0" val="0"/>
                 </set-game-val-0>
-                <set-game-val-13 comment="false" x="31" y="164">
+                <set-game-val-13 comment="false" x="31" y="107">
                     <int id="0" val="0"/>
                 </set-game-val-13>
-                <set-game-val-5 comment="false" x="31" y="184">
+                <set-game-val-5 comment="false" x="31" y="127">
                     <int id="0" val="1"/>
                 </set-game-val-5>
-                <set-game-val-4 comment="false" x="31" y="204">
+                <set-game-val-4 comment="false" x="31" y="147">
                     <int id="0" val="8"/>
                 </set-game-val-4>
-                <set-game-val-12 comment="false" x="31" y="224">
+                <set-game-val-12 comment="false" x="31" y="167">
                     <int id="0" val="0"/>
                 </set-game-val-12>
-                <set-game-val-15 comment="false" x="31" y="244">
+                <set-game-val-15 comment="false" x="31" y="187">
                     <int id="0" val="8000"/>
                 </set-game-val-15>
-                <set-game-val-7 comment="false" x="31" y="264">
+                <set-game-val-7 comment="false" x="31" y="207">
                     <int id="0" val="5"/>
                 </set-game-val-7>
-                <set-game-val-10 comment="false" x="31" y="284">
+                <set-game-val-10 comment="false" x="31" y="227">
                     <int id="0" val="6500"/>
                 </set-game-val-10>
-                <set-game-val-14 comment="false" x="31" y="304">
+                <set-game-val-14 comment="false" x="31" y="247">
                     <get-game-val-15 comment="false" id="0" x="0" y="0"/>
                 </set-game-val-14>
-                <set-game-val-9 comment="false" x="31" y="329">
+                <set-game-val-9 comment="false" x="31" y="272">
                     <get-game-val-7 comment="false" id="0" x="0" y="0"/>
                 </set-game-val-9>
-                <set-game-val-11 comment="false" x="31" y="354">
+                <set-game-val-11 comment="false" x="31" y="297">
                     <get-game-val-10 comment="false" id="0" x="0" y="0"/>
                 </set-game-val-11>
-                <set-game-val-8 comment="false" x="31" y="379">
+                <set-game-val-8 comment="false" x="31" y="322">
                     <false comment="false" id="0" x="0" y="0"/>
                 </set-game-val-8>
-                <clear-list comment="false" x="31" y="404">
+                <clear-list comment="false" x="31" y="347">
                     <get-game-val-3 comment="false" id="0" x="0" y="0"/>
                 </clear-list>
-                <set-val-0-6 comment="false" x="31" y="429">
+                <set-val-0-6 comment="false" x="31" y="372">
                     <int id="0" val="2"/>
                 </set-val-0-6>
-                <actors-of-type3 comment="false" x="31" y="449">
+                <mousedisp comment="false" x="31" y="392">
+                    <int id="0" val="0"/>
+                </mousedisp>
+                <actors-of-type3 comment="false" x="31" y="419">
                     <group eventID="2" id="-1">
-                        <add-list comment="false" x="42" y="481">
+                        <add-list comment="false" x="42" y="451">
                             <get-game-val-3 comment="false" id="0" x="0" y="0"/>
                             <actor-of-type comment="false" id="1" x="0" y="0"/>
                         </add-list>
-                        <toggle-image comment="false" x="42" y="506">
+                        <toggle-image comment="false" x="42" y="476">
                             <actor-of-type comment="false" id="0" x="0" y="0"/>
                             <int id="1" val="1"/>
                         </toggle-image>
                     </group>
                     <actortype eid="15" id="0"/>
                 </actors-of-type3>
-                <custom-40 comment="false" x="31" y="550"/>
-                <for-each comment="false" x="31" y="570">
+                <custom-40 comment="false" x="31" y="520"/>
+                <for-each comment="false" x="31" y="540">
                     <group eventID="2" id="-1">
-                        <print comment="false" x="42" y="595">
+                        <print comment="false" x="42" y="565">
                             <for-each-item comment="false" id="0" x="0" y="0"/>
                         </print>
-                        <print comment="false" x="42" y="620">
+                        <print comment="false" x="42" y="590">
                             <custom-137 comment="false" id="0" x="0" y="0">
                                 <for-each-item comment="false" id="0" x="0" y="0"/>
                             </custom-137>
@@ -311,28 +311,31 @@
                         <set-game-val-16 comment="false" x="37" y="348">
                             <true comment="false" id="0" x="0" y="0"/>
                         </set-game-val-16>
-                        <comment-short comment="false" x="37" y="373">
+                        <mousedisp comment="false" x="37" y="373">
+                            <int id="0" val="1"/>
+                        </mousedisp>
+                        <comment-short comment="false" x="37" y="400">
                             <int id="0" val="Sjekker om det er ny rekord."/>
                         </comment-short>
-                        <set-val-0-11 comment="false" x="37" y="393">
+                        <set-val-0-11 comment="false" x="37" y="420">
                             <null comment="false" id="0" x="0" y="0"/>
                         </set-val-0-11>
-                        <set-val-0-12 comment="false" x="37" y="425">
+                        <set-val-0-12 comment="false" x="37" y="452">
                             <null comment="false" id="0" x="0" y="0"/>
                         </set-val-0-12>
-                        <set-val-0-13 comment="false" x="37" y="457">
+                        <set-val-0-13 comment="false" x="37" y="484">
                             <get-game-val-6 comment="false" id="0" x="0" y="0"/>
                         </set-val-0-13>
-                        <if comment="false" x="37" y="482">
+                        <if comment="false" x="37" y="509">
                             <group eventID="9" id="-1">
-                                <for-each comment="false" x="48" y="517">
+                                <for-each comment="false" x="48" y="544">
                                     <group eventID="9" id="-1">
-                                        <if comment="false" x="59" y="542">
+                                        <if comment="false" x="59" y="569">
                                             <group eventID="9" id="-1">
-                                                <set-val-0-11 comment="false" x="70" y="585">
+                                                <set-val-0-11 comment="false" x="70" y="612">
                                                     <for-each-item comment="false" id="0" x="0" y="0"/>
                                                 </set-val-0-11>
-                                                <set-val-0-13 comment="false" x="70" y="617">
+                                                <set-val-0-13 comment="false" x="70" y="644">
                                                     <custom-138 comment="false" id="0" x="0" y="0">
                                                         <for-each-item comment="false" id="0" x="0" y="0"/>
                                                     </custom-138>
@@ -348,22 +351,22 @@
                                     </group>
                                     <get-game-val-18 comment="false" id="0" x="0" y="0"/>
                                 </for-each>
-                                <comment-short comment="false" x="48" y="679">
+                                <comment-short comment="false" x="48" y="706">
                                     <int id="0" val="Beholder kun topp tre."/>
                                 </comment-short>
-                                <if comment="false" x="48" y="699">
+                                <if comment="false" x="48" y="726">
                                     <group eventID="9" id="-1">
-                                        <remove-item comment="false" x="59" y="732">
+                                        <remove-item comment="false" x="59" y="759">
                                             <get-game-val-18 comment="false" id="0" x="0" y="0"/>
                                             <get-val-0-11 comment="false" id="1" x="0" y="0"/>
                                         </remove-item>
-                                        <create-actor3 comment="false" x="59" y="757">
+                                        <create-actor3 comment="false" x="59" y="784">
                                             <actortype eid="135" id="0"/>
                                             <int id="1" val="0"/>
                                             <int id="2" val="0"/>
                                             <int id="3" val="0"/>
                                         </create-actor3>
-                                        <set-val-0-11 comment="false" x="59" y="784">
+                                        <set-val-0-11 comment="false" x="59" y="811">
                                             <ACTOR eid="lastcreated" id="0"/>
                                         </set-val-0-11>
                                     </group>
@@ -380,22 +383,22 @@
                                 <int id="1" val="3"/>
                             </moreeq>
                         </if>
-                        <else comment="false" x="37" y="835">
+                        <else comment="false" x="37" y="862">
                             <group eventID="9" id="-1">
-                                <create-actor3 comment="false" x="48" y="855">
+                                <create-actor3 comment="false" x="48" y="882">
                                     <actortype eid="135" id="0"/>
                                     <int id="1" val="0"/>
                                     <int id="2" val="0"/>
                                     <int id="3" val="0"/>
                                 </create-actor3>
-                                <set-val-0-11 comment="false" x="48" y="882">
+                                <set-val-0-11 comment="false" x="48" y="909">
                                     <ACTOR eid="lastcreated" id="0"/>
                                 </set-val-0-11>
                             </group>
                         </else>
-                        <if comment="false" x="37" y="921">
+                        <if comment="false" x="37" y="948">
                             <group eventID="9" id="-1">
-                                <create-actor3 comment="false" x="48" y="954">
+                                <create-actor3 comment="false" x="48" y="981">
                                     <actortype eid="143" id="0"/>
                                     <int id="1" val="0"/>
                                     <int id="2" val="0"/>

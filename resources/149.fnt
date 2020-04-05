@@ -1,0 +1,16 @@
+#
+#Sun Apr 05 13:46:53 CEST 2020
+shadow.x=2
+shadow.y=2
+color=\#ff0000
+stroke.color=\#ff0000
+shadow.blur=2
+stroke.size=1
+shadow.color=\#000000
+alphabet=
+gradient.offset=0
+size=26
+antialias=true
+style=plain
+family=SansSerif
+chars=simple
