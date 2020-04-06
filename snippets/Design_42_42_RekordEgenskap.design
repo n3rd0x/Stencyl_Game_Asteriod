@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-font-new comment="false" x="26" y="40">
+                    <get-val-42-6 comment="false" id="0" x="0" y="0"/>
+                </set-font-new>
+                <draw-text comment="false" x="26" y="72">
+                    <get-val-42-1 comment="false" id="0" x="0" y="0"/>
+                    <get-val-42-4 comment="false" id="1" x="0" y="0"/>
+                    <get-val-42-5 comment="false" id="2" x="0" y="0"/>
+                </draw-text>
+                <if comment="false" x="26" y="97">
+                    <group eventID="1" id="-1">
+                        <draw-text comment="false" x="37" y="127">
+                            <get-val-42-2 comment="false" id="0" x="0" y="0"/>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-val-42-4 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="35"/>
+                            </plus>
+                            <get-val-42-5 comment="false" id="2" x="0" y="0"/>
+                        </draw-text>
+                        <draw-text comment="false" x="37" y="157">
+                            <tostring comment="false" id="0" x="0" y="0">
+                                <get-val-42-3 comment="false" id="0" x="0" y="0"/>
+                            </tostring>
+                            <plus comment="false" id="1" x="0" y="0">
+                                <get-val-42-4 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="35"/>
+                            </plus>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-val-42-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="20"/>
+                            </plus>
+                        </draw-text>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <get-val-42-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </more>
+                </if>
+            </group>
+        </draw>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <receiver-2-165 comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-42-1 comment="false" x="26" y="45">
+                    <get-byobval-42-165-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-42-1>
+                <set-val-42-2 comment="false" x="26" y="70">
+                    <get-byobval-42-165-2 comment="false" id="0" x="0" y="0"/>
+                </set-val-42-2>
+                <set-val-42-3 comment="false" x="26" y="95">
+                    <get-byobval-42-165-3 comment="false" id="0" x="0" y="0"/>
+                </set-val-42-3>
+                <set-val-42-4 comment="false" x="26" y="120">
+                    <get-byobval-42-165-4 comment="false" id="0" x="0" y="0"/>
+                </set-val-42-4>
+                <set-val-42-5 comment="false" x="26" y="145">
+                    <get-byobval-42-165-5 comment="false" id="0" x="0" y="0"/>
+                </set-val-42-5>
+            </group>
+            <get-byobval-42-165-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-42-165-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-42-165-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-42-165-3 comment="false" id="3" x="0" y="0"/>
+            <get-byobval-42-165-4 comment="false" id="4" x="0" y="0"/>
+            <get-byobval-42-165-5 comment="false" id="5" x="0" y="0"/>
+        </receiver-2-165>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

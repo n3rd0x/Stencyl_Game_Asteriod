@@ -1,0 +1,15 @@
+#
+#Mon Apr 06 09:50:28 CEST 2020
+shadow.x=1
+shadow.y=1
+color=\#ff9900
+shadow.blur=0
+stroke.size=1
+shadow.color=\#000000
+alphabet=\!()-0123456789\:?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz\u00C5\u00C6\u00D8\u00E5\u00E6\u00F8
+gradient.offset=0
+size=8
+antialias=true
+style=bold italic
+family=Monospaced
+chars=custom

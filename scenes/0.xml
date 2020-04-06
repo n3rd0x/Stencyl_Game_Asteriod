@@ -29,6 +29,12 @@
             <prop id="7" list="0" val="null"/>
             <prop id="8" list="0" val="GAME OVER"/>
             <prop id="9" list="0" val="Vil Du Prøve Igjen?"/>
+            <prop id="10" list="0" val="OK"/>
+            <prop id="11" list="0" val="-1"/>
+            <prop id="12" list="0" val="false"/>
+            <prop id="17" list="0" val="0"/>
+            <prop id="18" list="0" val=""/>
+            <prop id="19" list="0" val="0"/>
         </s>
     </snippets>
     <terrain/>
