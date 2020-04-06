@@ -359,7 +359,11 @@
                     </value>
                 </if>
                 <save-game comment="false" x="26" y="125">
-                    <group eventID="13" id="-1"/>
+                    <group eventID="13" id="-1">
+                        <comment-short comment="false" x="37" y="150">
+                            <int id="0" val="Lagre rekordene."/>
+                        </comment-short>
+                    </group>
                 </save-game>
                 <scene-reload-through comment="false" x="26" y="182">
                     <int id="0" val="0"/>

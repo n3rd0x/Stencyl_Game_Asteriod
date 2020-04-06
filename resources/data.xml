@@ -348,6 +348,8 @@
             <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <music atlasID="0" desc="" id="167" loop="true" name="MusicGamePlay" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
+    <music atlasID="0" desc="" id="168" loop="true" name="MusicGameTittel" oid="-1" pan="0" shared="false" stream="true" type="mp3" volume="1"/>
     <custom-block blocktag="custom-17" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_0&quot;, &quot;_customBlock_PekMotAktor&quot;, [, ]);" desc="" global="false" gui="Pek %0 mot %1" id="17" message="PekMotAktor" name="PekMotAktor" oid="-1" return="void" shared="false" snippetID="0">
         <blank name="aktor" order="0" type="actor"/>
         <blank name="destinasjon" order="1" type="actor"/>

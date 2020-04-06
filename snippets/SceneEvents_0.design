@@ -75,6 +75,15 @@
                     <actortype eid="15" id="0"/>
                 </actors-of-type3>
                 <custom-40 comment="false" x="31" y="577"/>
+                <set-volume-channel comment="false" x="31" y="597">
+                    <int id="0" val="70"/>
+                    <int id="1" val="1"/>
+                </set-volume-channel>
+                <play-sound-channel comment="false" x="31" y="617">
+                    <int id="0" val="0"/>
+                    <sound eid="167" id="1"/>
+                    <int id="2" val="1"/>
+                </play-sound-channel>
             </group>
         </init>
     </group>
