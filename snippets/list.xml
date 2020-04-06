@@ -49,7 +49,7 @@
             <event displayName="Pek mot Destinasjon" enabled="true" id="3" name="event-custom-block" order="6" repeats="true"/>
             <event displayName="Sjekk Ny Rekord" enabled="true" id="19" name="event-custom-block" order="24" repeats="true"/>
             <event displayName="Sett Ny Rekord" enabled="true" id="20" name="event-custom-block" order="25" repeats="true"/>
-            <event displayName="Legg Fiende" enabled="true" id="5" name="event-periodic" order="4" repeats="true"/>
+            <event displayName="Legg Til Fiende" enabled="true" id="5" name="event-periodic" order="4" repeats="true"/>
             <event displayName="Vis Rekorder" enabled="true" id="21" name="event-custom-block" order="26" repeats="true"/>
             <event displayName="Legg Spiller" enabled="true" id="9" name="event-custom-block" order="22" repeats="true"/>
             <event displayName="Legg Poeng" enabled="true" id="12" name="event-custom-block" order="23" repeats="true"/>
@@ -87,16 +87,19 @@
         <number default="2.0" defaultValue="2.0" desc="Grad ved rotasjon." dropdown="" fullname="Rotasjon Grad" hidden="false" id="2" name="_RotasjonGrad" order="2"/>
         <blocks/>
         <events>
-            <event displayName="Updating" enabled="true" id="5" name="step" order="2" repeats="true"/>
+            <event displayName="Oppdatering" enabled="true" id="5" name="step" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_5_5_SkyteLaser" classname="scripts.Design_5_5_SkyteLaser" desc="Egenskap for å skyte laser." description="Egenskap for å skyte laser." design="true" drawOrder="0" id="5" name="Skyte Laser" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <number default="20.0" defaultValue="20.0" desc="Fart for laseren når skytes." dropdown="" fullname="Fart" hidden="false" id="1" name="_Fart" order="1"/>
-        <blocks/>
+        <blocks>
+            <receiver blockID="166" id="1"/>
+        </blocks>
         <events>
-            <event displayName="Skyt Utført" enabled="false" id="2" name="event-key-press-release" order="2" repeats="true"/>
-            <event displayName="Click" enabled="true" id="3" name="event-mouse-press-release" order="3" repeats="true"/>
+            <event displayName="Tastetur" enabled="true" id="2" name="event-key-press-release" order="2" repeats="true"/>
+            <event displayName="Mus" enabled="true" id="3" name="event-mouse-press-release" order="3" repeats="true"/>
+            <event displayName="Skyt Laser" enabled="true" id="4" name="event-custom-block" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_6_6_WrapAroundScene" classname="scripts.Design_6_6_WrapAroundScene" desc="Make the actor appear on the opposite site of the scene when it leaves the scene." description="Make the actor appear on the opposite site of the scene when it leaves the scene." design="true" drawOrder="0" id="6" name="Wrap Around Scene" oid="-1" package="scripts" shared="false" type="actor">
@@ -146,9 +149,9 @@
             <event displayName="Returner Tilfeldig Aktor" enabled="true" id="1" name="event-custom-block-global" order="4" repeats="true"/>
             <event displayName="Returner Siste Grafikk" enabled="true" id="2" name="event-custom-block-global" order="11" repeats="true"/>
             <event displayName="Returner Siste Indeks" enabled="true" id="3" name="event-custom-block-global" order="12" repeats="true"/>
-            <event displayName="Halv Bredde Skjerm" enabled="true" id="4" name="event-custom-block-global" order="6" repeats="true"/>
-            <event displayName="Halv Høyde Skjerm" enabled="true" id="5" name="event-custom-block-global" order="8" repeats="true"/>
-            <event displayName="Halv Bredde Tekst" enabled="true" id="6" name="event-custom-block-global" order="7" repeats="true"/>
+            <event displayName="Halv Skjerm Bredde" enabled="true" id="4" name="event-custom-block-global" order="6" repeats="true"/>
+            <event displayName="Halv Skjerm Høyde" enabled="true" id="5" name="event-custom-block-global" order="7" repeats="true"/>
+            <event displayName="Halv Tekst Bredde" enabled="true" id="6" name="event-custom-block-global" order="8" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="15" attachedevent="true" class="scripts.ActorEvents_15" classname="scripts.ActorEvents_15" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="11" name="ActorEvents_15" oid="-1" package="scripts." shared="false" type="actor">
@@ -252,7 +255,7 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="false" class="scripts.Design_23_23_Skjold" classname="scripts.Design_23_23_Skjold" desc="" description="" design="true" drawOrder="0" id="23" name="Skjold" oid="-1" package="scripts" shared="false" type="actor">
+    <snippet attachedevent="false" class="scripts.Design_23_23_Skjold" classname="scripts.Design_23_23_Skjold" desc="" description="" design="true" drawOrder="0" id="23" name="Skjold Egenskap" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="ErSkjoldAktivert" hidden="true" id="2" name="_ErSkjoldAktivert" order="1"/>
         <number default="3" defaultValue="3" desc="" dropdown="" fullname="SkjoldLengde" hidden="false" id="3" name="_SkjoldLengde" order="2"/>

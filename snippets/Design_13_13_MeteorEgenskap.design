@@ -10,15 +10,15 @@
                         </comment-long>
                         <if comment="false" x="37" y="160">
                             <group eventID="2" id="-1">
-                                <repeat comment="false" x="48" y="190">
+                                <repeat comment="false" x="48" y="193">
                                     <group eventID="2" id="-1">
-                                        <custom-85 comment="false" x="59" y="215">
+                                        <custom-85 comment="false" x="59" y="218">
                                             <get-val-13-2 comment="false" id="0" x="0" y="0"/>
                                             <int id="1" val="2"/>
                                             <ACTOR eid="this" id="2"/>
                                             <null comment="false" id="3" x="0" y="0"/>
                                         </custom-85>
-                                        <push-shove2 comment="false" x="59" y="247">
+                                        <push-shove2 comment="false" x="59" y="250">
                                             <ACTOR eid="lastcreated" id="0"/>
                                             <int id="1" val="1"/>
                                             <getdir comment="false" id="2" x="0" y="0">
@@ -36,10 +36,10 @@
                                     </randint>
                                 </repeat>
                             </group>
-                            <noteq comment="false" id="0" x="0" y="0">
-                                <get-val-13-2 comment="false" id="0" x="0" y="0"/>
-                                <null comment="false" id="1" x="0" y="0"/>
-                            </noteq>
+                            <value comment="false" id="0" x="0" y="0">
+                                <int id="0" val="2"/>
+                                <int id="1" val="0"/>
+                            </value>
                         </if>
                     </group>
                     <not comment="false" id="0" x="0" y="0">

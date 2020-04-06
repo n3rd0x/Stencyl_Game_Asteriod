@@ -98,7 +98,7 @@
     <packs/>
     <groups>
         <group desc="" id="4" name="SpillerLaser"/>
-        <group desc="" id="5" name="Fiender"/>
+        <group desc="" id="5" name="Romskip"/>
         <group desc="" id="6" name="Meteorer"/>
         <group desc="" id="7" name="Spiller"/>
         <group desc="" id="8" name="RomskipLaser"/>
@@ -113,7 +113,6 @@
         <cgroup g1="5" g2="5"/>
         <cgroup g1="5" g2="6"/>
         <cgroup g1="5" g2="7"/>
-        <cgroup g1="5" g2="8"/>
         <cgroup g1="6" g2="6"/>
         <cgroup g1="6" g2="7"/>
         <cgroup g1="6" g2="8"/>
@@ -134,7 +133,6 @@
     <props/>
     <attributes>
         <number cid="-1" id="9" name="SkjoldStatus" save="true" value="5000.0"/>
-        <boolean cid="-1" id="8" name="Skjold" save="true" value="false"/>
         <number cid="-1" id="15" name="LivNivaa" save="true" value="0.0"/>
         <boolean cid="-1" id="16" name="GameOver" save="true" value="false"/>
         <number cid="-1" id="6" name="Poeng" save="true" value="0.0"/>
@@ -142,6 +140,7 @@
         <number cid="-1" id="0" name="AntallMeteorStor" save="true" value="0.0"/>
         <text cid="0" id="21" name="RekordNavn2" save="true" value=""/>
         <text cid="0" id="19" name="RekordNavn1" save="true" value=""/>
+        <boolean cid="-1" id="8" name="SkjoldTilgjengelig" save="true" value="false"/>
         <number cid="-1" id="12" name="MaksRomskip" save="true" value="0.0"/>
         <number cid="-1" id="4" name="MaksMeteorStor" save="true" value="8.0"/>
         <list cid="-1" id="3" name="SpawnLokasjoner" save="true" val="list"/>
