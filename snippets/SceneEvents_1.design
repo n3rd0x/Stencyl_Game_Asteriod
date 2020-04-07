@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <mousedisp comment="false" x="26" y="40">
+                    <int id="0" val="1"/>
+                </mousedisp>
+                <load-game comment="false" x="26" y="67">
+                    <group eventID="1" id="-1">
+                        <comment-short comment="false" x="37" y="92">
+                            <int id="0" val="Brukes til å laste inn rekorder."/>
+                        </comment-short>
+                    </group>
+                </load-game>
+                <set-game-val-0 comment="false" x="26" y="124">
+                    <int id="0" val="0"/>
+                </set-game-val-0>
+                <set-game-val-13 comment="false" x="26" y="144">
+                    <int id="0" val="0"/>
+                </set-game-val-13>
+                <set-game-val-4 comment="false" x="26" y="164">
+                    <int id="0" val="8"/>
+                </set-game-val-4>
+                <set-game-val-12 comment="false" x="26" y="184">
+                    <int id="0" val="1"/>
+                </set-game-val-12>
+                <clear-list comment="false" x="26" y="204">
+                    <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                </clear-list>
+                <actors-of-type3 comment="false" x="26" y="229">
+                    <group eventID="1" id="-1">
+                        <add-list comment="false" x="37" y="261">
+                            <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                            <actor-of-type comment="false" id="1" x="0" y="0"/>
+                        </add-list>
+                        <toggle-image comment="false" x="37" y="286">
+                            <actor-of-type comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                        </toggle-image>
+                    </group>
+                    <actortype eid="15" id="0"/>
+                </actors-of-type3>
+                <play-sound-channel comment="false" x="26" y="330">
+                    <int id="0" val="1"/>
+                    <sound eid="168" id="1"/>
+                    <int id="2" val="1"/>
+                </play-sound-channel>
+                <set-volume-channel comment="false" x="26" y="357">
+                    <int id="0" val="70"/>
+                    <int id="1" val="1"/>
+                </set-volume-channel>
+                <set-val-43-1 comment="false" x="26" y="377">
+                    <image-inst-create comment="false" id="0" x="0" y="0">
+                        <image-file comment="false" id="0" x="0" y="0">
+                            <int id="0" val="tittel.png"/>
+                        </image-file>
+                    </image-inst-create>
+                </set-val-43-1>
+                <image-inst-hud comment="false" x="26" y="407">
+                    <get-val-43-1 comment="false" id="0" x="0" y="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <custom-132 comment="false" id="0" x="0" y="0"/>
+                        <div comment="false" id="1" x="0" y="0">
+                            <image-get-props comment="false" id="0" x="0" y="0">
+                                <get-val-43-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="3"/>
+                            </image-get-props>
+                            <int id="1" val="2"/>
+                        </div>
+                    </minus>
+                    <int id="2" val="100"/>
+                </image-inst-hud>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <custom-177 comment="false" x="26" y="42">
+                    <null comment="false" id="0" x="0" y="0"/>
+                </custom-177>
+                <if comment="false" x="26" y="74">
+                    <group eventID="2" id="-1">
+                        <actor-enabledisable-snippet comment="false" x="37" y="107">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="Follow Target"/>
+                        </actor-enabledisable-snippet>
+                        <actor-enabledisable-snippet comment="false" x="37" y="134">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="Face Target"/>
+                        </actor-enabledisable-snippet>
+                        <set-attribute comment="false" x="37" y="161">
+                            <actor comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="18" id="0"/>
+                            </actor>
+                            <int id="1" val="Follow Target"/>
+                            <int id="2" val="_TargetActor"/>
+                            <actor comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                            </actor>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="201">
+                            <actor comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="18" id="0"/>
+                            </actor>
+                            <int id="1" val="Face Target"/>
+                            <int id="2" val="_TargetActor"/>
+                            <actor comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                            </actor>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="241">
+                            <actor comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="18" id="0"/>
+                            </actor>
+                            <int id="1" val="Auto Skyt"/>
+                            <int id="2" val="_Maal"/>
+                            <actor comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                            </actor>
+                        </set-attribute>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="lastcreated" id="0"/>
+                        <int id="1" val="Auto Pilot"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <int id="0" val="3"/>
+            <ACTOR eid="lastcreated" id="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="3" id="0">
+        <receiver-3-172 comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <create-actor3 comment="false" x="26" y="45">
+                    <get-byobval-44-172-0 comment="false" id="0" x="0" y="0"/>
+                    <get-xy comment="false" id="1" x="0" y="0">
+                        <get-byobval-44-172-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </get-xy>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <get-byobval-44-172-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="3"/>
+                    </get-xy>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <setanim comment="false" x="26" y="90">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <randint comment="false" id="1" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <get-byobval-44-172-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="1"/>
+                        </minus>
+                    </randint>
+                </setanim>
+                <if comment="false" x="26" y="132">
+                    <group eventID="3" id="-1">
+                        <custom-182 comment="false" x="37" y="162">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <get-byobval-44-172-3 comment="false" id="1" x="0" y="0"/>
+                        </custom-182>
+                    </group>
+                    <noteq comment="false" id="0" x="0" y="0">
+                        <get-byobval-44-172-3 comment="false" id="0" x="0" y="0"/>
+                        <null comment="false" id="1" x="0" y="0"/>
+                    </noteq>
+                </if>
+                <else comment="false" x="26" y="206">
+                    <group eventID="3" id="-1">
+                        <setangle comment="false" x="37" y="226">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <randint comment="false" id="1" x="0" y="0">
+                                <int id="0" val="0"/>
+                                <int id="1" val="360"/>
+                            </randint>
+                        </setangle>
+                    </group>
+                </else>
+            </group>
+            <get-byobval-44-172-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-44-172-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-44-172-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-44-172-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-3-172>
+    </group>
+    <group eventID="3" id="-1">
+        <get-byobval-44-172-0 comment="false" x="123" y="21"/>
+    </group>
+    <group eventID="4" id="0">
+        <receiver-4-173 comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <create-actor3 comment="false" x="26" y="45">
+                    <actortype eid="161" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <custom-165 comment="false" x="26" y="72">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="Rekorder"/>
+                    <int id="2" val=""/>
+                    <int id="3" val="0"/>
+                    <get-byobval-44-173-0 comment="false" id="4" x="0" y="0"/>
+                    <get-byobval-44-173-1 comment="false" id="5" x="0" y="0"/>
+                </custom-165>
+                <create-actor3 comment="false" x="26" y="104">
+                    <actortype eid="161" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <custom-165 comment="false" x="26" y="131">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="(1)"/>
+                    <get-game-val-19 comment="false" id="2" x="0" y="0"/>
+                    <get-game-val-20 comment="false" id="3" x="0" y="0"/>
+                    <get-byobval-44-173-0 comment="false" id="4" x="0" y="0"/>
+                    <plus comment="false" id="5" x="0" y="0">
+                        <get-byobval-44-173-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="20"/>
+                    </plus>
+                </custom-165>
+                <create-actor3 comment="false" x="26" y="168">
+                    <actortype eid="161" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <custom-165 comment="false" x="26" y="195">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="(2)"/>
+                    <get-game-val-21 comment="false" id="2" x="0" y="0"/>
+                    <get-game-val-23 comment="false" id="3" x="0" y="0"/>
+                    <get-byobval-44-173-0 comment="false" id="4" x="0" y="0"/>
+                    <plus comment="false" id="5" x="0" y="0">
+                        <get-byobval-44-173-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="40"/>
+                    </plus>
+                </custom-165>
+                <create-actor3 comment="false" x="26" y="232">
+                    <actortype eid="161" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <custom-165 comment="false" x="26" y="259">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="(3)"/>
+                    <get-game-val-22 comment="false" id="2" x="0" y="0"/>
+                    <get-game-val-24 comment="false" id="3" x="0" y="0"/>
+                    <get-byobval-44-173-0 comment="false" id="4" x="0" y="0"/>
+                    <plus comment="false" id="5" x="0" y="0">
+                        <get-byobval-44-173-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="60"/>
+                    </plus>
+                </custom-165>
+            </group>
+            <get-byobval-44-173-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-44-173-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-4-173>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <receiver-5-174 comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="5" id="-1">
+                        <custom-172 comment="false" x="37" y="75">
+                            <get-byobval-44-174-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="4"/>
+                            <custom-12 comment="false" id="2" x="0" y="0">
+                                <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                            </custom-12>
+                            <get-byobval-44-174-1 comment="false" id="3" x="0" y="0"/>
+                        </custom-172>
+                        <set-attribute comment="false" x="37" y="112">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="Follow Target"/>
+                            <int id="2" val="_TargetActor"/>
+                            <get-byobval-44-174-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="144">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="Face Target"/>
+                            <int id="2" val="_TargetActor"/>
+                            <get-byobval-44-174-1 comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <custom-90 comment="false" x="37" y="176">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <get-byobval-44-174-1 comment="false" id="1" x="0" y="0"/>
+                        </custom-90>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-game-val-13 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-12 comment="false" id="1" x="0" y="0"/>
+                    </less>
+                </if>
+            </group>
+            <get-byobval-44-174-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-44-174-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-5-174>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <receiver-6-175 comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="6" id="-1">
+                        <if comment="false" x="37" y="75">
+                            <group eventID="6" id="-1">
+                                <custom-172 comment="false" x="48" y="105">
+                                    <actortype eid="5" id="0"/>
+                                    <int id="1" val="4"/>
+                                    <custom-12 comment="false" id="2" x="0" y="0">
+                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                    </custom-12>
+                                    <get-byobval-44-175-0 comment="false" id="3" x="0" y="0"/>
+                                </custom-172>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <randint comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="0"/>
+                                    <int id="1" val="100"/>
+                                </randint>
+                                <int id="1" val="50"/>
+                            </less>
+                        </if>
+                        <else comment="false" x="37" y="154">
+                            <group eventID="6" id="-1">
+                                <custom-172 comment="false" x="48" y="174">
+                                    <actortype eid="51" id="0"/>
+                                    <int id="1" val="4"/>
+                                    <custom-12 comment="false" id="2" x="0" y="0">
+                                        <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                                    </custom-12>
+                                    <get-byobval-44-175-0 comment="false" id="3" x="0" y="0"/>
+                                </custom-172>
+                            </group>
+                        </else>
+                        <push-shove2 comment="false" x="37" y="223">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="1"/>
+                            <getdir comment="false" id="2" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                            </getdir>
+                            <randint comment="false" id="3" x="0" y="0">
+                                <int id="0" val="20"/>
+                                <int id="1" val="100"/>
+                            </randint>
+                        </push-shove2>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                        <get-game-val-4 comment="false" id="1" x="0" y="0"/>
+                    </less>
+                </if>
+            </group>
+            <get-byobval-44-175-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-6-175>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <receiver-7-176 comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="7" id="-1">
+                        <custom-172 comment="false" x="37" y="75">
+                            <actortype eid="31" id="0"/>
+                            <int id="1" val="4"/>
+                            <custom-12 comment="false" id="2" x="0" y="0">
+                                <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                            </custom-12>
+                            <get-byobval-44-176-0 comment="false" id="3" x="0" y="0"/>
+                        </custom-172>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <randint comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="100"/>
+                        </randint>
+                        <int id="1" val="50"/>
+                    </less>
+                </if>
+                <else comment="false" x="26" y="124">
+                    <group eventID="7" id="-1">
+                        <custom-172 comment="false" x="37" y="144">
+                            <actortype eid="53" id="0"/>
+                            <int id="1" val="4"/>
+                            <custom-12 comment="false" id="2" x="0" y="0">
+                                <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                            </custom-12>
+                            <get-byobval-44-176-0 comment="false" id="3" x="0" y="0"/>
+                        </custom-172>
+                    </group>
+                </else>
+                <push-shove2 comment="false" x="26" y="193">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <getdir comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="lastcreated" id="0"/>
+                    </getdir>
+                    <randint comment="false" id="3" x="0" y="0">
+                        <int id="0" val="20"/>
+                        <int id="1" val="80"/>
+                    </randint>
+                </push-shove2>
+            </group>
+            <get-byobval-44-176-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-7-176>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <receiver-8-177 comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <comment-long comment="false" x="26" y="45">
+                    <int id="0" val="Tilfeldig fiende:&#10;0 - Ingen&#10;1 - Stor Meteor&#10;2 - Medium Meteor"/>
+                </comment-long>
+                <comment-long comment="false" x="26" y="125">
+                    <int id="0" val="3 - Romskip A (sakte)&#10;4 - Romskip B (normal)&#10;5 - Romskip C (rask)"/>
+                </comment-long>
+                <set-val-44-1 comment="false" x="26" y="205">
+                    <randint comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <get-val-44-2 comment="false" id="1" x="0" y="0"/>
+                    </randint>
+                </set-val-44-1>
+                <if comment="false" x="26" y="235">
+                    <group eventID="8" id="-1">
+                        <custom-175 comment="false" x="37" y="265">
+                            <get-byobval-44-177-0 comment="false" id="0" x="0" y="0"/>
+                        </custom-175>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-44-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <else-if comment="false" x="26" y="309">
+                    <group eventID="8" id="-1">
+                        <custom-175 comment="false" x="37" y="339">
+                            <get-byobval-44-177-0 comment="false" id="0" x="0" y="0"/>
+                        </custom-175>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-44-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="383">
+                    <group eventID="8" id="-1">
+                        <custom-176 comment="false" x="37" y="413">
+                            <get-byobval-44-177-0 comment="false" id="0" x="0" y="0"/>
+                        </custom-176>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-44-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="2"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="457">
+                    <group eventID="8" id="-1">
+                        <custom-174 comment="false" x="37" y="487">
+                            <actortype eid="80" id="0"/>
+                            <get-byobval-44-177-0 comment="false" id="1" x="0" y="0"/>
+                        </custom-174>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-44-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="3"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="531">
+                    <group eventID="8" id="-1">
+                        <custom-174 comment="false" x="37" y="561">
+                            <actortype eid="94" id="0"/>
+                            <get-byobval-44-177-0 comment="false" id="1" x="0" y="0"/>
+                        </custom-174>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-44-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="4"/>
+                    </eq>
+                </else-if>
+                <else-if comment="false" x="26" y="605">
+                    <group eventID="8" id="-1">
+                        <custom-174 comment="false" x="37" y="635">
+                            <actortype eid="96" id="0"/>
+                            <get-byobval-44-177-0 comment="false" id="1" x="0" y="0"/>
+                        </custom-174>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-44-1 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="5"/>
+                    </eq>
+                </else-if>
+            </group>
+            <get-byobval-44-177-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-8-177>
+    </group>
+    <group eventID="8" id="-1"/>
+    <group eventID="11" id="0">
+        <receiver-11-180 comment="false" x="15" y="15">
+            <group eventID="11" id="-1">
+                <return comment="false" x="26" y="45">
+                    <to-degreesradians comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <atan2 comment="false" id="1" x="0" y="0">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <get-byobval-44-180-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <get-xy comment="false" id="1" x="0" y="0">
+                                    <get-byobval-44-180-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                            </minus>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <get-byobval-44-180-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <get-xy comment="false" id="1" x="0" y="0">
+                                    <get-byobval-44-180-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                            </minus>
+                        </atan2>
+                    </to-degreesradians>
+                </return>
+            </group>
+            <get-byobval-44-180-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-44-180-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-11-180>
+    </group>
+    <group eventID="11" id="-1"/>
+    <group eventID="12" id="0">
+        <receiver-12-181 comment="false" x="15" y="15">
+            <group eventID="12" id="-1">
+                <return comment="false" x="26" y="45">
+                    <sqrt comment="false" id="0" x="0" y="0">
+                        <plus comment="false" id="0" x="0" y="0">
+                            <pow comment="false" id="0" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <get-byobval-44-181-1 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="2"/>
+                                    </get-xy>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <get-byobval-44-181-0 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="2"/>
+                                    </get-xy>
+                                </minus>
+                                <int id="1" val="2"/>
+                            </pow>
+                            <pow comment="false" id="1" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <get-byobval-44-181-1 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="3"/>
+                                    </get-xy>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <get-byobval-44-181-0 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="3"/>
+                                    </get-xy>
+                                </minus>
+                                <int id="1" val="2"/>
+                            </pow>
+                        </plus>
+                    </sqrt>
+                </return>
+            </group>
+            <get-byobval-44-181-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-44-181-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-12-181>
+    </group>
+    <group eventID="12" id="-1"/>
+    <group eventID="13" id="0">
+        <receiver-13-182 comment="false" x="15" y="15">
+            <group eventID="13" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="13" id="-1">
+                        <setangle comment="false" x="37" y="83">
+                            <get-byobval-44-182-0 comment="false" id="0" x="0" y="0"/>
+                            <custom-180 comment="false" id="1" x="0" y="0">
+                                <get-byobval-44-182-0 comment="false" id="0" x="0" y="0"/>
+                                <get-byobval-44-182-1 comment="false" id="1" x="0" y="0"/>
+                            </custom-180>
+                        </setangle>
+                    </group>
+                    <isalive comment="false" id="0" x="0" y="0">
+                        <get-byobval-44-182-0 comment="false" id="0" x="0" y="0"/>
+                    </isalive>
+                </if>
+            </group>
+            <get-byobval-44-182-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-44-182-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-13-182>
+    </group>
+    <group eventID="13" id="-1"/>
+</groups>

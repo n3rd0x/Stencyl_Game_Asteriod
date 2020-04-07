@@ -42,12 +42,6 @@
                                 <get-val-27-4 comment="false" id="1" x="0" y="0"/>
                             </minus>
                         </setangle>
-                        <print comment="false" x="37" y="209">
-                            <str-combine comment="false" id="0" x="0" y="0">
-                                <int id="0" val="FACE: "/>
-                                <get-val-27-4 comment="false" id="1" x="0" y="0"/>
-                            </str-combine>
-                        </print>
                     </group>
                     <and comment="false" id="0" x="0" y="0">
                         <value comment="false" id="0" x="0" y="0">

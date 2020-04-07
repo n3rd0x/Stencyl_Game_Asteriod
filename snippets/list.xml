@@ -4,8 +4,6 @@
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="dx" hidden="true" id="2" name="_dx" order="0"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="dy" hidden="true" id="3" name="_dy" order="1"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Spiller" hidden="false" id="5" name="_Spiller" order="2"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="FiendeListe" hidden="false" id="6" name="_FiendeListe" order="3"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="FiendeType" hidden="false" id="7" name="_FiendeType" order="4"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="NyRekord" hidden="false" id="9" name="_NyRekord" order="5"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="RekordBoks" hidden="false" id="12" name="_RekordBoks" order="6"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="RekordPoeng" hidden="false" id="13" name="_RekordPoeng" order="7"/>
@@ -45,17 +43,11 @@
         </blocks>
         <events>
             <event displayName="Opprettet" enabled="true" id="2" name="init" order="2" repeats="true"/>
-            <event displayName="Legg Romskip" enabled="true" id="18" name="event-custom-block" order="8" repeats="true"/>
-            <event displayName="Pek mot Destinasjon" enabled="true" id="3" name="event-custom-block" order="6" repeats="true"/>
             <event displayName="Sjekk Ny Rekord" enabled="true" id="19" name="event-custom-block" order="24" repeats="true"/>
             <event displayName="Sett Ny Rekord" enabled="true" id="20" name="event-custom-block" order="25" repeats="true"/>
             <event displayName="Legg Til Fiende" enabled="true" id="5" name="event-periodic" order="4" repeats="true"/>
-            <event displayName="Vis Rekorder" enabled="true" id="21" name="event-custom-block" order="26" repeats="true"/>
             <event displayName="Legg Spiller" enabled="true" id="9" name="event-custom-block" order="22" repeats="true"/>
             <event displayName="Legg Poeng" enabled="true" id="12" name="event-custom-block" order="23" repeats="true"/>
-            <event displayName="Legg Medium Meteor" enabled="true" id="13" name="event-custom-block" order="18" repeats="true"/>
-            <event displayName="Legg Stor Meteor" enabled="true" id="14" name="event-custom-block" order="19" repeats="true"/>
-            <event displayName="Lag Fiende" enabled="true" id="15" name="event-custom-block" order="17" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="1" attachedevent="true" class="scripts.ActorEvents_1" classname="scripts.ActorEvents_1" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="1" name="ActorEvents_1" oid="-1" package="scripts." shared="false" type="actor">
@@ -69,9 +61,10 @@
         </blocks>
         <events>
             <event displayName="Kollisjon" enabled="true" id="1" name="collide" order="1" repeats="true"/>
-            <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="7" repeats="true"/>
-            <event displayName="Aktiver Skjold Animasjon" enabled="true" id="5" name="event-custom-block" order="9" repeats="true"/>
-            <event displayName="Deaktiver Skjold Animasjon" enabled="true" id="6" name="event-custom-block" order="10" repeats="true"/>
+            <event displayName="Ødelagt" enabled="true" id="2" name="event-actor-create-kill" order="8" repeats="true"/>
+            <event displayName="Aktiver Skjold Animasjon" enabled="true" id="5" name="event-custom-block" order="10" repeats="true"/>
+            <event displayName="Deaktiver Skjold Animasjon" enabled="true" id="6" name="event-custom-block" order="11" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="7" name="step" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="3" attachedevent="true" class="scripts.ActorEvents_3" classname="scripts.ActorEvents_3" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="3" name="ActorEvents_3" oid="-1" package="scripts." shared="false" type="actor">
@@ -309,10 +302,7 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_26_26_RomskipEgenskap" classname="scripts.Design_26_26_RomskipEgenskap" desc="" description="" design="true" drawOrder="0" id="26" name="Romskip Egenskap" oid="-1" package="scripts" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="KanSkyte" hidden="true" id="5" name="_KanSkyte" order="1"/>
-        <number default="2.0" defaultValue="2.0" desc="" dropdown="" fullname="SkyteRate" hidden="false" id="6" name="_SkyteRate" order="2"/>
         <actor default="" defaultValue="" desc="" dropdown="" fullname="Spiller" hidden="true" id="7" name="_Spiller" order="3"/>
-        <number default="20.0" defaultValue="20.0" desc="Fart for laseren når skytes." dropdown="" fullname="Fart" hidden="false" id="8" name="_Fart" order="4"/>
         <blocks>
             <receiver blockID="87" id="1"/>
             <receiver blockID="87" id="2"/>
@@ -323,7 +313,6 @@
         <events>
             <event displayName="Opprettet" enabled="true" id="1" name="init" order="1" repeats="true"/>
             <event displayName="Oppdatering" enabled="true" id="2" name="step" order="3" repeats="true"/>
-            <event displayName="Sjekk Skyte Rate" enabled="true" id="3" name="event-periodic" order="5" repeats="true"/>
             <event displayName="Sett Spiller" enabled="true" id="4" name="event-custom-block" order="4" repeats="true"/>
             <event displayName="Ødelagt" enabled="true" id="5" name="event-actor-create-kill" order="2" repeats="true"/>
         </events>
@@ -430,6 +419,78 @@
         <events>
             <event displayName="Tegning" enabled="true" id="1" name="draw" order="1" repeats="true"/>
             <event displayName="Sett Verdier" enabled="true" id="2" name="event-custom-block" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_1" classname="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="43" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" shared="false" type="scene">
+        <image-instance default="" defaultValue="" desc="" dropdown="" fullname="TittelGrafikk" hidden="false" id="1" name="_TittelGrafikk" order="0"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Romskip" hidden="false" id="3" name="_Romskip" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="FiendeListe" hidden="false" id="4" name="_FiendeListe" order="2"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="FiendeType" hidden="false" id="5" name="_FiendeType" order="3"/>
+        <blocks/>
+        <events>
+            <event displayName="Opprettet" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Legg Til Fiende" enabled="true" id="2" name="event-periodic" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_44_44_Felles" classname="scripts.Design_44_44_Felles" desc="" description="" design="true" drawOrder="0" id="44" name="Felles" oid="-1" package="scripts" shared="false" type="scene">
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="FiendeType" hidden="true" id="1" name="_FiendeType" order="0"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="FiendeListe" hidden="false" id="2" name="_FiendeListe" order="1"/>
+        <blocks>
+            <receiver blockID="170" id="1"/>
+            <receiver blockID="171" id="2"/>
+            <receiver blockID="172" id="3"/>
+            <receiver blockID="173" id="4"/>
+            <receiver blockID="174" id="5"/>
+            <receiver blockID="175" id="6"/>
+            <receiver blockID="176" id="7"/>
+            <receiver blockID="177" id="8"/>
+            <receiver blockID="178" id="9"/>
+            <receiver blockID="179" id="10"/>
+            <receiver blockID="180" id="11"/>
+            <receiver blockID="181" id="12"/>
+            <receiver blockID="182" id="13"/>
+        </blocks>
+        <events>
+            <event displayName="Lag Fiende" enabled="true" id="3" name="event-custom-block" order="8" repeats="true"/>
+            <event displayName="Vis Rekorder" enabled="true" id="4" name="event-custom-block" order="14" repeats="true"/>
+            <event displayName="Legg Til Romskip" enabled="true" id="5" name="event-custom-block" order="11" repeats="true"/>
+            <event displayName="Legg Til Stor Meteor" enabled="true" id="6" name="event-custom-block" order="13" repeats="true"/>
+            <event displayName="Legg Til Medium Meteor" enabled="true" id="7" name="event-custom-block" order="12" repeats="true"/>
+            <event displayName="Legg Til Fiende" enabled="true" id="8" name="event-custom-block" order="10" repeats="true"/>
+            <event displayName="Grad Fra Aktor Til Mål" enabled="true" id="11" name="event-custom-block-global" order="5" repeats="true"/>
+            <event displayName="Distanse Fra Aktor Til Mål" enabled="true" id="12" name="event-custom-block-global" order="7" repeats="true"/>
+            <event displayName="Pek Aktor Mot Mål" enabled="true" id="13" name="event-custom-block-global" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_45_45_AutoPilot" classname="scripts.Design_45_45_AutoPilot" desc="" description="" design="true" drawOrder="0" id="45" name="Auto Pilot" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Destinasjon" hidden="true" id="1" name="_Destinasjon" order="1"/>
+        <number default="0" defaultValue="0" desc="" dropdown="" fullname="diff" hidden="true" id="2" name="_diff" order="2"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="dist" hidden="true" id="3" name="_dist" order="3"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="AktivRute" hidden="true" id="4" name="_AktivRute" order="4"/>
+        <blocks/>
+        <events>
+            <event displayName="Oppretting" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Oppdatering" enabled="true" id="2" name="step" order="2" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_46_46_AutoSkyt" classname="scripts.Design_46_46_AutoSkyt" desc="" description="" design="true" drawOrder="0" id="46" name="Auto Skyt" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="20.0" defaultValue="20.0" desc="Fart for laseren når skytes." dropdown="" fullname="Fart" hidden="false" id="1" name="_Fart" order="1"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="KanSkyte" hidden="true" id="3" name="_KanSkyte" order="3"/>
+        <actor default="" defaultValue="" desc="" dropdown="" fullname="Maal" hidden="true" id="4" name="_Maal" order="4"/>
+        <actortype default="" defaultValue="" desc="" dropdown="" fullname="Laser Type" hidden="false" id="5" name="_LaserType" order="5"/>
+        <sound default="" defaultValue="" desc="" dropdown="" fullname="Laser Lyd" hidden="false" id="6" name="_LaserLyd" order="6"/>
+        <number default="2.0" defaultValue="2.0" desc="" dropdown="" fullname="SkyteRate" hidden="false" id="7" name="_SkyteRate" order="7"/>
+        <number default="50.0" defaultValue="50.0" desc="" dropdown="" fullname="SkyteSannsynlighet" hidden="false" id="8" name="_SkyteSannsynlighet" order="8"/>
+        <blocks>
+            <receiver blockID="183" id="1"/>
+            <receiver blockID="184" id="2"/>
+            <receiver blockID="185" id="3"/>
+        </blocks>
+        <events>
+            <event displayName="Sjekk Skyte Rate" enabled="true" id="2" name="event-periodic" order="7" repeats="true"/>
+            <event displayName="Auto Skyt Laser" enabled="true" id="5" name="event-custom-block" order="6" repeats="true"/>
         </events>
     </snippet>
 </pack>

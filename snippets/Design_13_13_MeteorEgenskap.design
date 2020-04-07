@@ -12,12 +12,12 @@
                             <group eventID="2" id="-1">
                                 <repeat comment="false" x="48" y="193">
                                     <group eventID="2" id="-1">
-                                        <custom-85 comment="false" x="59" y="218">
-                                            <get-val-13-2 comment="false" id="0" x="0" y="0"/>
+                                        <custom-172 comment="false" x="59" y="218">
+                                            <actortype eid="var" id="0" vid="2"/>
                                             <int id="1" val="2"/>
                                             <ACTOR eid="this" id="2"/>
                                             <null comment="false" id="3" x="0" y="0"/>
-                                        </custom-85>
+                                        </custom-172>
                                         <push-shove2 comment="false" x="59" y="250">
                                             <ACTOR eid="lastcreated" id="0"/>
                                             <int id="1" val="1"/>

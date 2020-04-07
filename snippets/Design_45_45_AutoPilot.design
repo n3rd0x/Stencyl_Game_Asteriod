@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <set-val-45-1 comment="false" x="26" y="40">
+                    <null comment="false" id="0" x="0" y="0"/>
+                </set-val-45-1>
+                <set-val-45-4 comment="false" x="26" y="72">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-45-4>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <set-val-45-1 comment="false" x="37" y="73">
+                            <custom-12 comment="false" id="0" x="0" y="0">
+                                <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                            </custom-12>
+                        </set-val-45-1>
+                        <custom-182 comment="false" x="37" y="110">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-45-1 comment="false" id="1" x="0" y="0"/>
+                        </custom-182>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <int id="1" val="1"/>
+                    </value>
+                </if>
+                <else comment="false" x="26" y="154">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="174">
+                            <group eventID="2" id="-1">
+                                <setvel comment="false" x="48" y="217">
+                                    <ACTOR eid="this" id="0"/>
+                                    <custom-180 comment="false" id="1" x="0" y="0">
+                                        <ACTOR eid="this" id="0"/>
+                                        <get-val-45-1 comment="false" id="1" x="0" y="0"/>
+                                    </custom-180>
+                                    <int id="2" val="5"/>
+                                </setvel>
+                                <set-val-45-4 comment="false" x="48" y="262">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-45-4>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <custom-181 comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <get-val-45-1 comment="false" id="1" x="0" y="0"/>
+                                </custom-181>
+                                <int id="1" val="5"/>
+                            </more>
+                        </if>
+                        <else comment="false" x="37" y="299">
+                            <group eventID="2" id="-1">
+                                <set-dxy comment="false" x="48" y="319">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                </set-dxy>
+                                <set-dxy comment="false" x="48" y="346">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="0"/>
+                                </set-dxy>
+                                <if comment="false" x="48" y="373">
+                                    <group eventID="2" id="-1">
+                                        <set-val-45-4 comment="false" x="59" y="398">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-45-4>
+                                        <dolater comment="false" x="59" y="423">
+                                            <group eventID="2" id="-1">
+                                                <set-val-45-1 comment="false" x="70" y="450">
+                                                    <null comment="false" id="0" x="0" y="0"/>
+                                                </set-val-45-1>
+                                            </group>
+                                            <int id="0" val="1"/>
+                                            <ACTOR eid="this" id="2"/>
+                                        </dolater>
+                                    </group>
+                                    <get-val-45-4 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                            </group>
+                        </else>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>
