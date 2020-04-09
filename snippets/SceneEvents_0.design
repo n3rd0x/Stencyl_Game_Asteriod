@@ -443,10 +443,21 @@
                                     <int id="0" val="0"/>
                                     <sound eid="108" id="1"/>
                                 </play-sound4>
-                                <custom-123 comment="false" x="48" y="716">
+                                <comment-wrapper comment="false" x="48" y="716">
+                                    <group eventID="12" id="-1">
+                                        <set-attribute comment="false" x="59" y="736">
+                                            <get-val-0-5 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="Helse Egenskap"/>
+                                            <int id="2" val="_Helse"/>
+                                            <int id="3" val="100"/>
+                                        </set-attribute>
+                                    </group>
+                                    <int id="0" val="Spilleren får full helse."/>
+                                </comment-wrapper>
+                                <custom-123 comment="false" x="48" y="780">
                                     <get-val-0-5 comment="false" id="0" x="0" y="0"/>
                                 </custom-123>
-                                <custom-48 comment="false" x="48" y="748"/>
+                                <custom-48 comment="false" x="48" y="812"/>
                             </group>
                             <moreeq comment="false" id="0" x="0" y="0">
                                 <get-game-val-6 comment="false" id="0" x="0" y="0"/>

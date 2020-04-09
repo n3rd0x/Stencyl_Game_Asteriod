@@ -1,0 +1,15 @@
+#
+#Thu Apr 09 15:00:50 CEST 2020
+shadow.x=1
+shadow.y=1
+color=\#ffcc00
+shadow.blur=0
+stroke.size=1
+shadow.color=\#000000
+alphabet=
+gradient.offset=0
+size=16
+antialias=true
+style=bold italic
+family=Serif
+chars=all

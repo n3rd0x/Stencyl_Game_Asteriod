@@ -71,10 +71,55 @@
                     </minus>
                     <int id="2" val="100"/>
                 </image-inst-hud>
+                <custom-173 comment="false" x="26" y="455">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <custom-132 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="60"/>
+                    </minus>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <custom-133 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="40"/>
+                    </minus>
+                </custom-173>
+                <set-val-43-6 comment="false" x="26" y="485">
+                    <custom-199 comment="false" id="0" x="0" y="0">
+                        <custom-132 comment="false" id="0" x="0" y="0"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </screen-wh>
+                            <int id="1" val="100"/>
+                        </minus>
+                        <get-val-43-9 comment="false" id="2" x="0" y="0"/>
+                        <font eid="49" id="3"/>
+                    </custom-199>
+                </set-val-43-6>
+                <set-val-43-7 comment="false" x="26" y="543">
+                    <custom-199 comment="false" id="0" x="0" y="0">
+                        <custom-132 comment="false" id="0" x="0" y="0"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </screen-wh>
+                            <int id="1" val="50"/>
+                        </minus>
+                        <get-val-43-13 comment="false" id="2" x="0" y="0"/>
+                        <font eid="49" id="3"/>
+                    </custom-199>
+                </set-val-43-7>
             </group>
         </init>
     </group>
-    <group eventID="1" id="-1"/>
+    <group eventID="1" id="-1">
+        <plus comment="false" x="596" y="336">
+            <int id="0" val=""/>
+            <int id="1" val="50"/>
+        </plus>
+        <minus comment="false" x="449" y="266">
+            <int id="0" val=""/>
+            <int id="1" val="50"/>
+        </minus>
+    </group>
     <group eventID="2" id="0">
         <event-periodic comment="false" x="15" y="15">
             <group eventID="2" id="-1">
@@ -135,4 +180,174 @@
         </event-periodic>
     </group>
     <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-mouse-enter-exit-region comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-val-43-8 comment="false" x="26" y="42">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-43-8>
+            </group>
+            <REGION eid="var" id="0" vid="6"/>
+            <int id="1" val="0"/>
+        </event-mouse-enter-exit-region>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="5" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="5" id="-1">
+                        <set-font-new comment="false" x="37" y="65">
+                            <font eid="194" id="0"/>
+                        </set-font-new>
+                    </group>
+                    <get-val-43-8 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="26" y="104">
+                    <group eventID="5" id="-1">
+                        <set-font-new comment="false" x="37" y="124">
+                            <font eid="49" id="0"/>
+                        </set-font-new>
+                    </group>
+                </else>
+                <draw-text comment="false" x="26" y="163">
+                    <get-val-43-9 comment="false" id="0" x="0" y="0"/>
+                    <get-region-pos comment="false" id="1" x="0" y="0">
+                        <REGION eid="var" id="0" vid="6"/>
+                        <int id="1" val="0"/>
+                    </get-region-pos>
+                    <get-region-pos comment="false" id="2" x="0" y="0">
+                        <REGION eid="var" id="0" vid="6"/>
+                        <int id="1" val="1"/>
+                    </get-region-pos>
+                </draw-text>
+                <if comment="false" x="26" y="196">
+                    <group eventID="5" id="-1">
+                        <set-font-new comment="false" x="37" y="221">
+                            <font eid="194" id="0"/>
+                        </set-font-new>
+                    </group>
+                    <get-val-43-14 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="26" y="260">
+                    <group eventID="5" id="-1">
+                        <set-font-new comment="false" x="37" y="280">
+                            <font eid="49" id="0"/>
+                        </set-font-new>
+                    </group>
+                </else>
+                <draw-text comment="false" x="26" y="319">
+                    <get-val-43-13 comment="false" id="0" x="0" y="0"/>
+                    <get-region-pos comment="false" id="1" x="0" y="0">
+                        <REGION eid="var" id="0" vid="7"/>
+                        <int id="1" val="0"/>
+                    </get-region-pos>
+                    <get-region-pos comment="false" id="2" x="0" y="0">
+                        <REGION eid="var" id="0" vid="7"/>
+                        <int id="1" val="1"/>
+                    </get-region-pos>
+                </draw-text>
+            </group>
+        </draw>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-mouse-enter-exit-region comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <set-val-43-8 comment="false" x="26" y="42">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-43-8>
+            </group>
+            <REGION eid="var" id="0" vid="6"/>
+            <int id="1" val="1"/>
+        </event-mouse-enter-exit-region>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-mouse-enter-exit-region comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <scene-change-through comment="false" x="26" y="42">
+                    <scene eid="0" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="2"/>
+                </scene-change-through>
+            </group>
+            <REGION eid="var" id="0" vid="6"/>
+            <int id="1" val="4"/>
+        </event-mouse-enter-exit-region>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="9" id="0">
+        <receiver-4-199 comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <set-val-43-11 comment="false" x="26" y="45">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-byobval-43-199-0 comment="false" id="0" x="0" y="0"/>
+                        <custom-151 comment="false" id="1" x="0" y="0">
+                            <get-byobval-43-199-2 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-43-199-3 comment="false" id="1" x="0" y="0"/>
+                        </custom-151>
+                    </minus>
+                </set-val-43-11>
+                <set-val-43-12 comment="false" x="26" y="88">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <get-byobval-43-199-1 comment="false" id="0" x="0" y="0"/>
+                        <custom-198 comment="false" id="1" x="0" y="0">
+                            <get-byobval-43-199-3 comment="false" id="0" x="0" y="0"/>
+                        </custom-198>
+                    </minus>
+                </set-val-43-12>
+                <return comment="false" x="26" y="131">
+                    <custom-190 comment="false" id="0" x="0" y="0">
+                        <get-val-43-11 comment="false" id="0" x="0" y="0"/>
+                        <get-val-43-12 comment="false" id="1" x="0" y="0"/>
+                        <get-font-width2-new comment="false" id="2" x="0" y="0">
+                            <get-byobval-43-199-3 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-43-199-2 comment="false" id="1" x="0" y="0"/>
+                        </get-font-width2-new>
+                        <get-font-height2-new comment="false" id="3" x="0" y="0">
+                            <get-byobval-43-199-3 comment="false" id="0" x="0" y="0"/>
+                        </get-font-height2-new>
+                    </custom-190>
+                </return>
+            </group>
+            <get-byobval-43-199-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-43-199-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-43-199-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-43-199-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-4-199>
+    </group>
+    <group eventID="9" id="-1"/>
+    <group eventID="10" id="0">
+        <event-mouse-enter-exit-region comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-val-43-14 comment="false" x="26" y="42">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-43-14>
+            </group>
+            <REGION eid="var" id="0" vid="7"/>
+            <int id="1" val="0"/>
+        </event-mouse-enter-exit-region>
+    </group>
+    <group eventID="10" id="-1"/>
+    <group eventID="11" id="0">
+        <event-mouse-enter-exit-region comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <set-val-43-14 comment="false" x="26" y="42">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-43-14>
+            </group>
+            <REGION eid="var" id="0" vid="7"/>
+            <int id="1" val="1"/>
+        </event-mouse-enter-exit-region>
+    </group>
+    <group eventID="11" id="-1"/>
+    <group eventID="12" id="0">
+        <event-mouse-enter-exit-region comment="false" x="15" y="15">
+            <group eventID="7" id="-1"/>
+            <REGION eid="var" id="0" vid="7"/>
+            <int id="1" val="4"/>
+        </event-mouse-enter-exit-region>
+    </group>
+    <group eventID="12" id="-1"/>
 </groups>
