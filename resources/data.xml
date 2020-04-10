@@ -33,7 +33,7 @@
         <blank name="@block.thisactor" order="0" type="actor"/>
     </custom-block>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="256" id="0" name="Bakgrunn" numframes="1" oid="-1" readable="false" repeats="true" resized="false" shared="false" width="256" xpf="1.0" ypf="1.0"/>
-    <custom-block blocktag="custom-188" blocktype="NORMAL" code="(.say(&quot;Boks Egenskap&quot;, &quot;_customBlock_BoksKlikket&quot;) : Bool)" desc="" global="false" gui="BoksKlikket ( %0 )" id="188" message="BoksKlikket" name="BoksKlikket" oid="-1" return="boolean" shared="false" snippetID="47">
+    <custom-block blocktag="custom-188" blocktype="NORMAL" code="(sayToScene(&quot;SceneEvents_2&quot;, &quot;_customBlock_BoksKlikket&quot;, []) : Bool)" desc="" global="false" gui="BoksKlikket ( %0 )" id="188" message="BoksKlikket" name="BoksKlikket" oid="-1" return="boolean" shared="false" snippetID="47">
         <blank name="@block.thisactor" order="0" type="actor"/>
     </custom-block>
     <custom-block blocktag="custom-26" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_Damage&quot;, []);" desc="Subtracts a specific amount of health from the Actor." global="false" gui="Damage %0 By %1" id="26" message="Damage" name="Damage" oid="-1" return="void" shared="false" snippetID="-1">
@@ -82,19 +82,13 @@
         <blank name="Self" order="0" type="actor"/>
         <blank name="Amount" order="1" type="number"/>
     </custom-block>
-    <custom-block blocktag="custom-190" blocktype="NORMAL" code="(scripts.Design_44_44_Felles._customBlock_LagBoks(, , , ) : Region)" desc="" global="true" gui="LagBoks ( x: %0 , y: %1 , b: %2 , h: %3 )" id="190" message="LagBoks" name="LagBoks" oid="-1" return="region" shared="false" snippetID="44">
-        <blank name="x" order="0" type="number"/>
-        <blank name="y" order="1" type="number"/>
-        <blank name="b" order="2" type="number"/>
-        <blank name="h" order="3" type="number"/>
-    </custom-block>
     <custom-block blocktag="custom-172" blocktype="ACTION" code="sayToScene(&quot;Felles&quot;, &quot;_customBlock_LagFiende&quot;, [, , , ]);" desc="" global="false" gui="LagFiende ( type: %0 , animasjon: %1 , lokasjon: %2 , mål: %3)" id="172" message="LagFiende" name="LagFiende" oid="-1" return="void" shared="false" snippetID="44">
         <blank name="Type" order="0" type="actortype"/>
         <blank name="maksAnimasjon" order="1" type="number"/>
         <blank name="Lokasjon" order="2" type="actor"/>
         <blank name="Maal" order="3" type="actor"/>
     </custom-block>
-    <custom-block blocktag="custom-199" blocktype="NORMAL" code="(sayToScene(&quot;SceneEvents_1&quot;, &quot;_customBlock_LagTekstBoks&quot;, [, , , ]) : Region)" desc="" global="false" gui="LagTekstBoks ( cx: %0 , cy: %1 , tekst: %2 , skrift: %3 )" id="199" message="LagTekstBoks" name="LagTekstBoks" oid="-1" return="region" shared="false" snippetID="43">
+    <custom-block blocktag="custom-202" blocktype="NORMAL" code="(sayToScene(&quot;Felles&quot;, &quot;_customBlock_LagTekstBoks&quot;, [, , , ]) : Region)" desc="" global="false" gui="LagTekstBoks ( cx: %0 , cy: %1 , tekst: %2 , skrift: %3 )" id="202" message="LagTekstBoks" name="LagTekstBoks" oid="-1" return="region" shared="false" snippetID="44">
         <blank name="cx" order="0" type="number"/>
         <blank name="cy" order="1" type="number"/>
         <blank name="Tekst" order="2" type="text"/>
@@ -736,6 +730,37 @@
             <poly data="4,0,0,9,0,9,2,0,2" density="0.1" fric="0.2" gid="8" id="0" name="Box" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="49" fixedrot="true" fric="0.2" gid="3" id="206" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="RulleTekst" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="207" static="false">
+        <snippets>
+            <s enabled="true" id="48">
+                <prop id="2147483647" list="0" val="thisactor"/>
+                <prop id="1" list="0" val="120"/>
+                <prop id="2" list="0" val="400"/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val="49"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="207" name="RulleTekst" readable="false" shared="false"/>
+    <custom-block blocktag="custom-211" blocktype="ACTION" code="sayToScene(&quot;SceneEvents_2&quot;, &quot;_customBlock_Rulletekst&quot;, [, , , ]);" desc="" global="false" gui="Rulletekst ( x: %0 , y: %1 , tekst: %2 , skrift: %3 )" id="211" message="Rulletekst" name="Rulletekst" oid="-1" return="void" shared="false" snippetID="47">
+        <blank name="x" order="0" type="number"/>
+        <blank name="y" order="1" type="number"/>
+        <blank name="Tekst" order="2" type="text"/>
+        <blank name="Skrift" order="3" type="font"/>
+    </custom-block>
+    <custom-block blocktag="custom-205" blocktype="NORMAL" code="(scripts.Design_44_44_Felles._customBlock_SenterGrafikkBredde(, ) : Float)" desc="" global="true" gui="SenterGrafikkBredde ( x: %0 , grafikk: %1 )" id="205" message="SenterGrafikkBredde" name="SenterGrafikkBredde" oid="-1" return="number" shared="false" snippetID="44">
+        <blank name="x" order="0" type="number"/>
+        <blank name="Grafikk" order="1" type="image-instance"/>
+    </custom-block>
+    <custom-block blocktag="custom-203" blocktype="NORMAL" code="(scripts.Design_44_44_Felles._customBlock_SenterTekstBredde(, , ) : Float)" desc="" global="true" gui="SenterTekstBredde ( x: %0 , tekst: %1 , skrift: %2 )" id="203" message="SenterTekstBredde" name="SenterTekstBredde" oid="-1" return="number" shared="false" snippetID="44">
+        <blank name="x" order="0" type="number"/>
+        <blank name="Tekst" order="1" type="text"/>
+        <blank name="Skrift" order="2" type="font"/>
+    </custom-block>
+    <custom-block blocktag="custom-204" blocktype="NORMAL" code="(scripts.Design_44_44_Felles._customBlock_SenterTekstHoyde(, ) : Float)" desc="" global="true" gui="SenterTekstHøyde ( y: %0, skrift: %1 )" id="204" message="SenterTekstHoyde" name="SenterTekstHoyde" oid="-1" return="number" shared="false" snippetID="44">
+        <blank name="y" order="0" type="number"/>
+        <blank name="Skrift" order="1" type="font"/>
+    </custom-block>
     <custom-block blocktag="custom-23" blocktype="ACTION" code=".say(&quot;Health Manager&quot;, &quot;_customBlock_SetHealth&quot;, []);" desc="" global="false" gui="Set Health For %0 To %1" id="23" message="SetHealth" name="SetHealth" oid="-1" return="void" shared="false" snippetID="-1">
         <blank name="Self" order="0" type="actor"/>
         <blank name="Amount" order="1" type="number"/>

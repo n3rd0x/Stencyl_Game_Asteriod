@@ -7,8 +7,8 @@
     </exts>
     <bundles>
         <bundle author="" id="com.yourcompany.gamename" internalVersion="1" metroColor="-12566464" name="My Game" store="Windows Store" version="1.0.0"/>
-        <bundle id="no.tranit.nerdox" internalVersion="1" name="Asteriod" store="Google Play" version="1.0.0"/>
         <bundle id="com.yourcompany.gamename" internalVersion="1" name="My Game" store="Mac App Store" version="1.0.0"/>
+        <bundle id="no.tranit.nerdox" internalVersion="1" name="Asteriod" store="Google Play" version="1.0.0"/>
         <bundle id="no.tranit.nerdox" internalVersion="1" name="Asteriod" store="App Store" version="1.0.0"/>
     </bundles>
     <scales>
@@ -72,6 +72,7 @@
         </group>
         <group desc="" id="2" name="Scene" type="actortype">
             <r id="161"/>
+            <r id="206"/>
             <r id="15"/>
             <r id="143"/>
         </group>
@@ -184,7 +185,7 @@
     </collisions>
     <autotileFormats/>
     <atlases>
-        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,3,5,15,31,35,49,51,53,55,80,91,94,96,107,108,109,110,111,112,113,114,115,116,117,118,125,129,143,149,157,161,167,168,194," name="Main Atlas" pvr="false" resize="0" target="0"/>
+        <atlas allScenes="true" desc="" dirty="true" id="0" members="0,1,3,5,15,31,35,49,51,53,55,80,91,94,96,107,108,109,110,111,112,113,114,115,116,117,118,125,129,143,149,157,161,167,168,194,206," name="Main Atlas" pvr="false" resize="0" target="0"/>
     </atlases>
     <libraries/>
 </game>

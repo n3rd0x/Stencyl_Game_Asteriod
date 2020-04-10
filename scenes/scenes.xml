@@ -2,4 +2,5 @@
 <scenes>
     <scene desc="" format="4.0.2" id="0" name="GamePlay Scene"/>
     <scene desc="" format="4.0.2" id="1" name="Tittel Scene"/>
+    <scene desc="" format="4.0.2" id="2" name="Attribusjon Scene"/>
 </scenes>

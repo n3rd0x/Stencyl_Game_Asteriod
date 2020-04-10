@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <stop-sounds comment="false" x="26" y="40"/>
+                <mousedisp comment="false" x="26" y="60">
+                    <int id="0" val="1"/>
+                </mousedisp>
+                <set-val-47-6 comment="false" x="26" y="87">
+                    <custom-202 comment="false" id="0" x="0" y="0">
+                        <custom-132 comment="false" id="0" x="0" y="0"/>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <screen-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </screen-wh>
+                            <int id="1" val="50"/>
+                        </minus>
+                        <get-val-47-9 comment="false" id="2" x="0" y="0"/>
+                        <font eid="49" id="3"/>
+                    </custom-202>
+                </set-val-47-6>
+                <set-val-47-11 comment="false" x="26" y="145">
+                    <image-inst-create comment="false" id="0" x="0" y="0">
+                        <image-file comment="false" id="0" x="0" y="0">
+                            <int id="0" val="n3rd0x.png"/>
+                        </image-file>
+                    </image-inst-create>
+                </set-val-47-11>
+                <image-inst-hud comment="false" x="26" y="175">
+                    <get-val-47-11 comment="false" id="0" x="0" y="0"/>
+                    <custom-205 comment="false" id="1" x="0" y="0">
+                        <custom-132 comment="false" id="0" x="0" y="0"/>
+                        <get-val-47-11 comment="false" id="1" x="0" y="0"/>
+                    </custom-205>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <screen-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </screen-wh>
+                        <int id="1" val="180"/>
+                    </minus>
+                </image-inst-hud>
+                <image-origin comment="false" x="26" y="213">
+                    <get-val-47-11 comment="false" id="0" x="0" y="0"/>
+                    <div comment="false" id="1" x="0" y="0">
+                        <image-get-props comment="false" id="0" x="0" y="0">
+                            <get-val-47-11 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="3"/>
+                        </image-get-props>
+                        <int id="1" val="2"/>
+                    </div>
+                    <div comment="false" id="2" x="0" y="0">
+                        <image-get-props comment="false" id="0" x="0" y="0">
+                            <get-val-47-11 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="4"/>
+                        </image-get-props>
+                        <int id="1" val="2"/>
+                    </div>
+                </image-origin>
+                <set-val-47-13 comment="false" x="26" y="256">
+                    <create-list comment="false" id="0" x="0" y="0"/>
+                </set-val-47-13>
+                <set-val-47-14 comment="false" x="26" y="281">
+                    <int id="0" val="0"/>
+                </set-val-47-14>
+                <add-list comment="false" x="26" y="301">
+                    <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="== GRAFIKK =="/>
+                </add-list>
+                <add-list comment="false" x="26" y="326">
+                    <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Kenney.nl (http://kenney.nl)"/>
+                </add-list>
+                <add-list comment="false" x="26" y="351">
+                    <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="   "/>
+                </add-list>
+                <add-list comment="false" x="26" y="376">
+                    <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="== MUSIKK =="/>
+                </add-list>
+                <add-list comment="false" x="26" y="401">
+                    <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Eric Matyas (http://soundimage.org)"/>
+                </add-list>
+                <add-list comment="false" x="26" y="426">
+                    <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="   "/>
+                </add-list>
+                <add-list comment="false" x="26" y="451">
+                    <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="== LYD =="/>
+                </add-list>
+                <add-list comment="false" x="26" y="476">
+                    <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Kenney.nl (http://kenney.nl)"/>
+                </add-list>
+                <add-list comment="false" x="26" y="501">
+                    <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="Michael Kurinnoy (http://opengameart.org)"/>
+                </add-list>
+                <add-list comment="false" x="26" y="526">
+                    <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="   "/>
+                </add-list>
+                <add-list comment="false" x="26" y="551">
+                    <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="  "/>
+                </add-list>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="3" id="0">
+        <event-mouse-enter-exit-region comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <set-val-47-8 comment="false" x="26" y="42">
+                    <true comment="false" id="0" x="0" y="0"/>
+                </set-val-47-8>
+            </group>
+            <REGION eid="var" id="0" vid="6"/>
+            <int id="1" val="0"/>
+        </event-mouse-enter-exit-region>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="5" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="5" id="-1">
+                        <set-font-new comment="false" x="37" y="65">
+                            <font eid="194" id="0"/>
+                        </set-font-new>
+                    </group>
+                    <get-val-47-8 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="26" y="104">
+                    <group eventID="5" id="-1">
+                        <set-font-new comment="false" x="37" y="124">
+                            <font eid="49" id="0"/>
+                        </set-font-new>
+                    </group>
+                </else>
+                <draw-text comment="false" x="26" y="163">
+                    <get-val-47-9 comment="false" id="0" x="0" y="0"/>
+                    <get-region-pos comment="false" id="1" x="0" y="0">
+                        <REGION eid="var" id="0" vid="6"/>
+                        <int id="1" val="0"/>
+                    </get-region-pos>
+                    <get-region-pos comment="false" id="2" x="0" y="0">
+                        <REGION eid="var" id="0" vid="6"/>
+                        <int id="1" val="1"/>
+                    </get-region-pos>
+                </draw-text>
+                <comment-wrapper comment="false" x="26" y="196">
+                    <group eventID="5" id="-1">
+                        <set-font-new comment="false" x="37" y="216">
+                            <font eid="149" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="37" y="243">
+                            <get-val-47-10 comment="false" id="0" x="0" y="0"/>
+                            <custom-203 comment="false" id="1" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <get-val-47-10 comment="false" id="1" x="0" y="0"/>
+                                <font eid="149" id="2"/>
+                            </custom-203>
+                            <int id="2" val="100"/>
+                        </draw-text>
+                        <set-font-new comment="false" x="37" y="281">
+                            <font eid="49" id="0"/>
+                        </set-font-new>
+                        <draw-text comment="false" x="37" y="308">
+                            <get-val-47-12 comment="false" id="0" x="0" y="0"/>
+                            <custom-203 comment="false" id="1" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <get-val-47-12 comment="false" id="1" x="0" y="0"/>
+                                <font eid="49" id="2"/>
+                            </custom-203>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-wh>
+                                <int id="1" val="120"/>
+                            </minus>
+                        </draw-text>
+                        <draw-text comment="false" x="37" y="346">
+                            <get-val-47-15 comment="false" id="0" x="0" y="0"/>
+                            <custom-203 comment="false" id="1" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <get-val-47-15 comment="false" id="1" x="0" y="0"/>
+                                <font eid="49" id="2"/>
+                            </custom-203>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <screen-wh comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="1"/>
+                                </screen-wh>
+                                <int id="1" val="100"/>
+                            </minus>
+                        </draw-text>
+                    </group>
+                    <int id="0" val="Attribusjon."/>
+                </comment-wrapper>
+            </group>
+        </draw>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-mouse-enter-exit-region comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <set-val-47-8 comment="false" x="26" y="42">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-47-8>
+            </group>
+            <REGION eid="var" id="0" vid="6"/>
+            <int id="1" val="1"/>
+        </event-mouse-enter-exit-region>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-mouse-enter-exit-region comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <scene-change-through comment="false" x="26" y="42">
+                    <scene eid="1" id="0"/>
+                    <int id="1" val="3"/>
+                    <int id="2" val="1"/>
+                </scene-change-through>
+            </group>
+            <REGION eid="var" id="0" vid="6"/>
+            <int id="1" val="4"/>
+        </event-mouse-enter-exit-region>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <image-tween-spin comment="false" x="26" y="42">
+                    <int id="0" val="0"/>
+                    <get-val-47-11 comment="false" id="1" x="0" y="0"/>
+                    <int id="2" val="10"/>
+                    <int id="3" val="1"/>
+                    <int id="4" val="0"/>
+                </image-tween-spin>
+            </group>
+            <int id="0" val="1"/>
+            <ACTOR eid="lastcreated" id="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="8" id="-1"/>
+    <group eventID="12" id="0">
+        <event-periodic comment="false" x="15" y="15">
+            <group eventID="12" id="-1">
+                <comment-wrapper comment="false" x="26" y="42">
+                    <group eventID="12" id="-1">
+                        <custom-211 comment="false" x="37" y="62">
+                            <custom-132 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="120"/>
+                            <get-item comment="false" id="2" x="0" y="0">
+                                <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                                <get-val-47-14 comment="false" id="1" x="0" y="0"/>
+                            </get-item>
+                            <font eid="49" id="3"/>
+                        </custom-211>
+                        <incdec comment="false" x="37" y="99">
+                            <int id="0" val="14"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                        </incdec>
+                        <if comment="false" x="37" y="126">
+                            <group eventID="12" id="-1">
+                                <set-val-47-14 comment="false" x="48" y="166">
+                                    <int id="0" val="0"/>
+                                </set-val-47-14>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-val-47-14 comment="false" id="0" x="0" y="0"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <length-list comment="false" id="0" x="0" y="0">
+                                        <get-val-47-13 comment="false" id="0" x="0" y="0"/>
+                                    </length-list>
+                                    <int id="1" val="1"/>
+                                </minus>
+                            </more>
+                        </if>
+                    </group>
+                    <int id="0" val="Hvert sekund oppretter vi en rulletekst fra listen."/>
+                </comment-wrapper>
+            </group>
+            <int id="0" val="2"/>
+            <ACTOR eid="lastcreated" id="2"/>
+        </event-periodic>
+    </group>
+    <group eventID="12" id="-1"/>
+    <group eventID="13" id="0">
+        <receiver-8-211 comment="false" x="15" y="15">
+            <group eventID="13" id="-1">
+                <create-actor3 comment="false" x="26" y="45">
+                    <actortype eid="206" id="0"/>
+                    <custom-203 comment="false" id="1" x="0" y="0">
+                        <get-byobval-47-211-0 comment="false" id="0" x="0" y="0"/>
+                        <get-byobval-47-211-2 comment="false" id="1" x="0" y="0"/>
+                        <get-byobval-47-211-3 comment="false" id="2" x="0" y="0"/>
+                    </custom-203>
+                    <get-byobval-47-211-1 comment="false" id="2" x="0" y="0"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-attribute comment="false" x="26" y="90">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="Rulle Tekst Egenskap"/>
+                    <int id="2" val="_Bunn"/>
+                    <minus comment="false" id="3" x="0" y="0">
+                        <screen-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </screen-wh>
+                        <int id="1" val="170"/>
+                    </minus>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="135">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="Rulle Tekst Egenskap"/>
+                    <int id="2" val="_Tekst"/>
+                    <get-byobval-47-211-2 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <set-attribute comment="false" x="26" y="167">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="Rulle Tekst Egenskap"/>
+                    <int id="2" val="_Skrift"/>
+                    <get-byobval-47-211-3 comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+            </group>
+            <get-byobval-47-211-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-47-211-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-47-211-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-47-211-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-8-211>
+    </group>
+    <group eventID="13" id="-1"/>
+</groups>

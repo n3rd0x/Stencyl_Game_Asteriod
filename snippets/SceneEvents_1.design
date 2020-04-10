@@ -59,19 +59,13 @@
                 </set-val-43-1>
                 <image-inst-hud comment="false" x="26" y="407">
                     <get-val-43-1 comment="false" id="0" x="0" y="0"/>
-                    <minus comment="false" id="1" x="0" y="0">
+                    <custom-205 comment="false" id="1" x="0" y="0">
                         <custom-132 comment="false" id="0" x="0" y="0"/>
-                        <div comment="false" id="1" x="0" y="0">
-                            <image-get-props comment="false" id="0" x="0" y="0">
-                                <get-val-43-1 comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="3"/>
-                            </image-get-props>
-                            <int id="1" val="2"/>
-                        </div>
-                    </minus>
+                        <get-val-43-1 comment="false" id="1" x="0" y="0"/>
+                    </custom-205>
                     <int id="2" val="100"/>
                 </image-inst-hud>
-                <custom-173 comment="false" x="26" y="455">
+                <custom-173 comment="false" x="26" y="437">
                     <minus comment="false" id="0" x="0" y="0">
                         <custom-132 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="60"/>
@@ -81,8 +75,8 @@
                         <int id="1" val="40"/>
                     </minus>
                 </custom-173>
-                <set-val-43-6 comment="false" x="26" y="485">
-                    <custom-199 comment="false" id="0" x="0" y="0">
+                <set-val-43-6 comment="false" x="26" y="467">
+                    <custom-202 comment="false" id="0" x="0" y="0">
                         <custom-132 comment="false" id="0" x="0" y="0"/>
                         <minus comment="false" id="1" x="0" y="0">
                             <screen-wh comment="false" id="0" x="0" y="0">
@@ -92,10 +86,10 @@
                         </minus>
                         <get-val-43-9 comment="false" id="2" x="0" y="0"/>
                         <font eid="49" id="3"/>
-                    </custom-199>
+                    </custom-202>
                 </set-val-43-6>
-                <set-val-43-7 comment="false" x="26" y="543">
-                    <custom-199 comment="false" id="0" x="0" y="0">
+                <set-val-43-7 comment="false" x="26" y="525">
+                    <custom-202 comment="false" id="0" x="0" y="0">
                         <custom-132 comment="false" id="0" x="0" y="0"/>
                         <minus comment="false" id="1" x="0" y="0">
                             <screen-wh comment="false" id="0" x="0" y="0">
@@ -105,19 +99,21 @@
                         </minus>
                         <get-val-43-13 comment="false" id="2" x="0" y="0"/>
                         <font eid="49" id="3"/>
-                    </custom-199>
+                    </custom-202>
                 </set-val-43-7>
             </group>
         </init>
     </group>
     <group eventID="1" id="-1">
-        <plus comment="false" x="596" y="336">
+        <minus comment="false" x="482" y="151">
             <int id="0" val=""/>
-            <int id="1" val="50"/>
-        </plus>
-        <minus comment="false" x="449" y="266">
-            <int id="0" val=""/>
-            <int id="1" val="50"/>
+            <div comment="false" id="1" x="0" y="0">
+                <image-get-props comment="false" id="0" x="0" y="0">
+                    <int id="0" val=""/>
+                    <int id="1" val="3"/>
+                </image-get-props>
+                <int id="1" val="2"/>
+            </div>
         </minus>
     </group>
     <group eventID="2" id="0">
@@ -277,47 +273,6 @@
         </event-mouse-enter-exit-region>
     </group>
     <group eventID="7" id="-1"/>
-    <group eventID="9" id="0">
-        <receiver-4-199 comment="false" x="15" y="15">
-            <group eventID="9" id="-1">
-                <set-val-43-11 comment="false" x="26" y="45">
-                    <minus comment="false" id="0" x="0" y="0">
-                        <get-byobval-43-199-0 comment="false" id="0" x="0" y="0"/>
-                        <custom-151 comment="false" id="1" x="0" y="0">
-                            <get-byobval-43-199-2 comment="false" id="0" x="0" y="0"/>
-                            <get-byobval-43-199-3 comment="false" id="1" x="0" y="0"/>
-                        </custom-151>
-                    </minus>
-                </set-val-43-11>
-                <set-val-43-12 comment="false" x="26" y="88">
-                    <minus comment="false" id="0" x="0" y="0">
-                        <get-byobval-43-199-1 comment="false" id="0" x="0" y="0"/>
-                        <custom-198 comment="false" id="1" x="0" y="0">
-                            <get-byobval-43-199-3 comment="false" id="0" x="0" y="0"/>
-                        </custom-198>
-                    </minus>
-                </set-val-43-12>
-                <return comment="false" x="26" y="131">
-                    <custom-190 comment="false" id="0" x="0" y="0">
-                        <get-val-43-11 comment="false" id="0" x="0" y="0"/>
-                        <get-val-43-12 comment="false" id="1" x="0" y="0"/>
-                        <get-font-width2-new comment="false" id="2" x="0" y="0">
-                            <get-byobval-43-199-3 comment="false" id="0" x="0" y="0"/>
-                            <get-byobval-43-199-2 comment="false" id="1" x="0" y="0"/>
-                        </get-font-width2-new>
-                        <get-font-height2-new comment="false" id="3" x="0" y="0">
-                            <get-byobval-43-199-3 comment="false" id="0" x="0" y="0"/>
-                        </get-font-height2-new>
-                    </custom-190>
-                </return>
-            </group>
-            <get-byobval-43-199-0 comment="false" id="0" x="0" y="0"/>
-            <get-byobval-43-199-1 comment="false" id="1" x="0" y="0"/>
-            <get-byobval-43-199-2 comment="false" id="2" x="0" y="0"/>
-            <get-byobval-43-199-3 comment="false" id="3" x="0" y="0"/>
-        </receiver-4-199>
-    </group>
-    <group eventID="9" id="-1"/>
     <group eventID="10" id="0">
         <event-mouse-enter-exit-region comment="false" x="15" y="15">
             <group eventID="3" id="-1">
@@ -344,7 +299,13 @@
     <group eventID="11" id="-1"/>
     <group eventID="12" id="0">
         <event-mouse-enter-exit-region comment="false" x="15" y="15">
-            <group eventID="7" id="-1"/>
+            <group eventID="7" id="-1">
+                <scene-change-through comment="false" x="26" y="42">
+                    <scene eid="2" id="0"/>
+                    <int id="1" val="4"/>
+                    <int id="2" val="1"/>
+                </scene-change-through>
+            </group>
             <REGION eid="var" id="0" vid="7"/>
             <int id="1" val="4"/>
         </event-mouse-enter-exit-region>

@@ -432,9 +432,6 @@
         <region default="" defaultValue="" desc="" dropdown="" fullname="RegionAttribusjon" hidden="false" id="7" name="_RegionAttribusjon" order="5"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="RegionStartMarkert" hidden="true" id="8" name="_RegionStartMarkert" order="6"/>
         <text default="START" defaultValue="START" desc="" dropdown="" fullname="TekstStart" hidden="false" id="9" name="_TekstStart" order="8"/>
-        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="RegionStartKlikket" hidden="false" id="10" name="_RegionStartKlikket" order="7"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="px" hidden="false" id="11" name="_px" order="10"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="py" hidden="false" id="12" name="_py" order="11"/>
         <text default="ATTRIBUSJON" defaultValue="ATTRIBUSJON" desc="" dropdown="" fullname="TekstAttribusjon" hidden="false" id="13" name="_TekstAttribusjon" order="9"/>
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="RegionAttribusjonMarkert" hidden="false" id="14" name="_RegionAttribusjonMarkert" order="12"/>
         <blocks>
@@ -445,12 +442,11 @@
         </blocks>
         <events>
             <event displayName="Opprettet" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Legg Til Fiende" enabled="true" id="2" name="event-periodic" order="14" repeats="true"/>
+            <event displayName="Legg Til Fiende" enabled="true" id="2" name="event-periodic" order="4" repeats="true"/>
             <event displayName="Mus Innenfor Start" enabled="true" id="3" name="event-mouse-enter-exit-region" order="6" repeats="true"/>
-            <event displayName="Drawing" enabled="true" id="5" name="draw" order="4" repeats="true"/>
+            <event displayName="Tegning" enabled="true" id="5" name="draw" order="2" repeats="true"/>
             <event displayName="Mus Utenfor Start" enabled="true" id="6" name="event-mouse-enter-exit-region" order="7" repeats="true"/>
             <event displayName="Mus Klikk Start" enabled="true" id="7" name="event-mouse-enter-exit-region" order="8" repeats="true"/>
-            <event displayName="Lag Tekst Boks" enabled="true" id="9" name="event-custom-block" order="2" repeats="true"/>
             <event displayName="Mus Innenfor Attribusjon" enabled="true" id="10" name="event-mouse-enter-exit-region" order="9" repeats="true"/>
             <event displayName="Mus Utenfor Attribusjon" enabled="true" id="11" name="event-mouse-enter-exit-region" order="10" repeats="true"/>
             <event displayName="Mus Klikk Attribusjon" enabled="true" id="12" name="event-mouse-enter-exit-region" order="11" repeats="true"/>
@@ -459,8 +455,8 @@
     <snippet attachedevent="false" class="scripts.Design_44_44_Felles" classname="scripts.Design_44_44_Felles" desc="" description="" design="true" drawOrder="0" id="44" name="Felles" oid="-1" package="scripts" shared="false" type="scene">
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="FiendeType" hidden="true" id="1" name="_FiendeType" order="0"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="FiendeListe" hidden="false" id="2" name="_FiendeListe" order="1"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="rx" hidden="true" id="3" name="_rx" order="2"/>
-        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="ry" hidden="true" id="4" name="_ry" order="3"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="px" hidden="true" id="5" name="_px" order="4"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="py" hidden="true" id="6" name="_py" order="5"/>
         <blocks>
             <receiver blockID="170" id="1"/>
             <receiver blockID="171" id="2"/>
@@ -478,18 +474,26 @@
             <receiver blockID="189" id="14"/>
             <receiver blockID="190" id="15"/>
             <receiver blockID="191" id="16"/>
+            <receiver blockID="201" id="17"/>
+            <receiver blockID="202" id="18"/>
+            <receiver blockID="203" id="19"/>
+            <receiver blockID="204" id="20"/>
+            <receiver blockID="205" id="21"/>
         </blocks>
         <events>
-            <event displayName="Lag Fiende" enabled="true" id="3" name="event-custom-block" order="12" repeats="true"/>
-            <event displayName="Vis Rekorder" enabled="true" id="4" name="event-custom-block" order="18" repeats="true"/>
-            <event displayName="Legg Til Romskip" enabled="true" id="5" name="event-custom-block" order="15" repeats="true"/>
-            <event displayName="Legg Til Stor Meteor" enabled="true" id="6" name="event-custom-block" order="17" repeats="true"/>
-            <event displayName="Legg Til Medium Meteor" enabled="true" id="7" name="event-custom-block" order="16" repeats="true"/>
-            <event displayName="Legg Til Fiende" enabled="true" id="8" name="event-custom-block" order="14" repeats="true"/>
-            <event displayName="Grad Fra Aktor Til Mål" enabled="true" id="11" name="event-custom-block-global" order="6" repeats="true"/>
+            <event displayName="Lag Fiende" enabled="true" id="3" name="event-custom-block" order="17" repeats="true"/>
+            <event displayName="Vis Rekorder" enabled="true" id="4" name="event-custom-block" order="23" repeats="true"/>
+            <event displayName="Legg Til Romskip" enabled="true" id="5" name="event-custom-block" order="20" repeats="true"/>
+            <event displayName="Legg Til Stor Meteor" enabled="true" id="6" name="event-custom-block" order="22" repeats="true"/>
+            <event displayName="Legg Til Medium Meteor" enabled="true" id="7" name="event-custom-block" order="21" repeats="true"/>
+            <event displayName="Legg Til Fiende" enabled="true" id="8" name="event-custom-block" order="19" repeats="true"/>
+            <event displayName="Grad Fra Aktor Til Mål" enabled="true" id="11" name="event-custom-block-global" order="4" repeats="true"/>
             <event displayName="Distanse Fra Aktor Til Mål" enabled="true" id="12" name="event-custom-block-global" order="7" repeats="true"/>
             <event displayName="Pek Aktor Mot Mål" enabled="true" id="13" name="event-custom-block-global" order="3" repeats="true"/>
-            <event displayName="Lag Boks" enabled="true" id="14" name="event-custom-block-global" order="10" repeats="true"/>
+            <event displayName="Lag Tekst Boks" enabled="true" id="16" name="event-custom-block" order="11" repeats="true"/>
+            <event displayName="Senter Tekst Bredde" enabled="true" id="17" name="event-custom-block-global" order="12" repeats="true"/>
+            <event displayName="Senter Tekst Høyde" enabled="true" id="18" name="event-custom-block-global" order="13" repeats="true"/>
+            <event displayName="Global Block" enabled="true" id="19" name="event-custom-block-global" order="14" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_45_45_AutoPilot" classname="scripts.Design_45_45_AutoPilot" desc="" description="" design="true" drawOrder="0" id="45" name="Auto Pilot" oid="-1" package="scripts" shared="false" type="actor">
@@ -522,5 +526,49 @@
             <event displayName="Sjekk Skyte Rate" enabled="true" id="2" name="event-periodic" order="7" repeats="true"/>
             <event displayName="Auto Skyt Laser" enabled="true" id="5" name="event-custom-block" order="6" repeats="true"/>
         </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_2" classname="scripts.SceneEvents_2" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="47" name="SceneEvents_2" oid="-1" package="scripts." sceneid="2" shared="false" type="scene">
+        <region default="" defaultValue="" desc="" dropdown="" fullname="RegionTilbake" hidden="false" id="6" name="_RegionTilbake" order="0"/>
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="RegionTilbakeMarkert" hidden="true" id="8" name="_RegionTilbakeMarkert" order="1"/>
+        <text default="TILBAKE" defaultValue="TILBAKE" desc="" dropdown="" fullname="TekstTilbake" hidden="false" id="9" name="_TekstTilbake" order="2"/>
+        <text default="ATTRIBUSJON" defaultValue="ATTRIBUSJON" desc="" dropdown="" fullname="TekstAttribusjon" hidden="false" id="10" name="_TekstAttribusjon" order="3"/>
+        <image-instance default="" defaultValue="" desc="" dropdown="" fullname="LogoGrafikk" hidden="false" id="11" name="_LogoGrafikk" order="4"/>
+        <text default="T.Sang 'n3rd0x' Tran" defaultValue="T.Sang 'n3rd0x' Tran" desc="" dropdown="" fullname="TekstUtvikler" hidden="false" id="12" name="_TekstUtvikler" order="5"/>
+        <list default="list" defaultValue="list" desc="" dropdown="" fullname="RulleTekster" hidden="false" id="13" name="_RulleTekster" order="6"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="RulleTekstIndeks" hidden="false" id="14" name="_RulleTekstIndeks" order="7"/>
+        <text default="10/04-2020 (v. 1.0.0)" defaultValue="10/04-2020 (v. 1.0.0)" desc="" dropdown="" fullname="TekstDato" hidden="false" id="15" name="_TekstDato" order="8"/>
+        <blocks>
+            <receiver blockID="200" id="4"/>
+            <receiver blockID="208" id="5"/>
+            <receiver blockID="209" id="6"/>
+            <receiver blockID="210" id="7"/>
+            <receiver blockID="211" id="8"/>
+        </blocks>
+        <events>
+            <event displayName="Opprettet" enabled="true" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Mus Innenfor" enabled="true" id="3" name="event-mouse-enter-exit-region" order="13" repeats="true"/>
+            <event displayName="Tegning" enabled="true" id="5" name="draw" order="8" repeats="true"/>
+            <event displayName="Mus Utenfor" enabled="true" id="6" name="event-mouse-enter-exit-region" order="14" repeats="true"/>
+            <event displayName="Mus Klikk" enabled="true" id="7" name="event-mouse-enter-exit-region" order="15" repeats="true"/>
+            <event displayName="Snurre Logo" enabled="true" id="8" name="event-periodic" order="7" repeats="true"/>
+            <event displayName="Kjør Rulletekst" enabled="true" id="12" name="event-periodic" order="2" repeats="true"/>
+            <event displayName="Rulletekst" enabled="true" id="13" name="event-custom-block" order="6" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="false" class="scripts.Design_48_48_RulleTekstEgenskap" classname="scripts.Design_48_48_RulleTekstEgenskap" desc="" description="" design="true" drawOrder="0" id="48" name="Rulle Tekst Egenskap" oid="-1" package="scripts" shared="false" type="actor">
+        <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
+        <number default="400.0" defaultValue="400.0" desc="" dropdown="" fullname="Bunn" hidden="false" id="2" name="_Bunn" order="2"/>
+        <text default="" defaultValue="" desc="" dropdown="" fullname="Tekst" hidden="false" id="3" name="_Tekst" order="3"/>
+        <font default="" defaultValue="" desc="" dropdown="" fullname="Skrift" hidden="false" id="4" name="_Skrift" order="4"/>
+        <blocks/>
+        <events>
+            <event displayName="Oppdatering" enabled="true" id="1" name="step" order="1" repeats="true"/>
+            <event displayName="Tegning" enabled="true" id="2" name="draw" order="2" repeats="true"/>
+            <event displayName="Opprettet" enabled="true" id="3" name="init" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet actorid="206" attachedevent="true" class="scripts.ActorEvents_206" classname="scripts.ActorEvents_206" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="49" name="ActorEvents_206" oid="-1" package="scripts." shared="false" type="actor">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>
