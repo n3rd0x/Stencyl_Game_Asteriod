@@ -536,7 +536,7 @@
         <text default="T.Sang 'n3rd0x' Tran" defaultValue="T.Sang 'n3rd0x' Tran" desc="" dropdown="" fullname="TekstUtvikler" hidden="false" id="12" name="_TekstUtvikler" order="5"/>
         <list default="list" defaultValue="list" desc="" dropdown="" fullname="RulleTekster" hidden="false" id="13" name="_RulleTekster" order="6"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="RulleTekstIndeks" hidden="false" id="14" name="_RulleTekstIndeks" order="7"/>
-        <text default="10/04-2020 (v. 1.0.0)" defaultValue="10/04-2020 (v. 1.0.0)" desc="" dropdown="" fullname="TekstDato" hidden="false" id="15" name="_TekstDato" order="8"/>
+        <text default="11/04-2020 (v. 1.0.1)" defaultValue="11/04-2020 (v. 1.0.1)" desc="" dropdown="" fullname="TekstDato" hidden="false" id="15" name="_TekstDato" order="8"/>
         <blocks>
             <receiver blockID="200" id="4"/>
             <receiver blockID="208" id="5"/>

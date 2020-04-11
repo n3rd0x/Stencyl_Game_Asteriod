@@ -523,8 +523,8 @@
         </set-val-44-6>
     </group>
     <group eventID="16" id="-1">
-        <get-val-44-6 comment="false" x="247" y="323"/>
         <get-val-44-5 comment="false" x="161" y="319"/>
+        <get-val-44-6 comment="false" x="247" y="323"/>
     </group>
     <group eventID="17" id="0">
         <receiver-19-203 comment="false" x="15" y="15">

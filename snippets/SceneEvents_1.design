@@ -68,54 +68,213 @@
                 <custom-173 comment="false" x="26" y="437">
                     <minus comment="false" id="0" x="0" y="0">
                         <custom-132 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="60"/>
+                        <int id="1" val="150"/>
                     </minus>
                     <minus comment="false" id="1" x="0" y="0">
                         <custom-133 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="40"/>
                     </minus>
                 </custom-173>
-                <set-val-43-6 comment="false" x="26" y="467">
-                    <custom-202 comment="false" id="0" x="0" y="0">
-                        <custom-132 comment="false" id="0" x="0" y="0"/>
-                        <minus comment="false" id="1" x="0" y="0">
-                            <screen-wh comment="false" id="0" x="0" y="0">
-                                <int id="0" val="1"/>
-                            </screen-wh>
-                            <int id="1" val="100"/>
-                        </minus>
-                        <get-val-43-9 comment="false" id="2" x="0" y="0"/>
-                        <font eid="49" id="3"/>
-                    </custom-202>
-                </set-val-43-6>
-                <set-val-43-7 comment="false" x="26" y="525">
-                    <custom-202 comment="false" id="0" x="0" y="0">
-                        <custom-132 comment="false" id="0" x="0" y="0"/>
-                        <minus comment="false" id="1" x="0" y="0">
-                            <screen-wh comment="false" id="0" x="0" y="0">
-                                <int id="0" val="1"/>
-                            </screen-wh>
-                            <int id="1" val="50"/>
-                        </minus>
-                        <get-val-43-13 comment="false" id="2" x="0" y="0"/>
-                        <font eid="49" id="3"/>
-                    </custom-202>
-                </set-val-43-7>
+                <comment-wrapper comment="false" x="26" y="467">
+                    <group eventID="1" id="-1">
+                        <set-val-43-6 comment="false" x="37" y="487">
+                            <custom-202 comment="false" id="0" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </screen-wh>
+                                    <int id="1" val="100"/>
+                                </minus>
+                                <get-val-43-9 comment="false" id="2" x="0" y="0"/>
+                                <font eid="49" id="3"/>
+                            </custom-202>
+                        </set-val-43-6>
+                        <set-val-43-7 comment="false" x="37" y="545">
+                            <custom-202 comment="false" id="0" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <minus comment="false" id="1" x="0" y="0">
+                                    <screen-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </screen-wh>
+                                    <int id="1" val="50"/>
+                                </minus>
+                                <get-val-43-13 comment="false" id="2" x="0" y="0"/>
+                                <font eid="49" id="3"/>
+                            </custom-202>
+                        </set-val-43-7>
+                    </group>
+                    <int id="0" val="Lage knapper for start og attribusjon."/>
+                </comment-wrapper>
+                <comment-wrapper comment="false" x="26" y="615">
+                    <group eventID="1" id="-1">
+                        <create-actor3 comment="false" x="37" y="635">
+                            <actortype eid="161" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <custom-165 comment="false" x="37" y="662">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="Kontroller"/>
+                            <int id="2" val=""/>
+                            <int id="3" val="-1"/>
+                            <plus comment="false" id="4" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="100"/>
+                            </plus>
+                            <minus comment="false" id="5" x="0" y="0">
+                                <custom-133 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="40"/>
+                            </minus>
+                        </custom-165>
+                        <create-actor3 comment="false" x="37" y="699">
+                            <actortype eid="161" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <custom-165 comment="false" x="37" y="726">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="W"/>
+                            <int id="2" val="Akselere"/>
+                            <int id="3" val="-1"/>
+                            <plus comment="false" id="4" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="100"/>
+                            </plus>
+                            <minus comment="false" id="5" x="0" y="0">
+                                <custom-133 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="20"/>
+                            </minus>
+                        </custom-165>
+                        <create-actor3 comment="false" x="37" y="763">
+                            <actortype eid="161" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <custom-165 comment="false" x="37" y="790">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="A"/>
+                            <int id="2" val="Snu til Venstre"/>
+                            <int id="3" val="-1"/>
+                            <plus comment="false" id="4" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="100"/>
+                            </plus>
+                            <plus comment="false" id="5" x="0" y="0">
+                                <custom-133 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </plus>
+                        </custom-165>
+                        <create-actor3 comment="false" x="37" y="827">
+                            <actortype eid="161" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <custom-165 comment="false" x="37" y="854">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="D"/>
+                            <int id="2" val="Snu til Høyre"/>
+                            <int id="3" val="-1"/>
+                            <plus comment="false" id="4" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="100"/>
+                            </plus>
+                            <plus comment="false" id="5" x="0" y="0">
+                                <custom-133 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="20"/>
+                            </plus>
+                        </custom-165>
+                        <create-actor3 comment="false" x="37" y="891">
+                            <actortype eid="161" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <custom-165 comment="false" x="37" y="918">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="Q"/>
+                            <int id="2" val="Aktiver Skjold"/>
+                            <int id="3" val="-1"/>
+                            <plus comment="false" id="4" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="100"/>
+                            </plus>
+                            <plus comment="false" id="5" x="0" y="0">
+                                <custom-133 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="40"/>
+                            </plus>
+                        </custom-165>
+                        <create-actor3 comment="false" x="37" y="955">
+                            <actortype eid="161" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <custom-165 comment="false" x="37" y="982">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="K"/>
+                            <int id="2" val="Skyt"/>
+                            <int id="3" val="-1"/>
+                            <plus comment="false" id="4" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="100"/>
+                            </plus>
+                            <plus comment="false" id="5" x="0" y="0">
+                                <custom-133 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="60"/>
+                            </plus>
+                        </custom-165>
+                        <create-actor3 comment="false" x="37" y="1019">
+                            <actortype eid="161" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <custom-165 comment="false" x="37" y="1046">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="MH"/>
+                            <int id="2" val="(Høyre Mus Klikk)"/>
+                            <int id="3" val="-1"/>
+                            <plus comment="false" id="4" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="100"/>
+                            </plus>
+                            <plus comment="false" id="5" x="0" y="0">
+                                <custom-133 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="80"/>
+                            </plus>
+                        </custom-165>
+                        <create-actor3 comment="false" x="37" y="1083">
+                            <actortype eid="161" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <custom-165 comment="false" x="37" y="1110">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val=""/>
+                            <int id="2" val="Skyt"/>
+                            <int id="3" val="-1"/>
+                            <plus comment="false" id="4" x="0" y="0">
+                                <custom-132 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="100"/>
+                            </plus>
+                            <plus comment="false" id="5" x="0" y="0">
+                                <custom-133 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="100"/>
+                            </plus>
+                        </custom-165>
+                    </group>
+                    <int id="0" val="Vise kontroller konfigurasjonen."/>
+                </comment-wrapper>
             </group>
         </init>
     </group>
-    <group eventID="1" id="-1">
-        <minus comment="false" x="482" y="151">
-            <int id="0" val=""/>
-            <div comment="false" id="1" x="0" y="0">
-                <image-get-props comment="false" id="0" x="0" y="0">
-                    <int id="0" val=""/>
-                    <int id="1" val="3"/>
-                </image-get-props>
-                <int id="1" val="2"/>
-            </div>
-        </minus>
-    </group>
+    <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <event-periodic comment="false" x="15" y="15">
             <group eventID="2" id="-1">

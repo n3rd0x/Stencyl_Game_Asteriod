@@ -11,16 +11,16 @@
                     <get-val-42-4 comment="false" id="1" x="0" y="0"/>
                     <get-val-42-5 comment="false" id="2" x="0" y="0"/>
                 </draw-text>
-                <if comment="false" x="26" y="97">
+                <draw-text comment="false" x="26" y="97">
+                    <get-val-42-2 comment="false" id="0" x="0" y="0"/>
+                    <plus comment="false" id="1" x="0" y="0">
+                        <get-val-42-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="35"/>
+                    </plus>
+                    <get-val-42-5 comment="false" id="2" x="0" y="0"/>
+                </draw-text>
+                <if comment="false" x="26" y="127">
                     <group eventID="1" id="-1">
-                        <draw-text comment="false" x="37" y="127">
-                            <get-val-42-2 comment="false" id="0" x="0" y="0"/>
-                            <plus comment="false" id="1" x="0" y="0">
-                                <get-val-42-4 comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="35"/>
-                            </plus>
-                            <get-val-42-5 comment="false" id="2" x="0" y="0"/>
-                        </draw-text>
                         <draw-text comment="false" x="37" y="157">
                             <tostring comment="false" id="0" x="0" y="0">
                                 <get-val-42-3 comment="false" id="0" x="0" y="0"/>
