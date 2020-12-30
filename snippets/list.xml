@@ -441,15 +441,16 @@
             <receiver blockID="199" id="4"/>
         </blocks>
         <events>
-            <event displayName="Opprettet" enabled="true" id="1" name="init" order="1" repeats="true"/>
-            <event displayName="Legg Til Fiende" enabled="true" id="2" name="event-periodic" order="4" repeats="true"/>
-            <event displayName="Mus Innenfor Start" enabled="true" id="3" name="event-mouse-enter-exit-region" order="6" repeats="true"/>
-            <event displayName="Tegning" enabled="true" id="5" name="draw" order="2" repeats="true"/>
-            <event displayName="Mus Utenfor Start" enabled="true" id="6" name="event-mouse-enter-exit-region" order="7" repeats="true"/>
-            <event displayName="Mus Klikk Start" enabled="true" id="7" name="event-mouse-enter-exit-region" order="8" repeats="true"/>
-            <event displayName="Mus Innenfor Attribusjon" enabled="true" id="10" name="event-mouse-enter-exit-region" order="9" repeats="true"/>
-            <event displayName="Mus Utenfor Attribusjon" enabled="true" id="11" name="event-mouse-enter-exit-region" order="10" repeats="true"/>
-            <event displayName="Mus Klikk Attribusjon" enabled="true" id="12" name="event-mouse-enter-exit-region" order="11" repeats="true"/>
+            <event displayName="Opprettet" enabled="false" id="1" name="init" order="1" repeats="true"/>
+            <event displayName="Legg Til Fiende" enabled="true" id="2" name="event-periodic" order="5" repeats="true"/>
+            <event displayName="Mus Innenfor Start" enabled="true" id="3" name="event-mouse-enter-exit-region" order="7" repeats="true"/>
+            <event displayName="Tegning" enabled="true" id="5" name="draw" order="3" repeats="true"/>
+            <event displayName="Mus Utenfor Start" enabled="true" id="6" name="event-mouse-enter-exit-region" order="8" repeats="true"/>
+            <event displayName="Mus Klikk Start" enabled="true" id="7" name="event-mouse-enter-exit-region" order="9" repeats="true"/>
+            <event displayName="Mus Innenfor Attribusjon" enabled="true" id="10" name="event-mouse-enter-exit-region" order="10" repeats="true"/>
+            <event displayName="Mus Utenfor Attribusjon" enabled="true" id="11" name="event-mouse-enter-exit-region" order="11" repeats="true"/>
+            <event displayName="Mus Klikk Attribusjon" enabled="true" id="12" name="event-mouse-enter-exit-region" order="12" repeats="true"/>
+            <event displayName="After N secs" enabled="true" id="13" name="event-delay" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_44_44_Felles" classname="scripts.Design_44_44_Felles" desc="" description="" design="true" drawOrder="0" id="44" name="Felles" oid="-1" package="scripts" shared="false" type="scene">

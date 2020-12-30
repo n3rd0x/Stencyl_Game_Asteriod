@@ -67,10 +67,10 @@
                     <and comment="false" id="0" x="0" y="0">
                         <get-val-46-3 comment="false" id="0" x="0" y="0"/>
                         <and comment="false" id="1" x="0" y="0">
-                            <value comment="false" id="0" x="0" y="0">
-                                <int id="0" val="4"/>
-                                <int id="1" val="0"/>
-                            </value>
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <get-val-46-4 comment="false" id="0" x="0" y="0"/>
+                                <null comment="false" id="1" x="0" y="0"/>
+                            </noteq>
                             <isalive comment="false" id="1" x="0" y="0">
                                 <ACTOR eid="var" id="0" vid="4"/>
                             </isalive>

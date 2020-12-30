@@ -70,7 +70,7 @@
                 <custom-165 comment="false" x="26" y="72">
                     <ACTOR eid="lastcreated" id="0"/>
                     <int id="1" val="Rekorder"/>
-                    <int id="2" val=""/>
+                    <int id="2" val=" "/>
                     <int id="3" val="-1"/>
                     <get-byobval-44-173-0 comment="false" id="4" x="0" y="0"/>
                     <get-byobval-44-173-1 comment="false" id="5" x="0" y="0"/>
@@ -503,29 +503,7 @@
             <get-byobval-44-202-3 comment="false" id="3" x="0" y="0"/>
         </receiver-18-202>
     </group>
-    <group eventID="16" id="1">
-        <set-val-44-5 comment="false" x="81" y="403">
-            <minus comment="false" id="0" x="0" y="0">
-                <get-byobval-44-202-0 comment="false" id="0" x="0" y="0"/>
-                <custom-151 comment="false" id="1" x="0" y="0">
-                    <get-byobval-44-202-2 comment="false" id="0" x="0" y="0"/>
-                    <font id="1"/>
-                </custom-151>
-            </minus>
-        </set-val-44-5>
-        <set-val-44-6 comment="false" x="81" y="446">
-            <minus comment="false" id="0" x="0" y="0">
-                <get-byobval-44-202-1 comment="false" id="0" x="0" y="0"/>
-                <custom-198 comment="false" id="1" x="0" y="0">
-                    <get-byobval-44-202-3 comment="false" id="0" x="0" y="0"/>
-                </custom-198>
-            </minus>
-        </set-val-44-6>
-    </group>
-    <group eventID="16" id="-1">
-        <get-val-44-5 comment="false" x="161" y="319"/>
-        <get-val-44-6 comment="false" x="247" y="323"/>
-    </group>
+    <group eventID="16" id="-1"/>
     <group eventID="17" id="0">
         <receiver-19-203 comment="false" x="15" y="15">
             <group eventID="17" id="-1">
