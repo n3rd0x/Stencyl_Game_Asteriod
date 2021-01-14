@@ -345,33 +345,38 @@
     <group eventID="13" id="0">
         <event-mouse-enter-exit-region comment="false" x="15" y="15">
             <group eventID="13" id="-1">
-                <clear-list comment="false" x="26" y="42">
-                    <get-game-val-3 comment="false" id="0" x="0" y="0"/>
-                </clear-list>
-                <if comment="false" x="26" y="67">
+                <if comment="false" x="26" y="42">
                     <group eventID="13" id="-1">
-                        <custom-156 comment="false" x="37" y="97">
-                            <custom-134 comment="false" id="0" x="0" y="0">
-                                <ACTOR eid="var" id="0" vid="18"/>
-                            </custom-134>
-                        </custom-156>
+                        <clear-list comment="false" x="37" y="67">
+                            <get-game-val-3 comment="false" id="0" x="0" y="0"/>
+                        </clear-list>
+                        <if comment="false" x="37" y="92">
+                            <group eventID="13" id="-1">
+                                <custom-156 comment="false" x="48" y="122">
+                                    <custom-134 comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="18"/>
+                                    </custom-134>
+                                </custom-156>
+                            </group>
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <get-val-19-18 comment="false" id="0" x="0" y="0"/>
+                                <null comment="false" id="1" x="0" y="0"/>
+                            </noteq>
+                        </if>
+                        <save-game comment="false" x="37" y="167">
+                            <group eventID="13" id="-1">
+                                <comment-short comment="false" x="48" y="192">
+                                    <int id="0" val="Lagre rekordene."/>
+                                </comment-short>
+                            </group>
+                        </save-game>
+                        <scene-reload-through comment="false" x="37" y="224">
+                            <int id="0" val="0"/>
+                            <int id="1" val="2"/>
+                        </scene-reload-through>
                     </group>
-                    <noteq comment="false" id="0" x="0" y="0">
-                        <get-val-19-18 comment="false" id="0" x="0" y="0"/>
-                        <null comment="false" id="1" x="0" y="0"/>
-                    </noteq>
+                    <get-game-val-16 comment="false" id="0" x="0" y="0"/>
                 </if>
-                <save-game comment="false" x="26" y="142">
-                    <group eventID="13" id="-1">
-                        <comment-short comment="false" x="37" y="167">
-                            <int id="0" val="Lagre rekordene."/>
-                        </comment-short>
-                    </group>
-                </save-game>
-                <scene-reload-through comment="false" x="26" y="199">
-                    <int id="0" val="0"/>
-                    <int id="1" val="2"/>
-                </scene-reload-through>
             </group>
             <REGION eid="var" id="0" vid="11"/>
             <int id="1" val="4"/>
